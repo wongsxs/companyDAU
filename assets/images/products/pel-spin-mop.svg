@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <radialGradient id="haloGrad" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#fb923c" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="450" fill="url(#bgGrad)" rx="16"/>
+  <circle cx="300" cy="190" r="160" fill="url(#haloGrad)"/>
+
+  <!-- Grid Pattern Subdued -->
+  <g opacity="0.15">
+    <line x1="50" y1="0" x2="50" y2="450" stroke="#64748b" stroke-dasharray="4 4" />
+    <line x1="150" y1="0" x2="150" y2="450" stroke="#64748b" stroke-dasharray="4 4" />
+    <line x1="250" y1="0" x2="250" y2="450" stroke="#64748b" stroke-dasharray="4 4" />
+    <line x1="350" y1="0" x2="350" y2="450" stroke="#64748b" stroke-dasharray="4 4" />
+    <line x1="450" y1="0" x2="450" y2="450" stroke="#64748b" stroke-dasharray="4 4" />
+    <line x1="550" y1="0" x2="550" y2="450" stroke="#64748b" stroke-dasharray="4 4" />
+    <line x1="0" y1="100" x2="600" y2="100" stroke="#64748b" stroke-dasharray="4 4" />
+    <line x1="0" y1="200" x2="600" y2="200" stroke="#64748b" stroke-dasharray="4 4" />
+    <line x1="0" y1="300" x2="600" y2="300" stroke="#64748b" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Quality Badge -->
+  <g transform="translate(40, 36)">
+    <rect width="170" height="30" rx="15" fill="#ea580c" />
+    <text x="85" y="20" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle" letter-spacing="1">★ DELUXE SYSTEM</text>
+  </g>
+
+  <!-- Factory Quality Seal -->
+  <g transform="translate(470, 36)">
+    <circle cx="36" cy="18" r="18" fill="#ffffff" stroke="#ea580c" stroke-width="2" />
+    <text x="36" y="16" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="8" fill="#ea580c" text-anchor="middle">QC PASS</text>
+    <text x="36" y="25" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="7" fill="#64748b" text-anchor="middle">PABRIK</text>
+  </g>
+
+  <!-- Illustration Object Group -->
+  <g transform="translate(300, 195)" filter="url(#cardShadow)">    <!-- Bucket -->
+    <rect x="-85" y="-10" width="170" height="95" rx="16" fill="#ea580c"/>
+    <rect x="-75" y="0" width="150" height="75" rx="10" fill="#ffffff"/>
+    <!-- Stainless Spinner Basket -->
+    <ellipse cx="25" cy="35" rx="38" ry="25" fill="#cbd5e1" stroke="#94a3b8" stroke-width="3"/>
+    <line x1="25" y1="15" x2="25" y2="55" stroke="#64748b" stroke-width="2"/>
+    <line x1="0" y1="35" x2="50" y2="35" stroke="#64748b" stroke-width="2"/>
+    <!-- Bucket Wheels -->
+    <circle cx="-65" cy="85" r="12" fill="#1e293b"/>
+    <circle cx="-65" cy="85" r="5" fill="#e2e8f0"/>
+    <circle cx="65" cy="85" r="12" fill="#1e293b"/>
+    <circle cx="65" cy="85" r="5" fill="#e2e8f0"/>
+
+    <!-- Spin Mop Pole & Round Head -->
+    <g transform="translate(-18, -40)">
+      <line x1="0" y1="-95" x2="0" y2="30" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="0" cy="35" r="28" fill="#c2410c"/>
+      <circle cx="0" cy="35" r="38" fill="none" stroke="#ffffff" stroke-width="6" stroke-dasharray="6 4"/>
+    </g>  </g>
+
+  <!-- Product Labels at Bottom -->
+  <g transform="translate(50, 365)">
+    <rect width="500" height="60" rx="12" fill="#ffffff" filter="url(#cardShadow)"/>
+    <text x="25" y="26" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="16" fill="#0f172a">Spin Mop Stainless Steel</text>
+    <text x="25" y="46" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="500" font-size="12" fill="#64748b">Ember Beroda + Pemeras Otomatis</text>
+    
+    <g transform="translate(410, 16)">
+      <rect width="65" height="28" rx="6" fill="#f1f5f9"/>
+      <text x="32" y="18" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="10" fill="#ea580c" text-anchor="middle">ASLI PABRIK</text>
+    </g>
+  </g>
+</svg>
