@@ -4,19 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Jaya Wijaya — Pabrik & Produsen Alat Kebersihan Kebumen</title>
-  <meta name="description" content="Pabrik dan produsen alat kebersihan tangan pertama di Desa Pandanlor, Kebumen. Memproduksi sapu ijuk, sapu rayung, sapu nilon, pel katun, microfiber, dan kemoceng untuk distributor & agen grosir se-Indonesia.">
+  <meta name="description" content="Pabrik dan produsen alat kebersihan tangan pertama di Desa Pandanlor, Kebumen. Memproduksi aneka sapu serat alami, sapu nilon, dan sistem pel lantai berkualitas untuk distributor & agen grosir.">
   <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
           },
           colors: {
             brand: {
@@ -25,11 +24,7 @@
               deep: '#0E2A32',
               primary: '#0B736A',
               primaryHover: '#095F57',
-              mint: '#0D9488',
-              mintLight: '#14B8A6',
-              mintBg: '#ECFDF5',
               surface: '#F8FAFC',
-              cardBg: '#F3F4F6',
             }
           }
         }
@@ -38,27 +33,24 @@
   </script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    /* Mobile-first safe tap feedback */
     a, button { -webkit-tap-highlight-color: transparent; }
-    /* Smooth transitions */
-    .transition-smooth { transition: all 0.2s ease-in-out; }
   </style>
 </head>
-<body class="bg-white text-slate-800 font-sans antialiased flex flex-col min-h-screen pb-16 sm:pb-0 overflow-x-hidden">
+<body class="bg-white text-slate-800 font-sans antialiased flex flex-col min-h-screen pb-24 sm:pb-0 overflow-x-hidden">
 
-  <!-- 1. TOP ANNOUNCEMENT BAR (MATCH MOCKUP) -->
-  <div class="bg-[#06282E] text-slate-200 text-xs py-2 px-4 border-b border-teal-950/40">
-    <div class="max-w-7xl mx-auto flex items-center justify-between gap-3 text-[11px] sm:text-xs">
+  <!-- 1. TOP INFO BAR (CLEAN & PROFESSIONAL) -->
+  <div class="bg-[#06282E] text-slate-200 text-xs border-b border-teal-950/60 py-2">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 flex items-center justify-between gap-3 text-[11px] sm:text-xs">
       <div class="flex items-center gap-2 truncate">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0 animate-pulse"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
         <span class="truncate text-slate-200 font-medium">
-          Produsen alat kebersihan sejak 1998 — <span class="text-teal-200">Desa Pandanlor, Kebumen</span>
+          Produsen alat kebersihan sejak 2020 — <span class="text-teal-200">Desa Pandanlor, Kebumen</span>
         </span>
       </div>
-      <div class="shrink-0">
+      <div class="hidden sm:flex items-center gap-2 shrink-0">
         <a href="https://wa.me/6281234567890?text=Halo%20Jaya%20Wijaya,%20saya%20ingin%20tanya%20stok%20dan%20harga%20alat%20kebersihan."
            target="_blank"
-           class="inline-flex items-center gap-1.5 text-teal-300 hover:text-white font-semibold transition-colors">
+           class="inline-flex items-center gap-1.5 text-teal-300 hover:text-white font-medium transition-colors">
           <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i>
           <span>WA: 0812-3456-7890</span>
         </a>
@@ -66,21 +58,21 @@
     </div>
   </div>
 
-  <!-- 2. NAVBAR (MATCH MOCKUP) -->
-  <header class="bg-white border-b border-slate-100 sticky top-0 z-50 shadow-sm/50 backdrop-blur-md bg-white/95">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+  <!-- 2. MOBILE HEADER (64–72px, CLEAN & PROPORTIONAL) -->
+  <header class="bg-white border-b border-slate-200/80 sticky top-0 z-40 bg-white/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 h-16 sm:h-[72px] flex items-center justify-between">
       
-      <!-- Logo Brand -->
-      <a href="index.html" class="flex items-center gap-3 group shrink-0">
-        <img src="assets/images/logo.png" alt="Jaya Wijaya Logo" class="h-9 sm:h-11 w-auto object-contain">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="assets/images/logo.png" alt="Jaya Wijaya" class="h-9 sm:h-10 w-auto object-contain">
         <div class="hidden sm:block">
-          <span class="block text-base sm:text-lg font-extrabold tracking-tight text-[#0E2A32] leading-none">JAYA WIJAYA</span>
+          <span class="block text-base sm:text-lg font-bold tracking-tight text-[#0E2A32] leading-none">JAYA WIJAYA</span>
           <span class="block text-[10px] tracking-wider text-teal-700 font-semibold uppercase mt-0.5">Pabrik Alat Kebersihan</span>
         </div>
       </a>
 
       <!-- Desktop Nav Links -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
         <a href="index.html" class="text-teal-700 font-semibold border-b-2 border-teal-600 pb-1">Beranda</a>
         <a href="produk.html" class="hover:text-teal-700 transition-colors">Produk</a>
         <a href="tentang.html" class="hover:text-teal-700 transition-colors">Tentang Kami</a>
@@ -99,37 +91,39 @@
       </div>
 
       <!-- Mobile Hamburger Button -->
-      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Buka Menu Navigasi">
+      <button id="mobileMenuBtn" 
+              class="md:hidden p-2.5 -mr-1 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none" 
+              aria-label="Buka Menu Navigasi">
         <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
       </button>
     </div>
 
     <!-- Mobile Drawer Menu -->
-    <div id="mobileDrawer" class="hidden md:hidden border-t border-slate-100 bg-white px-4 py-4 space-y-2 shadow-lg">
-      <a href="index.html" class="flex items-center justify-between px-3 py-2.5 rounded-lg bg-teal-50 text-teal-800 font-bold text-sm">
+    <div id="mobileDrawer" class="hidden md:hidden border-t border-slate-200 bg-white px-5 py-3 space-y-1 shadow-lg">
+      <a href="index.html" class="flex items-center justify-between py-2.5 text-teal-800 font-bold text-sm">
         <span>Beranda</span>
         <i data-lucide="chevron-right" class="w-4 h-4 text-teal-600"></i>
       </a>
-      <a href="produk.html" class="flex items-center justify-between px-3 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50 font-medium text-sm">
+      <a href="produk.html" class="flex items-center justify-between py-2.5 text-slate-700 hover:text-teal-700 font-medium text-sm border-t border-slate-100">
         <span>Produk</span>
         <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
       </a>
-      <a href="tentang.html" class="flex items-center justify-between px-3 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50 font-medium text-sm">
+      <a href="tentang.html" class="flex items-center justify-between py-2.5 text-slate-700 hover:text-teal-700 font-medium text-sm border-t border-slate-100">
         <span>Tentang Kami</span>
         <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
       </a>
-      <a href="#keunggulan" class="flex items-center justify-between px-3 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50 font-medium text-sm">
-        <span>Keunggulan</span>
+      <a href="#keunggulan" class="flex items-center justify-between py-2.5 text-slate-700 hover:text-teal-700 font-medium text-sm border-t border-slate-100">
+        <span>Keunggulan Produksi</span>
         <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
       </a>
-      <a href="kontak.html" class="flex items-center justify-between px-3 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50 font-medium text-sm">
-        <span>Kontak</span>
+      <a href="kontak.html" class="flex items-center justify-between py-2.5 text-slate-700 hover:text-teal-700 font-medium text-sm border-t border-slate-100">
+        <span>Kontak & Lokasi</span>
         <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
       </a>
-      <div class="pt-3 border-t border-slate-100">
+      <div class="pt-3 pb-1 border-t border-slate-200">
         <a href="https://wa.me/6281234567890?text=Halo%20Jaya%20Wijaya,%20saya%20ingin%20konsultasi%20pemesanan%20alat%20kebersihan."
            target="_blank"
-           class="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-[#0B736A] hover:bg-[#095F57] text-white font-semibold text-sm shadow-sm">
+           class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-[#0B736A] hover:bg-[#095F57] text-white font-semibold text-sm shadow-sm">
           <i data-lucide="message-circle" class="w-4 h-4"></i>
           <span>Hubungi Kami via WhatsApp</span>
         </a>
@@ -140,76 +134,80 @@
   <!-- MAIN WRAPPER -->
   <main class="flex-1">
 
-    <!-- 3. HERO SECTION (SPLIT SCREEN MATCH MOCKUP) -->
-    <section class="bg-gradient-to-b from-[#F8FAFC] to-white py-8 sm:py-12 lg:py-16 border-b border-slate-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- 3. HERO SECTION (CLEAN MOBILE-FIRST HIERARCHY) -->
+    <section class="bg-gradient-to-b from-[#F8FAFC] to-white py-8 sm:py-12 lg:py-14 border-b border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-10 items-center">
           
-          <!-- Image Column (ORDER-1 on Mobile so photo is immediately visible at the top, ORDER-2 on Desktop) -->
-          <div class="order-1 lg:order-2 lg:col-span-5 relative">
-            <div class="relative rounded-2xl overflow-hidden shadow-md border border-slate-200/80 bg-slate-100 group">
-              <!-- Photo 1: Products (Default) -->
+          <!-- Visual Media Container (Order-1 on Mobile so photo greets user, Order-2 on Desktop) -->
+          <div class="order-1 lg:order-2 lg:col-span-5">
+            
+            <!-- Clean Image Frame with 20–24px Radius & NO intrusive overlays -->
+            <div class="rounded-[20px] sm:rounded-[24px] overflow-hidden border border-slate-200 shadow-sm bg-slate-100">
+              <!-- Visual 1: Products (Default) -->
               <img id="heroImgProduct" 
                    src="assets/images/home/hero_composition.png" 
                    alt="Aneka Produk Sapu dan Pel Jaya Wijaya" 
-                   class="w-full h-auto object-cover block transition-opacity duration-300">
+                   class="w-full h-auto object-cover block">
               
-              <!-- Photo 2: Factory Workshop (Pabrik Desa Pandanlor Kebumen) -->
+              <!-- Visual 2: Factory Workshop (Clean Switch) -->
               <img id="heroImgFactory" 
                    src="assets/images/home/factory_workshop.png" 
                    alt="Pabrik Manufaktur Jaya Wijaya Desa Pandanlor Kebumen" 
-                   class="w-full h-auto object-cover hidden transition-opacity duration-300">
+                   class="w-full h-auto object-cover hidden">
+            </div>
 
-              <!-- Dual Switch Pill Tabs on top of the image -->
-              <div class="absolute top-3 left-3 bg-[#06282E]/90 backdrop-blur-md p-1 rounded-full flex items-center gap-1 shadow-sm border border-white/20 z-10">
+            <!-- Segmented Control Tabs (Neatly placed BELOW image, never covering the photo) -->
+            <div class="mt-2.5 flex items-center justify-between gap-2">
+              <div class="inline-flex p-1 bg-slate-100 rounded-lg border border-slate-200 text-xs">
                 <button type="button" 
                         id="tabHeroProduct" 
                         onclick="switchHeroMedia('product')" 
-                        class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-500 text-white transition-all shadow-xs flex items-center gap-1 cursor-pointer">
-                  <span>📦 Foto Produk</span>
+                        class="px-3 py-1 rounded-md font-semibold text-xs bg-white text-slate-900 shadow-xs transition-all cursor-pointer">
+                  Koleksi Produk
                 </button>
                 <button type="button" 
                         id="tabHeroFactory" 
                         onclick="switchHeroMedia('factory')" 
-                        class="px-2.5 py-1 rounded-full text-[11px] font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-1 cursor-pointer">
-                  <span>🏭 Pabrik Kebumen</span>
+                        class="px-3 py-1 rounded-md font-medium text-xs text-slate-600 hover:text-slate-900 transition-all cursor-pointer">
+                  Workshop Pabrik
                 </button>
               </div>
 
-              <!-- Location Badge on bottom left -->
-              <div class="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md text-slate-800 text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs border border-slate-200 flex items-center gap-1.5 z-10">
-                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span>Desa Pandanlor, Klirong</span>
+              <div class="text-[11px] text-slate-500 font-medium flex items-center gap-1 shrink-0">
+                <i data-lucide="map-pin" class="w-3 h-3 text-teal-700"></i>
+                <span>Desa Pandanlor, Kebumen</span>
               </div>
             </div>
+
           </div>
 
-          <!-- Typography & CTAs (ORDER-2 on Mobile, ORDER-1 on Desktop) -->
-          <div class="order-2 lg:order-1 lg:col-span-7 space-y-4 sm:space-y-6">
+          <!-- Hero Content (Order-2 on Mobile, Order-1 on Desktop) -->
+          <div class="order-2 lg:order-1 lg:col-span-7 space-y-4 sm:space-y-5">
             
-            <!-- Mint Badge -->
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-teal-800 border border-teal-200/80">
-              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <!-- Clean Subtitle Kicker -->
+            <div class="text-xs font-bold tracking-wider text-teal-800 uppercase inline-flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
               <span>PRODUKSI LANGSUNG DARI PABRIK</span>
             </div>
 
-            <!-- Big Headline -->
-            <h1 class="text-2xl sm:text-4xl lg:text-[46px] font-extrabold text-[#0D282E] leading-[1.18] tracking-tight">
+            <!-- Structured Headline -->
+            <h1 class="text-2xl sm:text-3xl lg:text-[42px] font-extrabold text-[#0D282E] leading-[1.2] tracking-tight">
               Alat Kebersihan<br>
               Berkualitas untuk<br>
-              <span class="text-[#0B7D76]">Distributor & Grosir.</span>
+              <span class="text-teal-700">Distributor & Grosir.</span>
             </h1>
 
-            <!-- Paragraph -->
-            <p class="text-slate-600 text-xs sm:text-base leading-relaxed max-w-xl font-normal">
-              Produksi berbagai jenis alat kebersihan seperti sapu serat alami (ijuk, rayung, lidi), sapu nilon, pel katun, microfiber dan kebutuhan kebersihan lainnya. Pasokan stabil dengan harga pabrik untuk toko kelontong, agen grosir, dan pengadaan instansi.
+            <!-- Body Paragraph -->
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
+              Produksi berbagai jenis alat kebersihan seperti sapu serat alami (ijuk, rayung, lidi), sapu nilon, pel katun, microfiber dan kebutuhan kebersihan lainnya.
             </p>
 
-            <!-- Buttons -->
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-1">
+            <!-- Action Buttons (Height 52px, Touch-Friendly on Android) -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
               <a href="produk.html"
-                 class="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-lg bg-[#07363E] hover:bg-[#05282E] text-white font-semibold text-xs sm:text-sm transition-colors shadow-sm">
+                 class="h-[52px] px-6 rounded-xl bg-[#07363E] hover:bg-[#05282E] text-white font-semibold text-sm inline-flex items-center justify-center gap-2 transition-colors shadow-sm">
                 <i data-lucide="package" class="w-4 h-4 text-teal-300"></i>
                 <span>Lihat Katalog Produk</span>
                 <i data-lucide="arrow-right" class="w-4 h-4 text-teal-300"></i>
@@ -217,41 +215,41 @@
 
               <a href="https://wa.me/6281234567890?text=Halo%20Jaya%20Wijaya,%20saya%20ingin%20tanya%20stok%20dan%20harga%20alat%20kebersihan."
                  target="_blank"
-                 class="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-lg bg-white border border-slate-300 hover:border-teal-600 hover:bg-slate-50 text-slate-800 font-semibold text-xs sm:text-sm transition-colors shadow-sm">
+                 class="h-[52px] px-6 rounded-xl bg-white border border-slate-300 hover:border-teal-600 hover:bg-slate-50 text-slate-800 font-semibold text-sm inline-flex items-center justify-center gap-2 transition-colors shadow-sm">
                 <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
                 <span>Tanya Stok via WhatsApp</span>
               </a>
             </div>
 
-            <!-- 3 Mini Badges Below CTAs (Compact 3 Columns on Mobile) -->
-            <div class="pt-3 border-t border-slate-200/60 grid grid-cols-3 gap-2">
+            <!-- 3 Clean Value Points (Functional & Minimal) -->
+            <div class="pt-3 border-t border-slate-200/80 grid grid-cols-3 gap-2">
               <div class="flex items-center gap-2">
-                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-teal-50 border border-teal-200/60 flex items-center justify-center text-teal-700 shrink-0">
-                  <i data-lucide="tag" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
+                <div class="w-7 h-7 rounded-lg bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
+                  <i data-lucide="tag" class="w-3.5 h-3.5"></i>
                 </div>
                 <div>
-                  <span class="block text-[11px] sm:text-xs font-bold text-slate-900 leading-tight">Harga</span>
-                  <span class="block text-[10px] sm:text-[11px] text-slate-500">Pabrik</span>
+                  <span class="block text-xs font-bold text-slate-900 leading-tight">Harga</span>
+                  <span class="block text-[11px] text-slate-500">Pabrik</span>
                 </div>
               </div>
 
               <div class="flex items-center gap-2">
-                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-teal-50 border border-teal-200/60 flex items-center justify-center text-teal-700 shrink-0">
-                  <i data-lucide="shield-check" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
+                <div class="w-7 h-7 rounded-lg bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
                 </div>
                 <div>
-                  <span class="block text-[11px] sm:text-xs font-bold text-slate-900 leading-tight">Pasokan</span>
-                  <span class="block text-[10px] sm:text-[11px] text-slate-500">Stabil</span>
+                  <span class="block text-xs font-bold text-slate-900 leading-tight">Pasokan</span>
+                  <span class="block text-[11px] text-slate-500">Stabil</span>
                 </div>
               </div>
 
               <div class="flex items-center gap-2">
-                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-teal-50 border border-teal-200/60 flex items-center justify-center text-teal-700 shrink-0">
-                  <i data-lucide="truck" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
+                <div class="w-7 h-7 rounded-lg bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
+                  <i data-lucide="truck" class="w-3.5 h-3.5"></i>
                 </div>
                 <div>
-                  <span class="block text-[11px] sm:text-xs font-bold text-slate-900 leading-tight">Melayani</span>
-                  <span class="block text-[10px] sm:text-[11px] text-slate-500">Grosir</span>
+                  <span class="block text-xs font-bold text-slate-900 leading-tight">Melayani</span>
+                  <span class="block text-[11px] text-slate-500">Grosir</span>
                 </div>
               </div>
             </div>
@@ -263,56 +261,56 @@
       </div>
     </section>
 
-    <!-- 4. METRICS / STATS BAR (MATCH MOCKUP - 4 COLUMNS CARD) -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-2 sm:-mt-4 relative z-10">
-      <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-4 sm:p-6 lg:p-7">
+    <!-- 4. METRICS / STATS BAR (SOLID 2x2 ON MOBILE, 4-COL ON DESKTOP) -->
+    <section class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 -mt-2 sm:-mt-4 relative z-10">
+      <div class="bg-white rounded-[16px] sm:rounded-[20px] border border-slate-200/90 shadow-sm p-4 sm:p-6 lg:p-7">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 lg:divide-x divide-slate-100">
           
           <!-- Metric 1 -->
-          <div class="flex items-start sm:items-center gap-3 sm:gap-4">
-            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
-              <i data-lucide="factory" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+          <div class="flex items-start sm:items-center gap-3">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
+              <i data-lucide="factory" class="w-5 h-5"></i>
             </div>
             <div>
               <div class="text-base sm:text-2xl font-extrabold text-[#0E2A32] tracking-tight leading-tight">250.000+</div>
               <div class="text-[11px] sm:text-xs text-slate-600 font-medium">Unit / Bulan</div>
-              <div class="text-[9px] sm:text-[10px] font-mono font-bold text-teal-700 uppercase tracking-wider mt-0.5">KAPASITAS PRODUKSI</div>
+              <div class="text-[9px] sm:text-[10px] font-bold text-teal-700 uppercase tracking-wider mt-0.5">KAPASITAS PRODUKSI</div>
             </div>
           </div>
 
           <!-- Metric 2 -->
-          <div class="flex items-start sm:items-center gap-3 sm:gap-4 lg:pl-6">
-            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
-              <i data-lucide="layers" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+          <div class="flex items-start sm:items-center gap-3 lg:pl-6">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
+              <i data-lucide="layers" class="w-5 h-5"></i>
             </div>
             <div>
               <div class="text-base sm:text-2xl font-extrabold text-[#0E2A32] tracking-tight leading-tight">3+</div>
               <div class="text-[11px] sm:text-xs text-slate-600 font-medium">Jenis Material</div>
-              <div class="text-[9px] sm:text-[10px] font-mono font-bold text-teal-700 uppercase tracking-wider mt-0.5">IJUK, RAYUNG, NILON</div>
+              <div class="text-[9px] sm:text-[10px] font-bold text-teal-700 uppercase tracking-wider mt-0.5">IJUK, RAYUNG, NILON</div>
             </div>
           </div>
 
           <!-- Metric 3 -->
-          <div class="flex items-start sm:items-center gap-3 sm:gap-4 lg:pl-6">
-            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
-              <i data-lucide="package" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+          <div class="flex items-start sm:items-center gap-3 lg:pl-6">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
+              <i data-lucide="package" class="w-5 h-5"></i>
             </div>
             <div>
               <div class="text-base sm:text-2xl font-extrabold text-[#0E2A32] tracking-tight leading-tight">350g / 450g</div>
               <div class="text-[11px] sm:text-xs text-slate-600 font-medium">Bobot Benang Pel</div>
-              <div class="text-[9px] sm:text-[10px] font-mono font-bold text-teal-700 uppercase tracking-wider mt-0.5">STANDAR PRODUKSI</div>
+              <div class="text-[9px] sm:text-[10px] font-bold text-teal-700 uppercase tracking-wider mt-0.5">STANDAR PRODUKSI</div>
             </div>
           </div>
 
           <!-- Metric 4 -->
-          <div class="flex items-start sm:items-center gap-3 sm:gap-4 lg:pl-6">
-            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
-              <i data-lucide="truck" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+          <div class="flex items-start sm:items-center gap-3 lg:pl-6">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
+              <i data-lucide="truck" class="w-5 h-5"></i>
             </div>
             <div>
               <div class="text-base sm:text-2xl font-extrabold text-[#0E2A32] tracking-tight leading-tight">Seluruh RI</div>
               <div class="text-[11px] sm:text-xs text-slate-600 font-medium">Area Pengiriman</div>
-              <div class="text-[9px] sm:text-[10px] font-mono font-bold text-teal-700 uppercase tracking-wider mt-0.5">GROSIR & PENGADAAN</div>
+              <div class="text-[9px] sm:text-[10px] font-bold text-teal-700 uppercase tracking-wider mt-0.5">GROSIR & PENGADAAN</div>
             </div>
           </div>
 
@@ -320,23 +318,23 @@
       </div>
     </section>
 
-    <!-- 5. KATEGORI PRODUK SECTION (MATCH MOCKUP - 6 CARDS GRID) -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16" id="produk">
+    <!-- 5. KATEGORI PRODUK SECTION (SECTION SPACING: 40–56px) -->
+    <section class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-10 sm:py-14" id="produk">
       
       <!-- Section Header -->
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8 sm:mb-10">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6 sm:mb-8">
         <div>
-          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-teal-800 border border-teal-200/60 uppercase tracking-wide">
+          <span class="text-xs font-bold text-teal-800 uppercase tracking-wider">
             KATEGORI PRODUK
           </span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0D282E] tracking-tight mt-2">Produk Kami</h2>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0D282E] tracking-tight mt-1">Produk Kami</h2>
           <p class="text-slate-600 text-sm sm:text-base mt-1 max-w-xl">
             Berbagai pilihan alat kebersihan dengan kualitas terbaik, siap untuk kebutuhan grosir, toko, maupun pengadaan.
           </p>
         </div>
 
         <a href="produk.html" 
-           class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-teal-700 hover:text-teal-800 border border-slate-300 hover:border-teal-600 px-4 py-2.5 rounded-lg transition-colors shrink-0 self-start sm:self-auto">
+           class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-teal-700 hover:text-teal-800 border border-slate-300 hover:border-teal-600 px-4 py-2.5 rounded-lg transition-colors shrink-0 self-start sm:self-auto">
           <span>Lihat Semua Produk</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
@@ -346,9 +344,9 @@
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
         
         <!-- Card 1: Sapu Ijuk -->
-        <div class="bg-white border border-slate-200/80 rounded-xl p-3 sm:p-4 flex flex-col justify-between hover:shadow-md hover:border-teal-500/50 transition-all group">
+        <div class="bg-white border border-slate-200/90 rounded-[16px] p-3 sm:p-4 flex flex-col justify-between hover:border-teal-600/50 transition-all group">
           <div>
-            <div class="aspect-square bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center mb-3">
+            <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center mb-3">
               <img src="assets/images/home/sapu_ijuk.png" alt="Sapu Ijuk" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
             </div>
             <h3 class="font-bold text-[#0D282E] text-sm sm:text-base leading-tight">Sapu Ijuk</h3>
@@ -361,9 +359,9 @@
         </div>
 
         <!-- Card 2: Sapu Rayung -->
-        <div class="bg-white border border-slate-200/80 rounded-xl p-3 sm:p-4 flex flex-col justify-between hover:shadow-md hover:border-teal-500/50 transition-all group">
+        <div class="bg-white border border-slate-200/90 rounded-[16px] p-3 sm:p-4 flex flex-col justify-between hover:border-teal-600/50 transition-all group">
           <div>
-            <div class="aspect-square bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center mb-3">
+            <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center mb-3">
               <img src="assets/images/home/sapu_rayung.png" alt="Sapu Rayung" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
             </div>
             <h3 class="font-bold text-[#0D282E] text-sm sm:text-base leading-tight">Sapu Rayung</h3>
@@ -376,9 +374,9 @@
         </div>
 
         <!-- Card 3: Sapu Nilon -->
-        <div class="bg-white border border-slate-200/80 rounded-xl p-3 sm:p-4 flex flex-col justify-between hover:shadow-md hover:border-teal-500/50 transition-all group">
+        <div class="bg-white border border-slate-200/90 rounded-[16px] p-3 sm:p-4 flex flex-col justify-between hover:border-teal-600/50 transition-all group">
           <div>
-            <div class="aspect-square bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center mb-3">
+            <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center mb-3">
               <img src="assets/images/home/sapu_nilon.png" alt="Sapu Nilon" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
             </div>
             <h3 class="font-bold text-[#0D282E] text-sm sm:text-base leading-tight">Sapu Nilon</h3>
@@ -391,9 +389,9 @@
         </div>
 
         <!-- Card 4: Pel Katun -->
-        <div class="bg-white border border-slate-200/80 rounded-xl p-3 sm:p-4 flex flex-col justify-between hover:shadow-md hover:border-teal-500/50 transition-all group">
+        <div class="bg-white border border-slate-200/90 rounded-[16px] p-3 sm:p-4 flex flex-col justify-between hover:border-teal-600/50 transition-all group">
           <div>
-            <div class="aspect-square bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center mb-3">
+            <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center mb-3">
               <img src="assets/images/home/pel_katun.png" alt="Pel Katun" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
             </div>
             <h3 class="font-bold text-[#0D282E] text-sm sm:text-base leading-tight">Pel Katun</h3>
@@ -406,9 +404,9 @@
         </div>
 
         <!-- Card 5: Microfiber -->
-        <div class="bg-white border border-slate-200/80 rounded-xl p-3 sm:p-4 flex flex-col justify-between hover:shadow-md hover:border-teal-500/50 transition-all group">
+        <div class="bg-white border border-slate-200/90 rounded-[16px] p-3 sm:p-4 flex flex-col justify-between hover:border-teal-600/50 transition-all group">
           <div>
-            <div class="aspect-square bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center mb-3">
+            <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center mb-3">
               <img src="assets/images/home/microfiber.png" alt="Microfiber" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
             </div>
             <h3 class="font-bold text-[#0D282E] text-sm sm:text-base leading-tight">Microfiber</h3>
@@ -421,9 +419,9 @@
         </div>
 
         <!-- Card 6: Kemoceng -->
-        <div class="bg-white border border-slate-200/80 rounded-xl p-3 sm:p-4 flex flex-col justify-between hover:shadow-md hover:border-teal-500/50 transition-all group">
+        <div class="bg-white border border-slate-200/90 rounded-[16px] p-3 sm:p-4 flex flex-col justify-between hover:border-teal-600/50 transition-all group">
           <div>
-            <div class="aspect-square bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center mb-3">
+            <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center mb-3">
               <img src="assets/images/home/kemoceng.png" alt="Kemoceng" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
             </div>
             <h3 class="font-bold text-[#0D282E] text-sm sm:text-base leading-tight">Kemoceng</h3>
@@ -439,15 +437,15 @@
 
     </section>
 
-    <!-- 6. TENTANG KAMI SECTION (MATCH MOCKUP - WORKSHOP IMAGE + 4 ICONS) -->
-    <section class="bg-slate-50/60 border-y border-slate-200/70 py-12 sm:py-16" id="tentang">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- 6. TENTANG KAMI SECTION (WORKSHOP + PROFILE FACTORY) -->
+    <section class="bg-slate-50/70 border-y border-slate-200/80 py-10 sm:py-14" id="tentang">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           <!-- Left: Workshop Image with Jaya Wijaya worker shirt -->
           <div class="lg:col-span-5">
-            <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200/80 bg-slate-200">
+            <div class="rounded-[20px] overflow-hidden border border-slate-200 shadow-sm bg-slate-200">
               <img src="assets/images/home/factory_workshop.png" 
                    alt="Pabrik Jaya Wijaya Kebumen" 
                    class="w-full h-auto object-cover block">
@@ -455,9 +453,9 @@
           </div>
 
           <!-- Right: Text & 4 Features -->
-          <div class="lg:col-span-7 space-y-4 sm:space-y-5" id="keunggulan">
+          <div class="lg:col-span-7 space-y-4" id="keunggulan">
             
-            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-teal-800 border border-teal-200/60 uppercase tracking-wide">
+            <span class="text-xs font-bold text-teal-800 uppercase tracking-wider">
               TENTANG KAMI
             </span>
 
@@ -470,32 +468,32 @@
             </p>
 
             <!-- 4 Features Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
               
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/60 flex items-center justify-center text-teal-700 shrink-0">
-                  <i data-lucide="settings" class="w-5 h-5"></i>
+                <div class="w-9 h-9 rounded-lg bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
+                  <i data-lucide="settings" class="w-4 h-4"></i>
                 </div>
                 <span class="font-semibold text-slate-800 text-xs sm:text-sm">Produksi Langsung dari Pabrik</span>
               </div>
 
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/60 flex items-center justify-center text-teal-700 shrink-0">
-                  <i data-lucide="check-circle" class="w-5 h-5"></i>
+                <div class="w-9 h-9 rounded-lg bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
+                  <i data-lucide="check-circle" class="w-4 h-4"></i>
                 </div>
                 <span class="font-semibold text-slate-800 text-xs sm:text-sm">Kualitas Terjamin</span>
               </div>
 
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/60 flex items-center justify-center text-teal-700 shrink-0">
-                  <i data-lucide="truck" class="w-5 h-5"></i>
+                <div class="w-9 h-9 rounded-lg bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
+                  <i data-lucide="truck" class="w-4 h-4"></i>
                 </div>
                 <span class="font-semibold text-slate-800 text-xs sm:text-sm">Melayani Grosir & Pengadaan</span>
               </div>
 
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/60 flex items-center justify-center text-teal-700 shrink-0">
-                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                <div class="w-9 h-9 rounded-lg bg-teal-50 border border-teal-200/70 flex items-center justify-center text-teal-700 shrink-0">
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
                 </div>
                 <span class="font-semibold text-slate-800 text-xs sm:text-sm">Berbasis di Kebumen</span>
               </div>
@@ -509,9 +507,9 @@
       </div>
     </section>
 
-    <!-- 7. CTA BANNER SECTION (MATCH MOCKUP - DEEP TEAL WITH TRUCK BG & WHITE WA PILL) -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14" id="kontak">
-      <div class="relative rounded-2xl overflow-hidden shadow-lg border border-teal-900 bg-[#07363E]">
+    <!-- 7. CTA BANNER SECTION (SOLID INDUSTRIAL B2B) -->
+    <section class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-10 sm:py-14" id="kontak">
+      <div class="relative rounded-[20px] sm:rounded-[24px] overflow-hidden shadow-md border border-teal-900 bg-[#07363E]">
         
         <!-- Background Overlay with Truck Texture -->
         <div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay pointer-events-none"
@@ -523,8 +521,8 @@
         <div class="relative z-10 p-6 sm:p-10 lg:p-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 sm:gap-8">
           
           <!-- Left Text -->
-          <div class="space-y-2.5 max-w-2xl">
-            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-200 border border-emerald-400/30 uppercase tracking-wide">
+          <div class="space-y-2 max-w-2xl">
+            <span class="text-xs font-bold text-teal-300 uppercase tracking-wider">
               BUTUH PENAWARAN HARGA?
             </span>
             <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
@@ -539,15 +537,15 @@
           <div class="shrink-0">
             <a href="https://wa.me/6281234567890?text=Halo%20Jaya%20Wijaya,%20saya%20butuh%20penawaran%20harga%20grosir%20dan%20katalog%20lengkap."
                target="_blank"
-               class="inline-flex items-center gap-3.5 bg-white hover:bg-slate-50 text-slate-900 px-6 sm:px-7 py-3.5 sm:py-4 rounded-full font-bold shadow-xl transition-all transform hover:-translate-y-0.5 active:translate-y-0 shrink-0 group">
-              <div class="w-10 h-10 rounded-full bg-[#0B736A] flex items-center justify-center text-white shrink-0 group-hover:bg-[#095F57] transition-colors">
-                <i data-lucide="message-circle" class="w-5 h-5"></i>
+               class="h-[54px] inline-flex items-center gap-3.5 bg-white hover:bg-slate-50 text-slate-900 px-6 sm:px-7 rounded-xl font-bold shadow-lg transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-[#0B736A] flex items-center justify-center text-white shrink-0 group-hover:bg-[#095F57] transition-colors">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
               </div>
               <div class="text-left">
-                <span class="block text-xs text-slate-500 font-semibold leading-tight">Chat via WhatsApp</span>
+                <span class="block text-[11px] text-slate-500 font-medium leading-tight">Chat via WhatsApp</span>
                 <span class="block text-sm sm:text-base font-extrabold text-[#0D282E]">0812-3456-7890</span>
               </div>
-              <i data-lucide="arrow-right" class="w-5 h-5 text-teal-700 ml-2 group-hover:translate-x-1 transition-transform"></i>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-teal-700 ml-1 group-hover:translate-x-1 transition-transform"></i>
             </a>
           </div>
 
@@ -560,11 +558,11 @@
 
   <!-- 8. FOOTER (CLEAN & COMPACT BRANDED JAYA WIJAYA) -->
   <footer class="bg-[#06282E] text-slate-300 text-xs border-t border-teal-950/60 py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
         
         <!-- Brand & Address -->
-        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3 text-center sm:text-left">
           <div class="bg-white p-1.5 rounded-lg shrink-0 shadow-sm">
             <img src="assets/images/logo.png" alt="Jaya Wijaya" class="h-8 w-auto object-contain">
           </div>
@@ -597,15 +595,19 @@
     </div>
   </footer>
 
-  <!-- 9. STICKY MOBILE ANDROID / IOS QUICK ACTION BAR -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2.5 sm:hidden flex items-center justify-between gap-2 shadow-2xl">
-    <a href="produk.html" class="flex-1 py-2.5 px-3 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs text-center transition-colors flex items-center justify-center gap-1.5">
-      <i data-lucide="package" class="w-4 h-4 text-teal-700"></i>
+  <!-- 9. BOTTOM STICKY CTA (REDESIGNED 64–68px, CLEAN B2B STYLE, SAFE-AREA) -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200/90 px-4 h-16 sm:h-[68px] sm:hidden flex items-center justify-between gap-3 shadow-md"
+       style="padding-bottom: max(0.5rem, env(safe-area-inset-bottom));">
+    <!-- Secondary Button: Katalog Produk -->
+    <a href="produk.html" 
+       class="flex-1 h-11 px-3 rounded-lg bg-slate-50 hover:bg-slate-100 border border-slate-300 text-slate-800 font-semibold text-xs text-center transition-colors flex items-center justify-center gap-1.5 shadow-2xs">
+      <i data-lucide="package" class="w-4 h-4 text-slate-600"></i>
       <span>Katalog Produk</span>
     </a>
+    <!-- Primary Button: Chat WhatsApp -->
     <a href="https://wa.me/6281234567890?text=Halo%20Jaya%20Wijaya,%20saya%20ingin%20tanya%20harga%20grosir%20alat%20kebersihan."
        target="_blank"
-       class="flex-1 py-2.5 px-3 rounded-lg bg-[#0B736A] hover:bg-[#095F57] text-white font-bold text-xs text-center transition-colors flex items-center justify-center gap-1.5 shadow-md shadow-teal-900/20">
+       class="flex-1 h-11 px-3 rounded-lg bg-[#0B736A] hover:bg-[#095F57] text-white font-semibold text-xs text-center transition-colors flex items-center justify-center gap-1.5 shadow-sm">
       <i data-lucide="message-circle" class="w-4 h-4 text-emerald-300"></i>
       <span>Chat WhatsApp</span>
     </a>
@@ -626,7 +628,7 @@
       });
     }
 
-    // Hero Media Switcher (Product vs Factory)
+    // Hero Media Switcher (Segmented Control Tabs below Image)
     function switchHeroMedia(type) {
       const imgProd = document.getElementById('heroImgProduct');
       const imgFact = document.getElementById('heroImgFactory');
@@ -637,13 +639,13 @@
       if (type === 'product') {
         imgProd.classList.remove('hidden');
         imgFact.classList.add('hidden');
-        tabProd.className = 'px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-500 text-white transition-all shadow-xs flex items-center gap-1 cursor-pointer';
-        tabFact.className = 'px-2.5 py-1 rounded-full text-[11px] font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-1 cursor-pointer';
+        tabProd.className = 'px-3 py-1 rounded-md font-semibold text-xs bg-white text-slate-900 shadow-xs transition-all cursor-pointer';
+        tabFact.className = 'px-3 py-1 rounded-md font-medium text-xs text-slate-600 hover:text-slate-900 transition-all cursor-pointer';
       } else {
         imgProd.classList.add('hidden');
         imgFact.classList.remove('hidden');
-        tabFact.className = 'px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-500 text-white transition-all shadow-xs flex items-center gap-1 cursor-pointer';
-        tabProd.className = 'px-2.5 py-1 rounded-full text-[11px] font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-1 cursor-pointer';
+        tabFact.className = 'px-3 py-1 rounded-md font-semibold text-xs bg-white text-slate-900 shadow-xs transition-all cursor-pointer';
+        tabProd.className = 'px-3 py-1 rounded-md font-medium text-xs text-slate-600 hover:text-slate-900 transition-all cursor-pointer';
       }
     }
   </script>
