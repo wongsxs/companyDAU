@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Prosedur Pemesanan & Kontak — BERSIH PRIMA</title>
   <meta name="description" content="Alur pemesanan B2B dan grosir sapu/pel lantai langsung dari pabrik Bersih Prima Dau, Malang. Kontak resmi, logistik ekspedisi kargo, dan jadwal operasional.">
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
@@ -34,42 +34,44 @@
     }
   </script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    a, button { -webkit-tap-highlight-color: transparent; }
+  </style>
 </head>
-<body class="bg-white text-slate-900 font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-white text-slate-900 font-sans antialiased flex flex-col min-h-screen pb-16 sm:pb-0">
 
   <!-- TOP INDUSTRIAL STATUS BAR -->
-  <div class="border-b border-teal-950/40 bg-brand-deep text-slate-300 text-xs font-mono py-2 px-4">
-    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-      <div class="flex items-center gap-4">
-        <span class="inline-flex items-center gap-2 text-white font-semibold">
-          <span class="w-2 h-2 rounded-full bg-brand-mintLight animate-pulse"></span>
-          BERSIH PRIMA MANUFACTURING
+  <div class="border-b border-teal-950/40 bg-brand-deep text-slate-300 text-[11px] sm:text-xs font-mono py-1.5 sm:py-2 px-3 sm:px-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center gap-2">
+      <div class="flex items-center gap-2 sm:gap-4 overflow-hidden">
+        <span class="inline-flex items-center gap-1.5 text-white font-semibold truncate">
+          <span class="w-2 h-2 rounded-full bg-brand-mintLight animate-pulse shrink-0"></span>
+          <span class="truncate">BERSIH PRIMA</span>
         </span>
         <span class="text-teal-800 hidden md:inline">|</span>
-        <span class="text-teal-200/80 hidden md:inline">FASILITAS PRODUKSI: DAU, MALANG, JAWA TIMUR</span>
+        <span class="text-teal-200/80 hidden sm:inline">PABRIK: DAU, MALANG</span>
       </div>
-      <div class="flex items-center gap-5">
-        <span class="text-teal-200/70 hidden sm:inline">PENGIRIMAN KARGO SELURUH INDONESIA</span>
+      <div class="flex items-center gap-3 shrink-0">
         <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20ingin%20konsultasi%20pemesanan%20grosir%20alat%20kebersihan."
            target="_blank"
-           class="text-teal-300 hover:text-white font-bold inline-flex items-center gap-1.5 transition-colors">
-          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-brand-mintLight"></i>
-          WA: +62 812-3456-7890
+           class="text-teal-300 hover:text-white font-bold inline-flex items-center gap-1 text-[11px] sm:text-xs">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-brand-mintLight shrink-0"></i>
+          <span>WA: 0812-3456-7890</span>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- NAVIGATION BAR -->
-  <header class="border-b border-slate-200/80 bg-white sticky top-0 z-40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-lg bg-brand-primary flex items-center justify-center p-2 text-white shadow-sm">
+  <!-- NAVIGATION BAR (MOBILE 64px) -->
+  <header class="border-b border-slate-200/80 bg-white/95 backdrop-blur-md sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-brand-primary flex items-center justify-center p-1.5 sm:p-2 text-white shadow-sm shrink-0">
           <img src="assets/images/logo.svg" alt="Bersih Prima" class="w-full h-full object-contain">
         </div>
         <div>
-          <span class="block text-lg font-extrabold tracking-tight text-brand-deep leading-none">BERSIH PRIMA</span>
-          <span class="block text-[11px] font-mono uppercase tracking-widest text-brand-mint font-semibold mt-1">INDUSTRIAL CLEANING TOOLS</span>
+          <span class="block text-base sm:text-lg font-extrabold tracking-tight text-brand-deep leading-none">BERSIH PRIMA</span>
+          <span class="block text-[10px] sm:text-[11px] font-mono uppercase tracking-widest text-brand-mint font-semibold mt-0.5">PABRIK ALAT KEBERSIHAN</span>
         </div>
       </a>
 
@@ -83,73 +85,86 @@
       <div class="hidden sm:flex items-center gap-3">
         <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20bisa%20minta%20lembar%20daftar%20harga%20resmi%20grosir?"
            target="_blank"
-           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-primary hover:bg-brand-dark text-white text-xs font-bold font-mono tracking-wider transition-colors shadow-sm">
+           class="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg bg-brand-primary hover:bg-brand-dark text-white text-xs font-bold font-mono tracking-wider transition-colors shadow-sm">
           <i data-lucide="file-text" class="w-4 h-4 text-teal-300"></i>
           <span>PRICELIST GROSIR (WA)</span>
         </a>
       </div>
 
-      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100" aria-label="Menu">
+      <button id="mobileMenuBtn" class="md:hidden p-2.5 -mr-1.5 rounded-lg text-slate-700 hover:bg-slate-100 flex items-center justify-center" aria-label="Buka Menu">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
 
-    <div id="mobileDrawer" class="hidden md:hidden border-t border-slate-200 bg-white px-5 py-4 space-y-3 font-semibold text-sm">
-      <a href="index.html" class="block text-slate-700 hover:text-brand-primary">Beranda</a>
-      <a href="produk.html" class="block text-slate-700 hover:text-brand-primary">Katalog Produk</a>
-      <a href="tentang.html" class="block text-slate-700 hover:text-brand-primary">Standar Mutu & Pabrik</a>
-      <a href="kontak.html" class="block text-brand-primary font-bold">Prosedur Order & Kontak</a>
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="hidden md:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-1 font-semibold text-sm shadow-xl">
+      <a href="index.html" class="flex items-center justify-between px-3 py-3 rounded-lg text-slate-700 hover:bg-slate-50">
+        <span>Beranda</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+      </a>
+      <a href="produk.html" class="flex items-center justify-between px-3 py-3 rounded-lg text-slate-700 hover:bg-slate-50">
+        <span>Katalog Produk (12 Item)</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+      </a>
+      <a href="tentang.html" class="flex items-center justify-between px-3 py-3 rounded-lg text-slate-700 hover:bg-slate-50">
+        <span>Standar Mutu & Pabrik</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+      </a>
+      <a href="kontak.html" class="flex items-center justify-between px-3 py-3 rounded-lg bg-brand-ice text-brand-primary font-bold">
+        <span>Prosedur Order & Kontak</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-brand-mint"></i>
+      </a>
     </div>
   </header>
 
   <!-- MAIN -->
-  <main class="flex-1 py-14 sm:py-20 bg-brand-surface">
+  <main class="flex-1 py-10 sm:py-20 bg-brand-surface">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       
       <!-- Top Title -->
-      <div class="border-b border-slate-300 pb-8 mb-12">
-        <span class="text-xs font-mono font-bold text-slate-500 uppercase tracking-widest">PROTOKOL PENGADAAN & DISTRIBUSI</span>
-        <h1 class="text-3xl sm:text-4xl font-extrabold text-brand-deep tracking-tight mt-1 leading-tight">
+      <div class="border-b border-slate-300 pb-6 sm:pb-8 mb-8 sm:mb-12">
+        <span class="text-[10px] sm:text-xs font-mono font-bold text-slate-500 uppercase tracking-widest">PROTOKOL PENGADAAN & DISTRIBUSI</span>
+        <h1 class="text-2xl sm:text-4xl font-extrabold text-brand-deep tracking-tight mt-0.5 leading-tight">
           Prosedur Pemesanan & Saluran Kontak
         </h1>
-        <p class="text-slate-600 text-base sm:text-lg mt-3 leading-relaxed">
-          Alur kerja pemesanan grosir alat kebersihan PT Bersih Prima Nusantara dirancang efisien, tepat waktu, dan transparan untuk memastikan keandalan pasokan toko dan proyek Anda.
+        <p class="text-slate-600 text-xs sm:text-lg mt-2 sm:mt-3 leading-relaxed">
+          Alur kerja pemesanan grosir alat kebersihan PT Bersih Prima Nusantara efisien, tepat waktu, dan transparan untuk memastikan keandalan pasokan toko dan proyek Anda.
         </p>
       </div>
 
       <!-- 4 Langkah Order -->
-      <div class="mb-14">
-        <h2 class="text-xl font-bold text-brand-deep font-mono uppercase tracking-wide mb-6">Alur Kerja Pengadaan Grosir:</h2>
+      <div class="mb-10 sm:mb-14">
+        <h2 class="text-lg sm:text-xl font-bold text-brand-deep font-mono uppercase tracking-wide mb-4 sm:mb-6">Alur Kerja Pengadaan Grosir:</h2>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-5">
           
-          <div class="border border-slate-300/80 rounded-xl bg-white p-6 shadow-sm">
-            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-brand-primary text-white rounded">STEP 01</span>
-            <h3 class="font-bold text-brand-deep text-base mt-3 mb-1">Identifikasi Item & Volume</h3>
+          <div class="border border-slate-300/80 rounded-xl bg-white p-4 sm:p-6 shadow-sm">
+            <span class="text-[11px] font-mono font-bold px-2 py-0.5 bg-brand-primary text-white rounded">STEP 01</span>
+            <h3 class="font-bold text-brand-deep text-sm sm:text-base mt-2.5 mb-1">Identifikasi Item & Volume</h3>
             <p class="text-xs text-slate-600 leading-relaxed">
               Tentukan jenis produk (sapu/pel), kode SKU yang diminati, serta estimasi kuantiti dalam satuan lusin atau koli karung (min. 24–50 unit per jenis).
             </p>
           </div>
 
-          <div class="border border-slate-300/80 rounded-xl bg-white p-6 shadow-sm">
-            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-brand-primary text-white rounded">STEP 02</span>
-            <h3 class="font-bold text-brand-deep text-base mt-3 mb-1">Inquiry WhatsApp & Kalkulasi Kargo</h3>
+          <div class="border border-slate-300/80 rounded-xl bg-white p-4 sm:p-6 shadow-sm">
+            <span class="text-[11px] font-mono font-bold px-2 py-0.5 bg-brand-primary text-white rounded">STEP 02</span>
+            <h3 class="font-bold text-brand-deep text-sm sm:text-base mt-2.5 mb-1">Inquiry WhatsApp & Kalkulasi Kargo</h3>
             <p class="text-xs text-slate-600 leading-relaxed">
               Kirimkan daftar ke tim sales via WhatsApp. Kami segera memeriksa stok gudang, memberikan harga grosir terbaik, dan menghitung estimasi biaya kargo ke kota tujuan.
             </p>
           </div>
 
-          <div class="border border-slate-300/80 rounded-xl bg-white p-6 shadow-sm">
-            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-brand-primary text-white rounded">STEP 03</span>
-            <h3 class="font-bold text-brand-deep text-base mt-3 mb-1">Penerbitan Invoice Proforma</h3>
+          <div class="border border-slate-300/80 rounded-xl bg-white p-4 sm:p-6 shadow-sm">
+            <span class="text-[11px] font-mono font-bold px-2 py-0.5 bg-brand-primary text-white rounded">STEP 03</span>
+            <h3 class="font-bold text-brand-deep text-sm sm:text-base mt-2.5 mb-1">Penerbitan Invoice Proforma</h3>
             <p class="text-xs text-slate-600 leading-relaxed">
               Kami menerbitkan nota resmi / invoice proforma dengan detail barang, berat/kubikasi kargo, dan rekening perbankan usaha resmi.
             </p>
           </div>
 
-          <div class="border border-slate-300/80 rounded-xl bg-white p-6 shadow-sm">
-            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-brand-primary text-white rounded">STEP 04</span>
-            <h3 class="font-bold text-brand-deep text-base mt-3 mb-1">Pengemasan Koli & Dispatch Kargo</h3>
+          <div class="border border-slate-300/80 rounded-xl bg-white p-4 sm:p-6 shadow-sm">
+            <span class="text-[11px] font-mono font-bold px-2 py-0.5 bg-brand-primary text-white rounded">STEP 04</span>
+            <h3 class="font-bold text-brand-deep text-sm sm:text-base mt-2.5 mb-1">Pengemasan Koli & Dispatch Kargo</h3>
             <p class="text-xs text-slate-600 leading-relaxed">
               Barang dikemas dalam karung koli berlapis anti-air dan diserahkan ke ekspedisi kargo (Dakota, Indah Logistik, Baraka). Resi dan foto barang langsung dikirimkan ke WhatsApp Anda.
             </p>
@@ -159,33 +174,33 @@
       </div>
 
       <!-- Contact Matrix -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-10 sm:mb-14">
         
         <!-- Sales & Operational Contact -->
-        <div class="border border-slate-300/80 rounded-xl bg-white p-7 shadow-sm space-y-5">
-          <div class="border-b border-slate-200 pb-3">
-            <span class="text-xs font-mono font-bold text-slate-500 uppercase">SALURAN KOMUNIKASI RESMI</span>
-            <h3 class="font-bold text-brand-deep text-base mt-0.5">Kontak Penjualan & Layanan B2B</h3>
+        <div class="border border-slate-300/80 rounded-xl bg-white p-5 sm:p-7 shadow-sm space-y-4 sm:space-y-5">
+          <div class="border-b border-slate-200 pb-2.5">
+            <span class="text-[10px] sm:text-xs font-mono font-bold text-slate-500 uppercase">SALURAN KOMUNIKASI RESMI</span>
+            <h3 class="font-bold text-brand-deep text-sm sm:text-base mt-0.5">Kontak Penjualan & Layanan B2B</h3>
           </div>
 
-          <div class="space-y-4 text-xs sm:text-sm">
+          <div class="space-y-3 sm:space-y-4 text-xs sm:text-sm">
             <div>
-              <span class="text-slate-400 block font-mono text-xs">WHATSAPP SALES (FAST RESPONSE):</span>
+              <span class="text-slate-400 block font-mono text-[11px]">WHATSAPP SALES (FAST RESPONSE):</span>
               <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20ingin%20konsultasi%20pemesanan%20grosir."
                  target="_blank"
-                 class="font-mono font-bold text-brand-mint hover:underline text-lg block mt-0.5">
+                 class="font-mono font-bold text-brand-mint hover:underline text-base sm:text-lg block mt-0.5">
                 +62 812-3456-7890
               </a>
               <span class="text-[11px] text-slate-500 block">Senin – Sabtu: 08.00 – 17.00 WIB</span>
             </div>
 
-            <div class="pt-3 border-t border-slate-100">
-              <span class="text-slate-400 block font-mono text-xs">TELEPON KANTOR:</span>
-              <span class="font-mono font-bold text-brand-deep text-sm block mt-0.5">(0341) 501-2345</span>
+            <div class="pt-2.5 border-t border-slate-100">
+              <span class="text-slate-400 block font-mono text-[11px]">TELEPON KANTOR:</span>
+              <span class="font-mono font-bold text-brand-deep text-xs sm:text-sm block mt-0.5">(0341) 501-2345</span>
             </div>
 
-            <div class="pt-3 border-t border-slate-100">
-              <span class="text-slate-400 block font-mono text-xs">SURAT ELEKTRONIK / EMAIL RESMI:</span>
+            <div class="pt-2.5 border-t border-slate-100">
+              <span class="text-slate-400 block font-mono text-[11px]">SURAT ELEKTRONIK / EMAIL RESMI:</span>
               <span class="font-mono font-bold text-brand-deep text-xs block mt-0.5">sales@bersihprima.co.id</span>
             </div>
           </div>
@@ -193,7 +208,7 @@
           <div class="pt-2">
             <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20ingin%20konsultasi%20pemesanan%20grosir."
                target="_blank"
-               class="w-full py-3 bg-brand-mint hover:bg-brand-mintLight text-white font-mono font-bold text-xs rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm">
+               class="w-full py-3 bg-brand-mint hover:bg-brand-mintLight text-white font-mono font-bold text-xs rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm min-h-[44px]">
               <i data-lucide="message-circle" class="w-4 h-4"></i>
               <span>CHAT SALES VIA WHATSAPP</span>
             </a>
@@ -201,23 +216,23 @@
         </div>
 
         <!-- Facility Location & Freight Partners -->
-        <div class="border border-slate-300/80 rounded-xl bg-white p-7 shadow-sm space-y-5">
-          <div class="border-b border-slate-200 pb-3">
-            <span class="text-xs font-mono font-bold text-slate-500 uppercase">FASILITAS & LOGISTIK</span>
-            <h3 class="font-bold text-brand-deep text-base mt-0.5">Lokasi Workshop & Mitra Ekspedisi</h3>
+        <div class="border border-slate-300/80 rounded-xl bg-white p-5 sm:p-7 shadow-sm space-y-4 sm:space-y-5">
+          <div class="border-b border-slate-200 pb-2.5">
+            <span class="text-[10px] sm:text-xs font-mono font-bold text-slate-500 uppercase">FASILITAS & LOGISTIK</span>
+            <h3 class="font-bold text-brand-deep text-sm sm:text-base mt-0.5">Lokasi Workshop & Mitra Ekspedisi</h3>
           </div>
 
-          <div class="space-y-4 text-xs sm:text-sm">
+          <div class="space-y-3 sm:space-y-4 text-xs sm:text-sm">
             <div>
-              <span class="text-slate-400 block font-mono text-xs">ALAMAT WORKSHOP & PERGUDANGAN:</span>
-              <p class="font-medium text-slate-900 mt-1 leading-snug">
+              <span class="text-slate-400 block font-mono text-[11px]">ALAMAT WORKSHOP & PERGUDANGAN:</span>
+              <p class="font-medium text-slate-900 mt-0.5 leading-snug">
                 Jl. Raya Dau, Dusun Klandungan, Kec. Dau, Kabupaten Malang, Jawa Timur 65151
               </p>
             </div>
 
-            <div class="pt-3 border-t border-slate-100">
-              <span class="text-slate-400 block font-mono text-xs">REKANAN EKSPEDISI KARGO REGULER:</span>
-              <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+            <div class="pt-2.5 border-t border-slate-100">
+              <span class="text-slate-400 block font-mono text-[11px]">REKANAN EKSPEDISI KARGO REGULER:</span>
+              <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">
                 Dakota Cargo, Indah Logistik Kargo, Baraka Sarana Tama, Kobra Express, Sadana, serta ekspedisi langganan pemesan. Kami juga melayani sewa truk colt diesel / fuso untuk partai besar.
               </p>
             </div>
@@ -227,26 +242,26 @@
       </div>
 
       <!-- FAQ Table -->
-      <div class="border border-slate-300/80 rounded-xl bg-white p-8 shadow-sm">
-        <h3 class="text-base font-bold text-brand-deep font-mono uppercase tracking-wide mb-6">Pertanyaan Teknis & Prosedur:</h3>
+      <div class="border border-slate-300/80 rounded-xl bg-white p-5 sm:p-8 shadow-sm">
+        <h3 class="text-sm sm:text-base font-bold text-brand-deep font-mono uppercase tracking-wide mb-4 sm:mb-6">Pertanyaan Teknis & Prosedur:</h3>
         
         <div class="divide-y divide-slate-200 text-xs sm:text-sm">
-          <div class="pb-4">
-            <h4 class="font-bold text-brand-deep">Berapa batasan minimum order (MOQ) untuk harga grosir pabrik?</h4>
+          <div class="pb-3.5">
+            <h4 class="font-bold text-brand-deep text-xs sm:text-sm">Berapa batasan minimum order (MOQ) untuk harga grosir pabrik?</h4>
             <p class="text-slate-600 text-xs mt-1 leading-relaxed">
               Ambang batas minimum berkisar antara 2 hingga 4 lusin (1 koli karung) per jenis barang. Anda diperbolehkan mengombinasikan beberapa item dalam 1 pengiriman kargo untuk mengoptimalkan kubikasi biaya kirim.
             </p>
           </div>
 
-          <div class="py-4">
-            <h4 class="font-bold text-brand-deep">Apakah pemesan dapat meminta pengiriman sampel fisik terlebih dahulu?</h4>
+          <div class="py-3.5">
+            <h4 class="font-bold text-brand-deep text-xs sm:text-sm">Apakah pemesan dapat meminta pengiriman sampel fisik terlebih dahulu?</h4>
             <p class="text-slate-600 text-xs mt-1 leading-relaxed">
               Dapat. Kami menyediakan unit sampel yang dikirimkan via ekspedisi reguler. Biaya unit sampel dan ongkos kirim akan diperhitungkan sebagai potongan (diskon) pada nota saat Anda melakukan pemesanan partai besar.
             </p>
           </div>
 
-          <div class="pt-4">
-            <h4 class="font-bold text-brand-deep">Bagaimana kebijakan penanganan barang cacat atau patah akibat transportasi?</h4>
+          <div class="pt-3.5">
+            <h4 class="font-bold text-brand-deep text-xs sm:text-sm">Bagaimana kebijakan penanganan barang cacat atau patah akibat transportasi?</h4>
             <p class="text-slate-600 text-xs mt-1 leading-relaxed">
               Barang yang mengalami kerusakan struktural akibat cacat produksi akan diganti pada pesanan berikutnya atau dipotongkan langsung pada saldo nota, dengan melampirkan dokumentasi video/foto saat pembongkaran koli karung.
             </p>
@@ -258,27 +273,43 @@
   </main>
 
   <!-- INDUSTRIAL FOOTER -->
-  <footer class="border-t border-teal-950 bg-brand-deep text-teal-200/70 text-xs py-10 mt-auto">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+  <footer class="border-t border-teal-950 bg-brand-deep text-teal-200/70 text-xs py-8 sm:py-10 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 text-center md:text-left">
       <div>
         <p class="text-sm font-bold text-white font-mono">PT BERSIH PRIMA NUSANTARA</p>
-        <p class="text-teal-300/80 mt-1 font-mono text-[11px]">FASILITAS PRODUKSI: JL. RAYA DAU, KAB. MALANG, JAWA TIMUR 65151</p>
+        <p class="text-teal-300/80 mt-1 font-mono text-[10px] sm:text-[11px]">FASILITAS PRODUKSI: JL. RAYA DAU, KAB. MALANG, JAWA TIMUR 65151</p>
       </div>
-      <div class="flex items-center gap-6 font-mono text-xs">
+      <div class="flex items-center gap-4 sm:gap-6 font-mono text-[11px] sm:text-xs">
         <a href="index.html" class="hover:text-white transition-colors">BERANDA</a>
         <a href="produk.html" class="hover:text-white transition-colors">KATALOG PRODUK</a>
         <a href="tentang.html" class="hover:text-white transition-colors">STANDAR PABRIK</a>
       </div>
-      <p class="text-teal-400/60 font-mono text-[11px]">&copy; 2026 PT BERSIH PRIMA NUSANTARA.</p>
+      <p class="text-teal-400/60 font-mono text-[10px] sm:text-[11px]">&copy; 2026 PT BERSIH PRIMA NUSANTARA.</p>
     </div>
   </footer>
+
+  <!-- MOBILE ANDROID BOTTOM ACTION BAR -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2.5 sm:hidden flex items-center justify-between gap-2 shadow-2xl">
+    <a href="index.html" class="flex-1 py-2.5 px-3 rounded-lg bg-slate-100 hover:bg-slate-200 text-brand-deep font-bold text-xs text-center transition-colors flex items-center justify-center gap-1.5">
+      <i data-lucide="home" class="w-4 h-4 text-brand-primary"></i>
+      <span>Beranda</span>
+    </a>
+    <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20konsultasi%20pemesanan%20grosir."
+       target="_blank"
+       class="flex-1 py-2.5 px-3 rounded-lg bg-brand-mint hover:bg-brand-mintLight text-white font-bold text-xs text-center transition-colors flex items-center justify-center gap-1.5 shadow-md shadow-teal-700/20">
+      <i data-lucide="message-circle" class="w-4 h-4"></i>
+      <span>Chat Sales (WA)</span>
+    </a>
+  </div>
 
   <script>
     if (window.lucide) lucide.createIcons();
     const btn = document.getElementById('mobileMenuBtn');
     const drawer = document.getElementById('mobileDrawer');
     if (btn && drawer) {
-      btn.addEventListener('click', () => drawer.classList.toggle('hidden'));
+      btn.addEventListener('click', () => {
+        drawer.classList.toggle('hidden');
+      });
     }
   </script>
 </body>
