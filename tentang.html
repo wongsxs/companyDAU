@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Pabrik Kami — Bersih Prima</title>
+  <meta name="description" content="Profil Bersih Prima, pengrajin dan produsen alat kebersihan sapu dan pel lantai langsung dari Dau, Malang, Jawa Timur.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              600: '#059669',
+              700: '#047857',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 py-3.5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center p-2 text-white shadow-sm">
+          <img src="assets/images/logo.svg" alt="Bersih Prima" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <span class="block text-base font-extrabold text-slate-900 tracking-tight leading-none">Bersih Prima</span>
+          <span class="block text-xs text-slate-500 font-medium mt-1">Pabrik Sapu & Pel Lantai</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="index.html" class="hover:text-emerald-600 transition-colors">Beranda</a>
+        <a href="produk.html" class="hover:text-emerald-600 transition-colors">Produk</a>
+        <a href="tentang.html" class="text-emerald-700 font-bold border-b-2 border-emerald-600 pb-0.5">Tentang Kami</a>
+        <a href="kontak.html" class="hover:text-emerald-600 transition-colors">Kontak & Cara Order</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center">
+        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20ingin%20tanya%20profil%20dan%20kerjasama%20grosir."
+           target="_blank"
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold transition-all shadow-sm">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Chat WhatsApp</span>
+        </a>
+      </div>
+
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" aria-label="Buka Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <div id="mobileDrawer" class="hidden md:hidden border-t border-slate-200 bg-white px-5 py-4 space-y-3 shadow-lg">
+      <a href="index.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Beranda</a>
+      <a href="produk.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Produk</a>
+      <a href="tentang.html" class="block text-sm font-bold text-emerald-600">Tentang Kami</a>
+      <a href="kontak.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Kontak & Cara Order</a>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main class="flex-1 py-12 sm:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <!-- Intro Header -->
+      <div class="border-b border-slate-200 pb-8 mb-10">
+        <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold uppercase tracking-wider mb-3">
+          Profil Usaha Kami
+        </span>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          Menjaga Mutu Sapu & Pel Buatan Lokal Sejak Hari Pertama.
+        </h1>
+        <p class="text-slate-600 text-base sm:text-lg mt-4 leading-relaxed">
+          Bersih Prima adalah unit usaha produksi perlengkapan kebersihan rumah tangga dan industri yang berbasis di Dau, Kabupaten Malang, Jawa Timur. Kami bermula dari perkumpulan pengrajin lokal yang fokus mengolah serat alami menjadi alat pembersih yang awet dan terjangkau.
+        </p>
+      </div>
+
+      <!-- Story / Reality -->
+      <div class="space-y-8 text-slate-700 leading-relaxed text-sm sm:text-base">
+        <div>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">Bagaimana Kami Bekerja</h2>
+          <p class="mb-3">
+            Di pasar alat kebersihan, seringkali pembeli mengeluh sapu yang baru dipakai seminggu sudah rontok serabutnya, atau gagang pel yang patah saat diperas. Masalah utamanya biasanya ada di bahan baku asal-asalan dan pengerjaan yang terburu-buru.
+          </p>
+          <p>
+            Di tempat kami, kami mengutamakan 3 hal sederhana:
+          </p>
+        </div>
+
+        <!-- 3 Pilar -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200">
+            <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold mb-3">
+              1
+            </div>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">Bahan Serat Asli</h3>
+            <p class="text-xs text-slate-500">Ijuk aren tua dan rumput rayung disortir manual, dibersihkan dari debu agar tidak mudah patah saat disapu.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200">
+            <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold mb-3">
+              2
+            </div>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">Anyaman & Klem Rapat</h3>
+            <p class="text-xs text-slate-500">Pengikatan kawat baja lapis ganda dan klem pel dipres menggunakan mesin agar serat terkunci kuat.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200">
+            <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold mb-3">
+              3
+            </div>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">Kayu Gagang Kering</h3>
+            <p class="text-xs text-slate-500">Kayu gagang sudah melewati pengeringan alami maupun oven, jadi lurus, enteng, dan bebas jamur.</p>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">Siapa yang Biasa Beli di Tempat Kami?</h2>
+          <p class="mb-3">
+            Sebagian besar pelanggan kami adalah pemilik usaha yang membutuhkan barang secara kontinyu:
+          </p>
+          <ul class="list-disc list-inside space-y-2 text-slate-600 pl-2">
+            <li><strong>Toko Kelontong & Agen Pasar:</strong> Membeli grosiran per koli/lusin untuk dijual kembali secara eceran dengan margin keuntungan yang menarik.</li>
+            <li><strong>Distributor Alat Kebersihan:</strong> Membeli dalam volume besar untuk didistribusikan ke jaringan minimarket atau toko retail daerah.</li>
+            <li><strong>Kebutuhan Kantor, Rumah Sakit & Pabrik:</strong> Memesan model pel jepit industri atau sapu dorong gudang untuk operasional kebersihan fasilitas mereka.</li>
+            <li><strong>Pemilik Merk / Maklon:</strong> Pesan produk dalam jumlah tertentu dengan stiker label merk mereka sendiri.</li>
+          </ul>
+        </div>
+
+        <!-- Alamat / Workshop Singkat -->
+        <div class="bg-slate-100 p-6 rounded-2xl border border-slate-200 text-slate-700">
+          <h3 class="font-bold text-slate-900 text-base mb-1">Lokasi Workshop & Gudang</h3>
+          <p class="text-xs sm:text-sm text-slate-600">
+            Jl. Raya Dau, Dusun Klandungan, Kec. Dau, Kabupaten Malang, Jawa Timur.<br>
+            Bagi Anda yang berada di wilayah Malang Raya, Surabaya, dan sekitarnya, silakan mampir langsung untuk melihat sampel barang atau cek proses pengerjaan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Action -->
+      <div class="mt-12 text-center">
+        <a href="produk.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm transition-all">
+          <span>Lihat Produk Buatan Kami</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-sm mt-auto">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <p class="text-base font-bold text-white">Bersih Prima — Pabrik Alat Kebersihan</p>
+        <p class="text-xs text-slate-400 mt-1">Dau, Malang, Jawa Timur — Melayani pesanan grosir se-Indonesia.</p>
+      </div>
+      <div class="flex items-center gap-6 text-xs">
+        <a href="index.html" class="hover:text-white">Beranda</a>
+        <a href="produk.html" class="hover:text-white">Katalog Produk</a>
+        <a href="kontak.html" class="hover:text-white">Kontak & Cara Order</a>
+      </div>
+      <p class="text-xs text-slate-500">&copy; 2026 Bersih Prima.</p>
+    </div>
+  </footer>
+
+  <script>
+    if (window.lucide) lucide.createIcons();
+    const btn = document.getElementById('mobileMenuBtn');
+    const drawer = document.getElementById('mobileDrawer');
+    if (btn && drawer) {
+      btn.addEventListener('click', () => drawer.classList.toggle('hidden'));
+    }
+  </script>
+</body>
+</html>
