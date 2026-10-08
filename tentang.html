@@ -19,14 +19,14 @@
             mono: ['"JetBrains Mono"', 'monospace'],
           },
           colors: {
-            primary: {
-              DEFAULT: '#0F172A',
-              dark: '#020617',
-            },
-            accent: {
-              DEFAULT: '#047857',
-              dark: '#064E3B',
-              light: '#10B981',
+            brand: {
+              deep: '#07282F',     // Deepest Teal Slate
+              dark: '#0B3B44',     // Dark Industrial Teal
+              primary: '#0E4A56',  // Core Ocean Teal
+              mint: '#0D9488',     // Fresh Mint Accent
+              mintLight: '#14B8A6',
+              ice: '#F0FDFA',      // Soft Clean Tint
+              surface: '#F8FAFC',  // High-Hygiene Slate
             }
           }
         }
@@ -37,23 +37,23 @@
 </head>
 <body class="bg-white text-slate-900 font-sans antialiased flex flex-col min-h-screen">
 
-  <!-- INDUSTRIAL TOP STATUS BAR -->
-  <div class="border-b border-slate-200 bg-slate-950 text-slate-300 text-xs font-mono py-2 px-4">
+  <!-- TOP INDUSTRIAL STATUS BAR -->
+  <div class="border-b border-teal-950/40 bg-brand-deep text-slate-300 text-xs font-mono py-2 px-4">
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center gap-4">
-        <span class="inline-flex items-center gap-1.5 text-white font-semibold">
-          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="inline-flex items-center gap-2 text-white font-semibold">
+          <span class="w-2 h-2 rounded-full bg-brand-mintLight animate-pulse"></span>
           BERSIH PRIMA MANUFACTURING
         </span>
-        <span class="text-slate-600 hidden md:inline">|</span>
-        <span class="text-slate-400 hidden md:inline">FASILITAS PRODUKSI: DAU, MALANG, JAWA TIMUR</span>
+        <span class="text-teal-800 hidden md:inline">|</span>
+        <span class="text-teal-200/80 hidden md:inline">FASILITAS PRODUKSI: DAU, MALANG, JAWA TIMUR</span>
       </div>
       <div class="flex items-center gap-5">
-        <span class="text-slate-400 hidden sm:inline">PENGIRIMAN KARGO SELURUH INDONESIA</span>
+        <span class="text-teal-200/70 hidden sm:inline">PENGIRIMAN KARGO SELURUH INDONESIA</span>
         <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20ingin%20konsultasi%20pemesanan%20grosir%20alat%20kebersihan."
            target="_blank"
-           class="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1">
-          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+           class="text-teal-300 hover:text-white font-bold inline-flex items-center gap-1.5 transition-colors">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-brand-mintLight"></i>
           WA: +62 812-3456-7890
         </a>
       </div>
@@ -61,30 +61,30 @@
   </div>
 
   <!-- NAVIGATION BAR -->
-  <header class="border-b border-slate-200 bg-white sticky top-0 z-40">
+  <header class="border-b border-slate-200/80 bg-white sticky top-0 z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-lg bg-slate-950 flex items-center justify-center p-2 text-white">
+        <div class="w-10 h-10 rounded-lg bg-brand-primary flex items-center justify-center p-2 text-white shadow-sm">
           <img src="assets/images/logo.svg" alt="Bersih Prima" class="w-full h-full object-contain">
         </div>
         <div>
-          <span class="block text-lg font-extrabold tracking-tight text-slate-950 leading-none">BERSIH PRIMA</span>
-          <span class="block text-[11px] font-mono uppercase tracking-widest text-slate-500 mt-1">INDUSTRIAL CLEANING TOOLS</span>
+          <span class="block text-lg font-extrabold tracking-tight text-brand-deep leading-none">BERSIH PRIMA</span>
+          <span class="block text-[11px] font-mono uppercase tracking-widest text-brand-mint font-semibold mt-1">INDUSTRIAL CLEANING TOOLS</span>
         </div>
       </a>
 
       <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-700">
-        <a href="index.html" class="hover:text-emerald-700 transition-colors">Beranda</a>
-        <a href="produk.html" class="hover:text-emerald-700 transition-colors">Katalog Produk</a>
-        <a href="tentang.html" class="text-emerald-700 border-b-2 border-emerald-700 pb-0.5">Standar Mutu & Pabrik</a>
-        <a href="kontak.html" class="hover:text-emerald-700 transition-colors">Prosedur Order & Kontak</a>
+        <a href="index.html" class="hover:text-brand-primary transition-colors">Beranda</a>
+        <a href="produk.html" class="hover:text-brand-primary transition-colors">Katalog Produk</a>
+        <a href="tentang.html" class="text-brand-primary border-b-2 border-brand-mint pb-0.5">Standar Mutu & Pabrik</a>
+        <a href="kontak.html" class="hover:text-brand-primary transition-colors">Prosedur Order & Kontak</a>
       </nav>
 
       <div class="hidden sm:flex items-center gap-3">
         <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20bisa%20minta%20lembar%20daftar%20harga%20resmi%20grosir?"
            target="_blank"
-           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-slate-950 hover:bg-emerald-800 text-white text-xs font-bold font-mono tracking-wider transition-colors">
-          <i data-lucide="file-text" class="w-4 h-4 text-emerald-400"></i>
+           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-primary hover:bg-brand-dark text-white text-xs font-bold font-mono tracking-wider transition-colors shadow-sm">
+          <i data-lucide="file-text" class="w-4 h-4 text-teal-300"></i>
           <span>PRICELIST GROSIR (WA)</span>
         </a>
       </div>
@@ -95,21 +95,21 @@
     </div>
 
     <div id="mobileDrawer" class="hidden md:hidden border-t border-slate-200 bg-white px-5 py-4 space-y-3 font-semibold text-sm">
-      <a href="index.html" class="block text-slate-700 hover:text-emerald-700">Beranda</a>
-      <a href="produk.html" class="block text-slate-700 hover:text-emerald-700">Katalog Produk</a>
-      <a href="tentang.html" class="block text-emerald-700 font-bold">Standar Mutu & Pabrik</a>
-      <a href="kontak.html" class="block text-slate-700 hover:text-emerald-700">Prosedur Order & Kontak</a>
+      <a href="index.html" class="block text-slate-700 hover:text-brand-primary">Beranda</a>
+      <a href="produk.html" class="block text-slate-700 hover:text-brand-primary">Katalog Produk</a>
+      <a href="tentang.html" class="block text-brand-primary font-bold">Standar Mutu & Pabrik</a>
+      <a href="kontak.html" class="block text-slate-700 hover:text-brand-primary">Prosedur Order & Kontak</a>
     </div>
   </header>
 
   <!-- MAIN -->
-  <main class="flex-1 py-14 sm:py-20 bg-slate-50">
+  <main class="flex-1 py-14 sm:py-20 bg-brand-surface">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       
       <!-- Top Title -->
       <div class="border-b border-slate-300 pb-8 mb-12">
         <span class="text-xs font-mono font-bold text-slate-500 uppercase tracking-widest">PROFIL OPERASIONAL & MUTU MANUFAKTUR</span>
-        <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight mt-1 leading-tight">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-brand-deep tracking-tight mt-1 leading-tight">
           Menjaga Konsistensi Mutu Sapu & Pel Skala Industri Sejak Awal Berdiri.
         </h1>
         <p class="text-slate-600 text-base sm:text-lg mt-3 leading-relaxed">
@@ -121,37 +121,37 @@
       <div class="space-y-12">
         
         <div>
-          <h2 class="text-xl font-bold text-slate-950 font-mono uppercase tracking-wide mb-4">4 Protokol Kualitas Manufaktur:</h2>
+          <h2 class="text-xl font-bold text-brand-deep font-mono uppercase tracking-wide mb-4">4 Protokol Kualitas Manufaktur:</h2>
           
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            <div class="border border-slate-300 rounded-xl bg-white p-6 shadow-sm">
-              <span class="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded">QC-01</span>
-              <h3 class="font-bold text-slate-950 text-base mt-3 mb-1.5">Inspeksi Seleksi Serat Alami</h3>
+            <div class="border border-slate-300/80 rounded-xl bg-white p-6 shadow-sm">
+              <span class="text-xs font-mono font-bold text-brand-primary bg-brand-ice border border-teal-200 px-2.5 py-1 rounded">QC-01</span>
+              <h3 class="font-bold text-brand-deep text-base mt-3 mb-1.5">Inspeksi Seleksi Serat Alami</h3>
               <p class="text-xs text-slate-600 leading-relaxed">
                 Ijuk aren dan rumput gelagah rayung melalui pemilahan mekanis dan manual untuk membuang serat getas, debu abu, serta serabut pendek yang berpotensi rontok saat dipakai menyapu.
               </p>
             </div>
 
-            <div class="border border-slate-300 rounded-xl bg-white p-6 shadow-sm">
-              <span class="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded">QC-02</span>
-              <h3 class="font-bold text-slate-950 text-base mt-3 mb-1.5">Kuncian Anyam Kawat Baja Ganda</h3>
+            <div class="border border-slate-300/80 rounded-xl bg-white p-6 shadow-sm">
+              <span class="text-xs font-mono font-bold text-brand-primary bg-brand-ice border border-teal-200 px-2.5 py-1 rounded">QC-02</span>
+              <h3 class="font-bold text-brand-deep text-base mt-3 mb-1.5">Kuncian Anyam Kawat Baja Ganda</h3>
               <p class="text-xs text-slate-600 leading-relaxed">
                 Pangkal serabut sapu diikat menggunakan kawat baja galvanis bertekanan hidrolik, memastikan ikatan kuat dan tidak akan terlepas meskipun terkena gesekan lantai semen kasar.
               </p>
             </div>
 
-            <div class="border border-slate-300 rounded-xl bg-white p-6 shadow-sm">
-              <span class="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded">QC-03</span>
-              <h3 class="font-bold text-slate-950 text-base mt-3 mb-1.5">Pengeringan Kayu Gagang (Kiln Dry)</h3>
+            <div class="border border-slate-300/80 rounded-xl bg-white p-6 shadow-sm">
+              <span class="text-xs font-mono font-bold text-brand-primary bg-brand-ice border border-teal-200 px-2.5 py-1 rounded">QC-03</span>
+              <h3 class="font-bold text-brand-deep text-base mt-3 mb-1.5">Pengeringan Kayu Gagang (Kiln Dry)</h3>
               <p class="text-xs text-slate-600 leading-relaxed">
                 Gagang kayu mahoni diproses dalam ruang pengeringan oven guna menurunkan kadar air di bawah 14%. Hasilnya gagang tetap lurus, ringan, dan bebas dari pertumbuhan jamur di gudang distributor.
               </p>
             </div>
 
-            <div class="border border-slate-300 rounded-xl bg-white p-6 shadow-sm">
-              <span class="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded">QC-04</span>
-              <h3 class="font-bold text-slate-950 text-base mt-3 mb-1.5">Pengemasan Standar Kargo (Koli Karung)</h3>
+            <div class="border border-slate-300/80 rounded-xl bg-white p-6 shadow-sm">
+              <span class="text-xs font-mono font-bold text-brand-primary bg-brand-ice border border-teal-200 px-2.5 py-1 rounded">QC-04</span>
+              <h3 class="font-bold text-brand-deep text-base mt-3 mb-1.5">Pengemasan Standar Kargo (Koli Karung)</h3>
               <p class="text-xs text-slate-600 leading-relaxed">
                 Setiap 50–60 unit sapu/pel diikat dan dibungkus karung polipropilena tebal berlapis anti-air, memastikan barang sampai ke lokasi Anda di luar pulau dalam kondisi bersih tanpa cacat.
               </p>
@@ -161,37 +161,37 @@
         </div>
 
         <!-- Segmen Pasar -->
-        <div class="border border-slate-300 rounded-xl bg-white p-8">
-          <h2 class="text-lg font-bold text-slate-950 font-mono uppercase tracking-wide mb-4">Profil Kemitraan Pasokan:</h2>
+        <div class="border border-slate-300/80 rounded-xl bg-white p-8 shadow-sm">
+          <h2 class="text-lg font-bold text-brand-deep font-mono uppercase tracking-wide mb-4">Profil Kemitraan Pasokan:</h2>
           
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs text-slate-700">
-            <div class="border-l-2 border-slate-950 pl-4 py-1">
-              <h4 class="font-bold text-slate-950 text-sm mb-1">Grosir Sembako & Toko Kelontong</h4>
+            <div class="border-l-2 border-brand-mint pl-4 py-1">
+              <h4 class="font-bold text-brand-deep text-sm mb-1">Grosir Sembako & Toko Kelontong</h4>
               <p class="text-slate-600 leading-relaxed">Pasokan rutin kartonan/karungan untuk pemenuhan stok eceran pasar tradisional dengan margin harga sehat.</p>
             </div>
-            <div class="border-l-2 border-slate-950 pl-4 py-1">
-              <h4 class="font-bold text-slate-950 text-sm mb-1">Distributor & Sub-Agen Daerah</h4>
+            <div class="border-l-2 border-brand-mint pl-4 py-1">
+              <h4 class="font-bold text-brand-deep text-sm mb-1">Distributor & Sub-Agen Daerah</h4>
               <p class="text-slate-600 leading-relaxed">Penyediaan kuota kontainer atau truk sewa untuk pemerataan distribusi retail di luar pulau Jawa.</p>
             </div>
-            <div class="border-l-2 border-slate-950 pl-4 py-1">
-              <h4 class="font-bold text-slate-950 text-sm mb-1">Pengadaan Fasilitas & Industri</h4>
+            <div class="border-l-2 border-brand-mint pl-4 py-1">
+              <h4 class="font-bold text-brand-deep text-sm mb-1">Pengadaan Fasilitas & Industri</h4>
               <p class="text-slate-600 leading-relaxed">Pengadaan sapu dorong 60cm dan pel jepit heavy duty untuk gedung perkantoran, rumah sakit, dan pabrik.</p>
             </div>
-            <div class="border-l-2 border-slate-950 pl-4 py-1">
-              <h4 class="font-bold text-slate-950 text-sm mb-1">Kerjasama OEM / Private Label</h4>
+            <div class="border-l-2 border-brand-mint pl-4 py-1">
+              <h4 class="font-bold text-brand-deep text-sm mb-1">Kerjasama OEM / Private Label</h4>
               <p class="text-slate-600 leading-relaxed">Produksi maklon dengan pemasangan stiker merk toko/perusahaan pembeli sesuai kesepakatan.</p>
             </div>
           </div>
         </div>
 
         <!-- Facility Location -->
-        <div class="border border-slate-300 rounded-xl bg-white p-8">
+        <div class="border border-slate-300/80 rounded-xl bg-white p-8 shadow-sm">
           <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-200 pb-4 mb-4">
             <div>
               <span class="text-xs font-mono font-bold text-slate-500 uppercase">LOKASI FISIK WORKSHOP & PERGUDANGAN</span>
-              <h3 class="text-base font-bold text-slate-950 mt-0.5">Fasilitas Manufaktur Dau — Malang</h3>
+              <h3 class="text-base font-bold text-brand-deep mt-0.5">Fasilitas Manufaktur Dau — Malang</h3>
             </div>
-            <span class="text-xs font-mono font-bold bg-slate-100 text-slate-800 px-3 py-1 rounded border border-slate-200">
+            <span class="text-xs font-mono font-bold bg-brand-ice text-brand-primary border border-teal-200 px-3 py-1 rounded">
               JAWA TIMUR, INDONESIA
             </span>
           </div>
@@ -207,18 +207,18 @@
   </main>
 
   <!-- INDUSTRIAL FOOTER -->
-  <footer class="border-t border-slate-800 bg-slate-950 text-slate-400 text-xs py-10 mt-auto">
+  <footer class="border-t border-teal-950 bg-brand-deep text-teal-200/70 text-xs py-10 mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
       <div>
         <p class="text-sm font-bold text-white font-mono">PT BERSIH PRIMA NUSANTARA</p>
-        <p class="text-slate-400 mt-1 font-mono text-[11px]">FASILITAS PRODUKSI: JL. RAYA DAU, KAB. MALANG, JAWA TIMUR 65151</p>
+        <p class="text-teal-300/80 mt-1 font-mono text-[11px]">FASILITAS PRODUKSI: JL. RAYA DAU, KAB. MALANG, JAWA TIMUR 65151</p>
       </div>
       <div class="flex items-center gap-6 font-mono text-xs">
-        <a href="index.html" class="hover:text-white">BERANDA</a>
-        <a href="produk.html" class="hover:text-white">KATALOG PRODUK</a>
-        <a href="kontak.html" class="hover:text-white">KONTAK & KARGO</a>
+        <a href="index.html" class="hover:text-white transition-colors">BERANDA</a>
+        <a href="produk.html" class="hover:text-white transition-colors">KATALOG PRODUK</a>
+        <a href="kontak.html" class="hover:text-white transition-colors">KONTAK & KARGO</a>
       </div>
-      <p class="text-slate-500 font-mono text-[11px]">&copy; 2026 PT BERSIH PRIMA NUSANTARA.</p>
+      <p class="text-teal-400/60 font-mono text-[11px]">&copy; 2026 PT BERSIH PRIMA NUSANTARA.</p>
     </div>
   </footer>
 
