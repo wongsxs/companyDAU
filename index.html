@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pabrik & Produsen Alat Kebersihan (Sapu & Pel Lantai) - PT Bersih Prima Nusantara</title>
-  <meta name="description" content="Pabrik dan produsen aneka sapu ijuk, sapu rayung, sapu nilon, serta pel lantai katun dan microfiber berkualitas standar industri dengan harga tangan pertama pabrik.">
-  <meta name="keywords" content="pabrik sapu, produsen pel lantai, sapu ijuk, sapu rayung, pel katun, alat kebersihan, grosir sapu, B2B cleaning tools">
+  <title>PT Bersih Prima Nusantara — Pabrik & Produsen Sapu & Pel Lantai</title>
+  <meta name="description" content="Produsen alat kebersihan tangan pertama di Indonesia. Memproduksi aneka sapu dan pel lantai standar industri untuk distributor, agen grosir, dan pengadaan B2B.">
+  <meta name="keywords" content="pabrik sapu, produsen pel lantai, grosir sapu, alat kebersihan, pabrik pel, sapu ijuk, pel microfiber, B2B cleaning tools">
   <meta name="author" content="PT Bersih Prima Nusantara">
 
-  <!-- Open Graph / Meta Sosial -->
-  <meta property="og:title" content="PT Bersih Prima Nusantara - Pabrik Sapu & Pel Lantai">
-  <meta property="og:description" content="Spesialis produksi aneka sapu dan pel lantai berkualitas unggul langsung dari pabrik tangan pertama. Kapasitas 250.000+ unit/bulan.">
-  <meta property="og:type" content="website">
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="PT Bersih Prima Nusantara — Pabrik Sapu & Pel Lantai">
+  <meta property="og:description" content="Pabrik alat kebersihan tangan pertama. Kapasitas 250.000+ unit/bulan dengan jangkauan pengiriman se-Indonesia.">
   <meta property="og:image" content="assets/images/logo.svg">
+  <meta property="og:type" content="website">
 
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -30,17 +30,13 @@
           },
           colors: {
             brand: {
-              50: '#f0f9ff',
-              100: '#e0f2fe',
-              200: '#bae6fd',
-              300: '#7dd3fc',
-              400: '#38bdf8',
-              500: '#0ea5e9',
-              600: '#0284c7',
-              700: '#0369a1',
-              800: '#075985',
-              900: '#0c4a6e',
-              950: '#082f49',
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
             }
           }
         }
@@ -48,1204 +44,514 @@
     }
   </script>
 
-  <!-- Lucide Icons -->
+  <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
   <style>
-    @keyframes floatSlow {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
-    }
-    .animate-float { animation: floatSlow 4s ease-in-out infinite; }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(6px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .animate-fadeIn { animation: fadeIn 0.25s ease-out forwards; }
-    ::-webkit-scrollbar { width: 8px; height: 8px; }
-    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f8fafc; }
     ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-    .transition-card { transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
-    .transition-card:hover { transform: translateY(-4px); box-shadow: 0 16px 30px -10px rgba(15, 23, 42, 0.12); }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-brand-500 selection:text-white">
 
-  <!-- ================= TOP ANNOUNCEMENT BAR ================= -->
-  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
-        <span class="inline-flex items-center gap-1.5 text-brand-400 font-medium">
-          <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
-          Pabrik Tangan Pertama (Direct Factory)
-        </span>
-        <span class="hidden md:inline-block text-slate-600">•</span>
-        <span class="hidden md:inline-flex items-center gap-1 text-slate-300">
-          <i data-lucide="truck" class="w-3.5 h-3.5 text-emerald-400"></i>
-          Melayani Pengiriman Skala Kontainer &amp; Truk ke Seluruh Nusantara
-        </span>
-      </div>
-      <div class="flex items-center gap-4 text-xs">
-        <a href="tel:6281234567890" class="hover:text-white transition flex items-center gap-1">
-          <i data-lucide="phone" class="w-3 h-3 text-brand-400"></i>
-          +62 812-3456-7890
-        </a>
-        <span class="text-slate-600">|</span>
-        <a href="#kontak" class="hover:text-brand-400 transition flex items-center gap-1 font-semibold text-slate-400">
-          <i data-lucide="map-pin" class="w-3 h-3"></i>
-          Lokasi Pabrik
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ================= STICKY HEADER NAVIGATION ================= -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        
-        <!-- Logo -->
-        <a href="#beranda" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-500 rounded-lg p-1">
-          <img src="assets/images/logo.svg" alt="PT Bersih Prima Nusantara" class="h-12 w-auto transition-transform duration-300 group-hover:scale-105">
-        </a>
-
-        <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center space-x-1 font-medium text-sm text-slate-700">
-          <a href="#beranda" class="px-3.5 py-2 rounded-lg hover:text-brand-600 hover:bg-slate-100/80 transition">Beranda</a>
-          <a href="#tentang" class="px-3.5 py-2 rounded-lg hover:text-brand-600 hover:bg-slate-100/80 transition">Profil Pabrik</a>
-          <a href="#kategori" class="px-3.5 py-2 rounded-lg hover:text-brand-600 hover:bg-slate-100/80 transition">Lini Produk</a>
-          <a href="#katalog" class="px-3.5 py-2 rounded-lg hover:text-brand-600 hover:bg-slate-100/80 transition">Katalog Produk</a>
-          <a href="#keunggulan" class="px-3.5 py-2 rounded-lg hover:text-brand-600 hover:bg-slate-100/80 transition">Keunggulan</a>
-          <a href="#kerjasama" class="px-3.5 py-2 rounded-lg hover:text-brand-600 hover:bg-slate-100/80 transition">Kemitraan B2B</a>
-          <a href="#kontak" class="px-3.5 py-2 rounded-lg hover:text-brand-600 hover:bg-slate-100/80 transition">Kontak &amp; Alamat</a>
-        </nav>
-
-        <!-- Right Side CTA Actions -->
-        <div class="hidden sm:flex items-center gap-3">
-          <a href="#katalog" class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2.5 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100 transition shadow-xs">
-            <i data-lucide="layers" class="w-4 h-4 text-slate-500"></i>
-            Lihat Katalog
-          </a>
-          <a href="https://wa.me/6281234567890?text=Halo%20PT%20Bersih%20Prima%20Nusantara,%20saya%20ingin%20konsultasi%20pemesanan%20grosir%20alat%20kebersihan%20(sapu%20&%20pel)." 
-             target="_blank" 
-             rel="noopener noreferrer"
-             class="inline-flex items-center gap-2 text-xs font-bold px-4 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white transition shadow-sm hover:shadow-md transform active:scale-95">
-            <i data-lucide="message-circle" class="w-4 h-4"></i>
-            WhatsApp Sales
-          </a>
+  <!-- HEADER / NAVBAR -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-600 to-slate-900 flex items-center justify-center p-2 shadow-sm shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <img src="assets/images/logo.svg" alt="Logo PT Bersih Prima Nusantara" class="w-full h-full object-contain">
         </div>
-
-        <!-- Mobile Menu Toggle Button -->
-        <div class="flex items-center gap-2 lg:hidden">
-          <button id="mobileMenuBtn" type="button" aria-label="Buka Menu" class="p-2.5 rounded-lg text-slate-700 hover:text-brand-600 hover:bg-slate-100">
-            <i data-lucide="menu" id="menuOpenIcon" class="w-6 h-6"></i>
-            <i data-lucide="x" id="menuCloseIcon" class="w-6 h-6 hidden"></i>
-          </button>
+        <div>
+          <span class="block text-lg font-extrabold tracking-tight text-slate-900 group-hover:text-brand-600 transition-colors">
+            Bersih Prima
+          </span>
+          <span class="block text-[11px] font-semibold text-slate-400 tracking-wider uppercase -mt-1">
+            Manufacturing & Supply
+          </span>
         </div>
+      </a>
 
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#produk" class="hover:text-brand-600 transition-colors">Katalog Produk</a>
+        <a href="#keunggulan" class="hover:text-brand-600 transition-colors">Keunggulan Pabrik</a>
+        <a href="#kemitraan" class="hover:text-brand-600 transition-colors">Mitra Grosir</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/6281234567890?text=Halo%20Sales%20PT%20Bersih%20Prima%20Nusantara,%20saya%20ingin%20konsultasi%20pemesanan%20grosir%20dan%20minta%20pricelist%20katalog."
+           target="_blank"
+           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 hover:bg-brand-600 text-white text-sm font-semibold shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5">
+          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+          <span>Hubungi Sales (WA)</span>
+        </a>
       </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" aria-label="Toggle Menu" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100">
+        <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+      </button>
     </div>
 
-    <!-- Mobile Drawer Navigation -->
-    <div id="mobileDrawer" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 shadow-xl animate-fadeIn">
-      <div class="space-y-1.5 font-medium text-slate-700">
-        <a href="#beranda" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100">
-          <i data-lucide="home" class="w-4 h-4 text-brand-500"></i> Beranda
-        </a>
-        <a href="#tentang" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100">
-          <i data-lucide="building-2" class="w-4 h-4 text-brand-500"></i> Profil Pabrik
-        </a>
-        <a href="#kategori" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100">
-          <i data-lucide="layers" class="w-4 h-4 text-brand-500"></i> Lini Produk
-        </a>
-        <a href="#katalog" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100">
-          <i data-lucide="grid" class="w-4 h-4 text-brand-500"></i> Katalog Produk
-        </a>
-        <a href="#keunggulan" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100">
-          <i data-lucide="award" class="w-4 h-4 text-brand-500"></i> Keunggulan
-        </a>
-        <a href="#kerjasama" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100">
-          <i data-lucide="briefcase" class="w-4 h-4 text-brand-500"></i> Kemitraan B2B
-        </a>
-        <a href="#kontak" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100">
-          <i data-lucide="map-pin" class="w-4 h-4 text-brand-500"></i> Kontak &amp; Lokasi
-        </a>
-      </div>
-
-      <div class="mt-4 pt-4 border-t border-slate-200">
-        <a href="https://wa.me/6281234567890?text=Halo%20PT%20Bersih%20Prima%20Nusantara,%20saya%20ingin%20bertanya%20produk." 
-           target="_blank" 
-           class="flex items-center justify-center gap-2 w-full py-3 bg-emerald-600 text-white font-bold rounded-lg text-sm shadow">
-          <i data-lucide="message-circle" class="w-4 h-4"></i> Hubungi WhatsApp Sales
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="hidden md:hidden border-b border-slate-200 bg-white px-4 py-5 space-y-4 shadow-xl">
+      <a href="#produk" class="block text-base font-semibold text-slate-700 hover:text-brand-600 mobile-nav-link">Katalog Produk</a>
+      <a href="#keunggulan" class="block text-base font-semibold text-slate-700 hover:text-brand-600 mobile-nav-link">Keunggulan Pabrik</a>
+      <a href="#kemitraan" class="block text-base font-semibold text-slate-700 hover:text-brand-600 mobile-nav-link">Mitra Grosir</a>
+      <div class="pt-2">
+        <a href="https://wa.me/6281234567890?text=Halo%20Sales%20PT%20Bersih%20Prima%20Nusantara,%20saya%20ingin%20konsultasi%20pemesanan%20grosir%20dan%20minta%20pricelist%20katalog."
+           target="_blank"
+           class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-900 text-white font-semibold text-sm">
+          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+          <span>Hubungi Sales via WhatsApp</span>
         </a>
       </div>
     </div>
   </header>
 
-  <main class="flex-grow">
-
-    <!-- ================= HERO SECTION ================= -->
-    <section id="beranda" class="relative overflow-hidden bg-gradient-to-b from-brand-50/60 via-white to-slate-50 pt-12 pb-20 lg:pt-20 lg:pb-28 border-b border-slate-200/70">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/80 border border-brand-200 text-brand-800 text-xs sm:text-sm font-semibold shadow-xs">
-              <span class="flex h-2 w-2 rounded-full bg-brand-600 animate-pulse"></span>
-              <span>Pabrik Manufaktur Tangan Pertama (Direct Factory)</span>
-            </div>
-
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-[1.15]">
-              Solusi Alat Kebersihan <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">Kualitas Unggul</span>: Spesialis Sapu &amp; Pel Lantai
-            </h1>
-
-            <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Selamat datang di <strong>PT Bersih Prima Nusantara</strong>. Kami memproduksi puluhan varian sapu ijuk, sapu rayung, sapu nilon, serta aneka pel lantai katun dan microfiber dengan kapasitas produksi <strong>250.000+ unit per bulan</strong> siap pasok kebutuhan distributor, toko perabot, supermarket, hotel, dan pengadaan instansi.
-            </p>
-
-            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
-              <a href="#katalog" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-brand-600/25 transition-all transform hover:-translate-y-0.5 active:scale-95">
-                <i data-lucide="layers" class="w-5 h-5"></i>
-                Jelajahi Katalog Produk
-              </a>
-              <a href="https://wa.me/6281234567890?text=Halo%20PT%20Bersih%20Prima%20Nusantara,%20saya%20ingin%20konsultasi%20penawaran%20harga%20grosir%20alat%20kebersihan." 
-                 target="_blank" 
-                 class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-bold text-sm sm:text-base shadow-sm transition-all transform hover:-translate-y-0.5">
-                <i data-lucide="message-circle" class="w-5 h-5 text-emerald-600"></i>
-                Hubungi Sales WhatsApp
-              </a>
-            </div>
-
-            <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-200/80 text-left">
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
-                  <i data-lucide="shield-check" class="w-4 h-4"></i>
-                </div>
-                <div>
-                  <p class="text-xs font-bold text-slate-900">Bahan Pilihan</p>
-                  <p class="text-[11px] text-slate-500">Ijuk murni &amp; katun tebal</p>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-lg bg-brand-100 flex items-center justify-center text-brand-700 shrink-0">
-                  <i data-lucide="badge-percent" class="w-4 h-4"></i>
-                </div>
-                <div>
-                  <p class="text-xs font-bold text-slate-900">Harga Pabrik</p>
-                  <p class="text-[11px] text-slate-500">Margin distributor tinggi</p>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center text-purple-700 shrink-0">
-                  <i data-lucide="truck" class="w-4 h-4"></i>
-                </div>
-                <div>
-                  <p class="text-xs font-bold text-slate-900">Siap Kirim</p>
-                  <p class="text-[11px] text-slate-500">Kargo &amp; kontainer</p>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 shrink-0">
-                  <i data-lucide="check-circle" class="w-4 h-4"></i>
-                </div>
-                <div>
-                  <p class="text-xs font-bold text-slate-900">Garansi Kualitas</p>
-                  <p class="text-[11px] text-slate-500">Quality control ketat</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Hero Right Showcase Card -->
-          <div class="lg:col-span-5 relative">
-            <div class="bg-white rounded-3xl p-6 shadow-2xl border border-slate-200/90 relative z-10 transition-card">
-              <div class="flex items-center justify-between pb-4 border-b border-slate-100">
-                <span class="text-xs font-bold text-slate-400">PRODUK UNGGULAN PABRIK</span>
-                <span class="text-xs font-bold px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200">
-                  Ready Stock
-                </span>
-              </div>
-
-              <div class="py-5 text-center">
-                <img src="assets/images/products/sapu-ijuk-premium.svg" alt="Sapu Ijuk Super Aren" class="w-full max-h-72 object-contain rounded-xl drop-shadow-md">
-              </div>
-
-              <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100 space-y-2">
-                <div class="flex items-center justify-between">
-                  <div>
-                    <h3 class="text-base font-extrabold text-slate-900">Sapu Ijuk Aren Premium</h3>
-                    <p class="text-xs text-slate-500">Serat aren pegunungan murni &amp; anyaman kawat rapat</p>
-                  </div>
-                  <div class="text-right">
-                    <span class="text-xs text-slate-400 line-through">Ecer: Rp 35.000</span>
-                    <p class="text-sm font-extrabold text-brand-700">Rp 24.500 <span class="text-[10px] font-normal text-slate-500">/ grosir</span></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mt-4">
-                <a href="#katalog" class="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs flex items-center justify-center gap-2 transition">
-                  <span>Lihat Seluruh 12+ Varian Produk</span>
-                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= STATS COUNTER STRIP ================= -->
-    <section class="bg-slate-900 text-white py-12 border-y border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-y lg:divide-y-0 lg:divide-x divide-slate-800">
-          <div class="pt-4 lg:pt-0">
-            <p class="text-3xl sm:text-4xl font-extrabold text-brand-400">12+ Tahun</p>
-            <p class="text-sm text-slate-300 font-medium mt-1">Dedikasi Manufaktur Sejak 2014</p>
-          </div>
-          <div class="pt-4 lg:pt-0">
-            <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400">250.000+</p>
-            <p class="text-sm text-slate-300 font-medium mt-1">Kapasitas Produksi Bulanan</p>
-          </div>
-          <div class="pt-4 lg:pt-0">
-            <p class="text-3xl sm:text-4xl font-extrabold text-amber-400">650+</p>
-            <p class="text-sm text-slate-300 font-medium mt-1">Mitra Agen &amp; Distributor Aktif</p>
-          </div>
-          <div class="pt-4 lg:pt-0">
-            <p class="text-3xl sm:text-4xl font-extrabold text-sky-400">100% Asli</p>
-            <p class="text-sm text-slate-300 font-medium mt-1">Bahan Pilihan &amp; Uji Mutu Pabrik</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= DUA PILAR LINI PRODUK ================= -->
-    <section id="kategori" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
-          <span class="text-xs font-extrabold tracking-wider text-brand-600 uppercase bg-brand-50 px-3 py-1 rounded-full border border-brand-200">
-            Lini Produk Utama
-          </span>
-          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Spesialisasi Produksi Alat Kebersihan Kami
-          </h2>
-          <p class="text-slate-600 text-sm sm:text-base">
-            Kami fokus memproduksi dua kategori produk utama dengan standar durabilitas tinggi untuk kebutuhan rumah tangga, komersial, maupun industri berat.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          
-          <!-- Kategori Sapu -->
-          <div class="rounded-3xl bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 sm:p-10 shadow-xl space-y-6">
-            <div class="w-14 h-14 rounded-2xl bg-brand-500/20 border border-brand-400/30 flex items-center justify-center text-brand-400">
-              <i data-lucide="brush" class="w-7 h-7"></i>
-            </div>
-            <div>
-              <span class="text-xs font-bold text-brand-400 uppercase tracking-widest">Kategori Unggulan 01</span>
-              <h3 class="text-2xl sm:text-3xl font-black mt-1 mb-3">Aneka Sapu Berkualitas</h3>
-              <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                Sapu ijuk aren asli, sapu rayung tradisional tebal, sapu nilon penangkap debu mikro, sapu lidi outdoor, hingga sapu dorong gudang 60 cm.
-              </p>
-              <ul class="text-xs text-slate-300 space-y-2">
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-400"></i> Serat aren hutan pegunungan tidak mudah rontok</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-400"></i> Anyaman kawat kuningan ganda super kuat</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-400"></i> Gagang pipa besi coating anti-karat</li>
-              </ul>
-            </div>
-            <button onclick="filterCategory('Aneka Sapu')" class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-white bg-brand-600 hover:bg-brand-500 px-5 py-2.5 rounded-xl transition">
-              Lihat Varian Sapu <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </button>
-          </div>
-
-          <!-- Kategori Pel -->
-          <div class="rounded-3xl bg-gradient-to-br from-brand-900 to-slate-900 text-white p-8 sm:p-10 shadow-xl space-y-6">
-            <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-400">
-              <i data-lucide="sparkles" class="w-7 h-7"></i>
-            </div>
-            <div>
-              <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Kategori Unggulan 02</span>
-              <h3 class="text-2xl sm:text-3xl font-black mt-1 mb-3">Aneka Alat Pel Lantai</h3>
-              <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                Pel katun bleaching 350g &amp; 450g daya serap tinggi, pel microfiber flat 360°, pel jepit industri Kentucky, spin mop otomatis, dan pel spons PVA.
-              </p>
-              <ul class="text-xs text-slate-300 space-y-2">
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Daya serap air instan benang katun murni</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Microfiber dual action basah &amp; kering</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Standar operasional rumah sakit &amp; mall</li>
-              </ul>
-            </div>
-            <button onclick="filterCategory('Aneka Pel Lantai')" class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-500 px-5 py-2.5 rounded-xl transition">
-              Lihat Varian Pel <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </button>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= KATALOG PRODUK INTERAKTIF ================= -->
-    <section id="katalog" class="py-20 bg-slate-50 border-t border-slate-200/80">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <main>
+    <!-- HERO SECTION -->
+    <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-slate-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
-          <div>
-            <span class="text-xs font-extrabold tracking-wider text-brand-600 uppercase bg-brand-50 px-3 py-1 rounded-full border border-brand-200">
-              Katalog Lengkap
-            </span>
-            <h2 class="text-3xl font-black text-slate-900 tracking-tight mt-2">
-              Katalog 12 Produk Unggulan Pabrik
-            </h2>
-            <p class="text-slate-600 text-sm mt-1">
-              Harga grosir langsung pabrik tangan pertama. Bisa pesan lusinan hingga kontainer.
-            </p>
-          </div>
+        <!-- Factory Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200/80 text-emerald-800 text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Produsen Tangan Pertama — Langsung dari Pabrik</span>
+        </div>
 
-          <!-- Total Counter -->
-          <div class="text-xs text-slate-500 font-semibold bg-white px-4 py-2 rounded-xl border border-slate-200 self-start md:self-auto">
-            Menampilkan: <span id="productCount" class="font-bold text-brand-600">12</span> produk
+        <!-- Main Title -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-6">
+          Pasokan Sapu & Pel Lantai <br class="hidden sm:inline">
+          <span class="bg-gradient-to-r from-brand-600 to-emerald-500 bg-clip-text text-transparent">Kualitas Industri untuk Grosir</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-600 leading-relaxed mb-10">
+          PT Bersih Prima Nusantara memproduksi aneka sapu ijuk, rayung, nilon, serta kain pel lantai standar ketahanan tinggi. Siap memenuhi kebutuhan agen distributor, toko kelontong, dan pengadaan instansi di seluruh Indonesia.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#produk"
+             class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm sm:text-base shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2">
+            <span>Lihat Produk Unggulan</span>
+            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+          <a href="https://wa.me/6281234567890?text=Halo%20Sales%20PT%20Bersih%20Prima%20Nusantara,%20bisa%20minta%20katalog%20PDF%20dan%20daftar%20harga%20grosir%20terbaru?"
+             target="_blank"
+             class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 font-bold text-sm sm:text-base shadow-sm transition-all flex items-center justify-center gap-2">
+            <i data-lucide="file-text" class="w-4 h-4 text-brand-600"></i>
+            <span>Minta Pricelist PDF (WA)</span>
+          </a>
+        </div>
+
+        <!-- Simple Trust Bar -->
+        <div class="mt-16 pt-10 border-t border-slate-200/70 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">250.000+</p>
+            <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Kapasitas Unit / Bulan</p>
+          </div>
+          <div>
+            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">12+ Tahun</p>
+            <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Pengalaman Produksi</p>
+          </div>
+          <div>
+            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">500+ Mitra</p>
+            <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Distributor & Toko</p>
+          </div>
+          <div>
+            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">100% Asli</p>
+            <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Produk Buatan Indonesia</p>
           </div>
         </div>
 
-        <!-- Filter & Search Toolbar -->
-        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-xs mb-8 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
-          
-          <!-- Category Tabs -->
-          <div class="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0 scrollbar-none">
-            <button onclick="filterCategory('All')" id="tab-All" class="cat-tab px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition bg-brand-600 text-white shadow-sm">
+      </div>
+    </section>
+
+    <!-- PRODUCT SHOWCASE SECTION -->
+    <section id="produk" class="py-20 bg-white border-t border-slate-200/80">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-2xl mx-auto text-center mb-12">
+          <h2 class="text-xs sm:text-sm font-bold tracking-widest text-brand-600 uppercase mb-2">Pilihan Produk Utama</h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Katalog Sapu & Pel Lantai</p>
+          <p class="text-sm sm:text-base text-slate-600 mt-3">
+            Bahan baku bermutu tinggi, sambungan anyaman kuat, dan tahan lama untuk pemakaian harian maupun intensitas tinggi.
+          </p>
+
+          <!-- Minimalist Filter Tabs -->
+          <div class="inline-flex p-1.5 mt-8 bg-slate-100 rounded-xl border border-slate-200 text-xs sm:text-sm font-semibold">
+            <button onclick="filterCategory('all')" id="tab-all" class="category-btn active px-4 py-2 rounded-lg bg-white text-slate-900 shadow-sm transition-all">
               Semua Produk
             </button>
-            <button onclick="filterCategory('Aneka Sapu')" id="tab-Aneka Sapu" class="cat-tab px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition bg-slate-100 text-slate-700 hover:bg-slate-200">
+            <button onclick="filterCategory('sapu')" id="tab-sapu" class="category-btn px-4 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition-all">
               Aneka Sapu
             </button>
-            <button onclick="filterCategory('Aneka Pel Lantai')" id="tab-Aneka Pel Lantai" class="cat-tab px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition bg-slate-100 text-slate-700 hover:bg-slate-200">
+            <button onclick="filterCategory('pel')" id="tab-pel" class="category-btn px-4 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition-all">
               Aneka Pel Lantai
             </button>
           </div>
-
-          <!-- Search & Sort -->
-          <div class="flex flex-col sm:flex-row items-center gap-3">
-            <div class="relative w-full sm:w-64">
-              <input type="text" id="searchInput" oninput="applyFilters()" placeholder="Cari nama produk / bahan..." class="w-full pl-9 pr-4 py-2 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500">
-              <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-2.5"></i>
-            </div>
-
-            <select id="sortSelect" onchange="applyFilters()" class="w-full sm:w-auto text-xs px-3 py-2 rounded-xl border border-slate-300 bg-white font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
-              <option value="default">Urutkan: Rekomendasi</option>
-              <option value="price_asc">Harga Grosir: Terendah</option>
-              <option value="price_desc">Harga Grosir: Tertinggi</option>
-              <option value="name_asc">Nama: A - Z</option>
-            </select>
-          </div>
-
         </div>
 
         <!-- Product Grid -->
-        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <!-- Cards injected via JavaScript -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <!-- Rendered dynamically by JavaScript -->
+        </div>
+
+        <!-- Custom OEM / Big Order Note -->
+        <div class="mt-14 p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200/90 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+          <div class="space-y-1">
+            <h3 class="text-lg font-bold text-slate-900">Butuh Custom Merk Sendiri (OEM) atau Pembelian Partai Kontainer?</h3>
+            <p class="text-sm text-slate-600">Kami melayani produksi pesanan khusus sesuai spesifikasi panjang gagang, gramasi kain pel, atau cetak merk toko Anda.</p>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20PT%20Bersih%20Prima%20Nusantara,%20saya%20tertarik%20diskusi%20custom%20order%20OEM%20/%20pesanan%20kontainer."
+             target="_blank"
+             class="whitespace-nowrap px-6 py-3 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-semibold text-sm transition-all shadow-sm">
+            Diskusi Kebutuhan Custom &rarr;
+          </a>
         </div>
 
       </div>
     </section>
 
-    <!-- ================= PROFIL PABRIK & FASILITAS ================= -->
-    <section id="tentang" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-6 space-y-5">
-            <span class="text-xs font-extrabold tracking-wider text-brand-600 uppercase bg-brand-50 px-3 py-1 rounded-full border border-brand-200">
-              Tentang Kami
-            </span>
-            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
-              Profil PT Bersih Prima Nusantara
-            </h2>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Didirikan pada tahun 2014 di kawasan sentra manufaktur Jawa Tengah, <strong>PT Bersih Prima Nusantara</strong> (PrimaClean Nusantara) memproduksi aneka alat kebersihan rumah tangga dan komersial dengan kapasitas produksi lebih dari <strong>250.000 unit per bulan</strong>.
-            </p>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Kami memadukan bahan alami Nusantara terbaik (ijuk aren pegunungan murni, bunga rayung alami) dengan teknologi perakitan modern (mesin press hidrolik, oven coating pipa baja anti karat) untuk memastikan setiap sapu dan pel tahan lama serta memiliki daya bersih maksimal.
-            </p>
-
-            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-200 text-center">
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                <p class="text-2xl font-black text-brand-600">2014</p>
-                <p class="text-[11px] text-slate-500 font-semibold">Tahun Berdiri</p>
-              </div>
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                <p class="text-2xl font-black text-emerald-600">4.500 m²</p>
-                <p class="text-[11px] text-slate-500 font-semibold">Fasilitas Pabrik</p>
-              </div>
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                <p class="text-2xl font-black text-amber-600">120+</p>
-                <p class="text-[11px] text-slate-500 font-semibold">Tenaga Ahli</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:col-span-6 space-y-6">
-            <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-10 space-y-6 shadow-xl">
-              <h3 class="text-xl font-bold flex items-center gap-2">
-                <i data-lucide="award" class="w-5 h-5 text-brand-400"></i>
-                Visi &amp; Misi Pabrik
-              </h3>
-
-              <div class="space-y-4 text-xs sm:text-sm">
-                <div class="border-l-2 border-brand-500 pl-4 space-y-1">
-                  <h4 class="font-bold text-white text-base">Visi Kami</h4>
-                  <p class="text-slate-300 leading-relaxed">Menjadi produsen alat kebersihan nomor 1 di Indonesia yang dikenal karena keunggulan ketahanan produk, ketepatan jadwal pasokan, dan kemitraan yang saling menguntungkan.</p>
-                </div>
-
-                <div class="border-l-2 border-emerald-500 pl-4 space-y-1">
-                  <h4 class="font-bold text-white text-base">Misi Kami</h4>
-                  <p class="text-slate-300 leading-relaxed">Menyediakan sapu &amp; pel bermutu tinggi dengan harga pabrik yang kompetitif, memberdayakan ratusan perajin lokal, dan menjamin pasokan stabil bagi seluruh jaringan distributor.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= KEUNGGULAN MANUFAKTUR ================= -->
-    <section id="keunggulan" class="py-20 bg-slate-50 border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
-          <span class="text-xs font-extrabold tracking-wider text-brand-600 uppercase bg-brand-50 px-3 py-1 rounded-full border border-brand-200">
-            Nilai Unggul
-          </span>
-          <h2 class="text-3xl font-black text-slate-900 tracking-tight">
-            Mengapa Pelaku Usaha &amp; Distributor Memilih Kami?
-          </h2>
+    <!-- WHY CHOOSE US (KEUNGGULAN PABRIK) -->
+    <section id="keunggulan" class="py-20 bg-slate-50 border-t border-slate-200/80">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-2xl mx-auto text-center mb-16">
+          <h2 class="text-xs sm:text-sm font-bold tracking-widest text-brand-600 uppercase mb-2">Kenapa Memilih Kami</h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Kemitraan Pabrik yang Aman & Menguntungkan</p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="p-6 rounded-2xl bg-white border border-slate-200 space-y-3">
-            <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center shadow-md">
-              <i data-lucide="dollar-sign" class="w-6 h-6"></i>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white p-7 rounded-2xl border border-slate-200/80 shadow-sm hover:border-brand-500/40 transition-all group">
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="badge-percent" class="w-6 h-6"></i>
             </div>
-            <h3 class="text-base font-bold text-slate-900">Harga Tangan Pertama</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">Tanpa perantara! Dapatkan harga modal langsung dari pabrik sehingga margin keuntungan toko Anda jauh lebih besar.</p>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Harga Tangan Pertama</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Langsung dari pabrik tanpa perantara. Margin keuntungan maksimal untuk toko kelontong dan agen distributor Anda.
+            </p>
           </div>
 
-          <div class="p-6 rounded-2xl bg-white border border-slate-200 space-y-3">
-            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center shadow-md">
+          <!-- Card 2 -->
+          <div class="bg-white p-7 rounded-2xl border border-slate-200/80 shadow-sm hover:border-brand-500/40 transition-all group">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Kualitas QC Teruji</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Bahan baku pilihan: anyaman ijuk tebal anti rontok, serat pel daya serap tinggi, dan kayu gagang oven yang lurus serta kokoh.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white p-7 rounded-2xl border border-slate-200/80 shadow-sm hover:border-brand-500/40 transition-all group">
+            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="boxes" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Kapasitas Besar</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Stok selalu siap dalam jumlah ribuan lusin. Menjamin kontinuitas pasokan toko Anda tanpa khawatir kehabisan barang.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white p-7 rounded-2xl border border-slate-200/80 shadow-sm hover:border-brand-500/40 transition-all group">
+            <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
               <i data-lucide="truck" class="w-6 h-6"></i>
             </div>
-            <h3 class="text-base font-bold text-slate-900">Jaringan Logistik Nasional</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">Kerja sama resmi dengan ekspedisi muatan kargo termurah ke Jawa, Sumatera, Kalimantan, Sulawesi, hingga Papua.</p>
-          </div>
-
-          <div class="p-6 rounded-2xl bg-white border border-slate-200 space-y-3">
-            <div class="w-12 h-12 rounded-xl bg-purple-600 text-white flex items-center justify-center shadow-md">
-              <i data-lucide="file-check" class="w-6 h-6"></i>
-            </div>
-            <h3 class="text-base font-bold text-slate-900">Faktur Pajak &amp; Legalitas PT</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">Perseroan Terbatas resmi (PT) dengan NIB, NPWP, dan siap menerbitkan Faktur Pajak resmi untuk pengadaan tender instansi.</p>
-          </div>
-
-          <div class="p-6 rounded-2xl bg-white border border-slate-200 space-y-3">
-            <div class="w-12 h-12 rounded-xl bg-amber-600 text-white flex items-center justify-center shadow-md">
-              <i data-lucide="refresh-cw" class="w-6 h-6"></i>
-            </div>
-            <h3 class="text-base font-bold text-slate-900">Garansi Tukar Produk</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">Setiap pesanan melewati QC ganda. Jika ada barang cacat produksi saat diterima, kami ganti 100% tanpa ribet.</p>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Ekspedisi Murah</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Didukung jaringan ekspedisi kargo darat dan kontainer laut dengan tarif paling efisien ke seluruh pulau di Indonesia.
+            </p>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- ================= KEMITRAAN & B2B ================= -->
-    <section id="kerjasama" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span class="text-xs font-extrabold tracking-wider text-brand-600 uppercase bg-brand-50 px-3 py-1 rounded-full border border-brand-200">
-            Kemitraan
-          </span>
-          <h2 class="text-3xl font-black text-slate-900 tracking-tight">
-            Peluang Kerjasama Distributor &amp; Skema Grosir
-          </h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 space-y-4">
-            <h3 class="text-xl font-bold text-slate-900">1. Toko &amp; Reseller</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">Cocok untuk toko perabot, toko kelontong, dan toko bangunan perumahan.</p>
-            <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-200">
-              <li>• Min. order 2 - 5 lusin</li>
-              <li>• Bebas campur varian sapu &amp; pel</li>
-              <li>• Potensi margin laba 30% - 40%</li>
-            </ul>
-            <div class="pt-4">
-              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20daftar%20sebagai%20Reseller%20toko." target="_blank" class="w-full py-2.5 bg-brand-600 text-white rounded-xl font-bold text-xs block text-center">Daftar Reseller</a>
-            </div>
-          </div>
-
-          <div class="p-8 rounded-3xl bg-slate-900 text-white border border-slate-800 space-y-4 shadow-xl">
-            <h3 class="text-xl font-bold text-white">2. Agen Grosir Daerah</h3>
-            <p class="text-xs text-slate-300 leading-relaxed">Pusat pasokan grosir untuk pasar induk kota / kabupaten dengan harga pabrik termurah.</p>
-            <ul class="text-xs text-slate-300 space-y-2 pt-2 border-t border-slate-800">
-              <li>• Min. order 100 - 300 unit</li>
-              <li>• Alokasi stok prioritas</li>
-              <li>• Subsidi ongkos kirim ekspedisi</li>
-            </ul>
-            <div class="pt-4">
-              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20jadi%20Agen%20Grosir%20Daerah." target="_blank" class="w-full py-2.5 bg-emerald-600 text-white rounded-xl font-bold text-xs block text-center">Gabung Agen</a>
-            </div>
-          </div>
-
-          <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 space-y-4">
-            <h3 class="text-xl font-bold text-slate-900">3. Pengadaan B2B &amp; Maklon</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">Untuk hotel, rumah sakit, cleaning service, serta private label merek sendiri.</p>
-            <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-200">
-              <li>• Tersedia faktur pajak resmi PT</li>
-              <li>• Kontrak pasokan berkala</li>
-              <li>• Kustom spesifikasi &amp; kemasan</li>
-            </ul>
-            <div class="pt-4">
-              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20penawaran%20pengadaan%20B2B." target="_blank" class="w-full py-2.5 bg-brand-600 text-white rounded-xl font-bold text-xs block text-center">Minta Penawaran</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= KONTAK & FORM PENAWARAN ================= -->
-    <section id="kontak" class="py-16 bg-slate-50 border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- PARTNERSHIP CALL TO ACTION -->
+    <section id="kemitraan" class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
-          <!-- Contact Form (Direct to WhatsApp) -->
-          <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xs">
-            <h2 class="text-2xl font-black text-slate-900 mb-2">Formulir Permintaan Penawaran</h2>
-            <p class="text-xs text-slate-500 mb-6">Isi formulir di bawah ini untuk langsung terhubung dengan tim sales representatif pabrik.</p>
+        <div class="rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8 sm:p-14 text-white text-center relative overflow-hidden shadow-2xl">
+          <!-- Background glow -->
+          <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-brand-500/20 blur-3xl pointer-events-none"></div>
+          <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none"></div>
 
-            <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="text-xs font-bold text-slate-700">Nama Lengkap *</label>
-                  <input type="text" id="contactName" required placeholder="Bpk / Ibu..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-white text-xs">
-                </div>
-                <div>
-                  <label class="text-xs font-bold text-slate-700">Nama Toko / Perusahaan</label>
-                  <input type="text" id="contactCompany" placeholder="Toko / Perusahaan..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-white text-xs">
-                </div>
-              </div>
+          <div class="relative z-10 max-w-2xl mx-auto">
+            <span class="inline-block px-3.5 py-1 rounded-full bg-white/10 text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-4">
+              Peluang Kerjasama B2B
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4 leading-tight">
+              Siap Menjadi Mitra Distributor atau Toko Grosir di Kota Anda?
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
+              Hubungi tim marketing pabrik kami untuk mendapatkan katalog resmi, sampel produk, dan simulasi skema harga grosir bertingkat.
+            </p>
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="text-xs font-bold text-slate-700">Nomor WhatsApp *</label>
-                  <input type="tel" id="contactPhone" required placeholder="08xxxxxxxxxx" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-white text-xs">
-                </div>
-                <div>
-                  <label class="text-xs font-bold text-slate-700">Jenis Kebutuhan *</label>
-                  <select id="contactType" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-white text-xs font-semibold">
-                    <option value="Pemesanan Grosir Sapu & Pel">Pemesanan Grosir Sapu &amp; Pel</option>
-                    <option value="Pendaftaran Agen Distributor">Pendaftaran Agen Distributor</option>
-                    <option value="Pengadaan Cleaning Service / Kantor">Pengadaan Kantor / Cleaning Service</option>
-                    <option value="Maklon / Private Label">Maklon / Private Label</option>
-                    <option value="Pertanyaan Umum">Pertanyaan Umum</option>
-                  </select>
-                </div>
-              </div>
-
-              <div>
-                <label class="text-xs font-bold text-slate-700">Pesan / Rincian Kebutuhan *</label>
-                <textarea id="contactMessage" rows="4" required placeholder="Sebutkan varian produk yang ingin dipesan, estimasi jumlah unit, dan kota tujuan pengiriman..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-white text-xs"></textarea>
-              </div>
-
-              <button type="submit" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl transition flex items-center justify-center gap-2 shadow">
-                <i data-lucide="message-circle" class="w-4 h-4"></i>
-                Kirim Permintaan Langsung ke WhatsApp
-              </button>
-            </form>
-          </div>
-
-          <!-- Contact Info & Map -->
-          <div class="lg:col-span-5 space-y-6">
-            <div class="bg-slate-900 text-white p-8 rounded-3xl space-y-4 shadow-xl">
-              <h3 class="text-xl font-bold border-b border-slate-800 pb-3 flex items-center gap-2">
-                <i data-lucide="building-2" class="w-5 h-5 text-brand-400"></i>
-                Kantor &amp; Fasilitas Pabrik
-              </h3>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                <strong>Alamat:</strong> Kawasan Industri Sentra Kerajinan &amp; Manufaktur, Jl. Raya Industri No. 88, Solo - Sukoharjo, Jawa Tengah 57552
-              </p>
-              <p class="text-xs text-slate-300">
-                <strong>Jam Operasional:</strong> Senin - Sabtu: 08.00 - 17.00 WIB
-              </p>
-              <p class="text-xs text-slate-300">
-                <strong>Email:</strong> sales@bersihprimanusantara.co.id
-              </p>
-              <p class="text-xs text-emerald-400 font-bold">
-                <strong>WhatsApp Hotline:</strong> +62 812-3456-7890
-              </p>
-              <div class="pt-4 border-t border-slate-800">
-                <a href="https://wa.me/6281234567890?text=Halo%20Sales%20PT%20Bersih%20Prima%20Nusantara..." target="_blank" class="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold text-xs block text-center transition">
-                  Chat WhatsApp Sekarang
-                </a>
-              </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="https://wa.me/6281234567890?text=Halo%20Sales%20PT%20Bersih%20Prima%20Nusantara,%20saya%20berminat%20menjadi%20mitra%20grosir/distributor.%20Mohon%20info%20syarat%20dan%20pricelist."
+                 target="_blank"
+                 class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base transition-all shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-3">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Chat Sales via WhatsApp Sekarang</span>
+              </a>
+              <a href="tel:+6281234567890"
+                 class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-base transition-all border border-white/15 flex items-center justify-center gap-2">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+                <span>(031) 8901-2345</span>
+              </a>
             </div>
 
-            <div class="rounded-3xl overflow-hidden border border-slate-200 h-64 shadow-xs">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126497.64376176395!2d110.74866657805128!3d-7.601725737525301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16627b0c79ab%3A0x3027a76e352bb40!2sSukoharjo%2C%20Kabupaten%20Sukoharjo%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+            <p class="text-xs text-slate-400 mt-6">
+              Respon cepat Senin – Sabtu (08:00 – 17:00 WIB). Melayani pengiriman partai kecil, sedang, hingga kontainer.
+            </p>
           </div>
-
         </div>
+
       </div>
     </section>
-
   </main>
 
-  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
-  <aside aria-label="Quick WhatsApp Contact" class="fixed bottom-6 right-6 z-50 group">
-    <a href="https://wa.me/6281234567890?text=Halo%20Sales%20PT%20Bersih%20Prima%20Nusantara,%20saya%20ingin%20bertanya%20katalog%20dan%20penawaran%20harga%20alat%20kebersihan." 
-       target="_blank" 
-       rel="noopener noreferrer"
-       class="relative flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 transform hover:scale-105 active:scale-95"
-       title="Chat Sales WhatsApp Langsung">
-      <span class="absolute -top-1 -right-1 flex h-4 w-4">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-4 w-4 bg-emerald-500 border-2 border-white"></span>
-      </span>
-      <i data-lucide="message-circle" class="w-6 h-6"></i>
-      <span class="hidden sm:inline-block text-sm">Konsultasi WhatsApp</span>
-    </a>
-  </aside>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="bg-slate-950 text-slate-400 pt-16 pb-8 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
         
-        <div class="lg:col-span-2 space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white font-bold shadow-md">
-              <i data-lucide="sparkles" class="w-6 h-6"></i>
-            </div>
-            <div>
-              <span class="text-xl font-extrabold text-white tracking-tight">Prima<span class="text-brand-400">Clean</span> Nusantara</span>
-              <p class="text-xs text-slate-400 tracking-wider font-semibold uppercase">PT Bersih Prima Nusantara</p>
-            </div>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center p-1.5">
+            <img src="assets/images/logo.svg" alt="Logo" class="w-full h-full object-contain">
           </div>
-          
-          <p class="text-sm text-slate-300 leading-relaxed max-w-sm">
-            Perusahaan manufaktur terkemuka yang bergerak di bidang produksi aneka alat kebersihan, dengan fokus utama pada ragam sapu premium dan pel lantai komersial berkualitas tinggi.
-          </p>
-
-          <div class="pt-2 flex items-center gap-3 text-xs font-semibold text-slate-300">
-            <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-brand-400 flex items-center gap-1">
-              <i data-lucide="award" class="w-3.5 h-3.5"></i> Standar Mutu SNI
-            </span>
-            <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-emerald-400 flex items-center gap-1">
-              <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Pabrik Langsung
-            </span>
+          <div>
+            <p class="text-base font-bold text-white">PT Bersih Prima Nusantara</p>
+            <p class="text-xs text-slate-400">Pabrik & Produsen Alat Kebersihan Standar Nasional</p>
           </div>
         </div>
 
-        <div>
-          <h4 class="text-sm font-bold text-white tracking-wider uppercase mb-4 flex items-center gap-2">
-            <i data-lucide="navigation" class="w-4 h-4 text-brand-400"></i> Navigasi
-          </h4>
-          <ul class="space-y-2.5 text-sm">
-            <li><a href="#beranda" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i> Beranda Utama</a></li>
-            <li><a href="#tentang" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i> Tentang Perusahaan</a></li>
-            <li><a href="#katalog" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i> Semua Produk</a></li>
-            <li><a href="#kerjasama" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i> Peluang Distributor</a></li>
-            <li><a href="#kontak" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i> Kontak &amp; Lokasi</a></li>
-          </ul>
+        <div class="text-xs text-slate-400 max-w-sm">
+          Kawasan Industri & Pergudangan Prima Blok B-12, Jawa Timur, Indonesia.<br>
+          Email: <span class="text-slate-300">sales@bersihprima.co.id</span> | Telp: <span class="text-slate-300">+62 812-3456-7890</span>
         </div>
 
-        <div>
-          <h4 class="text-sm font-bold text-white tracking-wider uppercase mb-4 flex items-center gap-2">
-            <i data-lucide="brush" class="w-4 h-4 text-brand-400"></i> Produk Utama
-          </h4>
-          <ul class="space-y-2.5 text-sm">
-            <li><a href="#katalog" onclick="filterCategory('Aneka Sapu')" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i> Sapu Ijuk Aren Premium</a></li>
-            <li><a href="#katalog" onclick="filterCategory('Aneka Sapu')" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i> Sapu Rayung Alami</a></li>
-            <li><a href="#katalog" onclick="filterCategory('Aneka Sapu')" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i> Sapu Dorong Industri</a></li>
-            <li><a href="#katalog" onclick="filterCategory('Aneka Pel Lantai')" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i> Pel Katun Bleaching</a></li>
-            <li><a href="#katalog" onclick="filterCategory('Aneka Pel Lantai')" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i> Pel Microfiber 360°</a></li>
-          </ul>
+        <div class="text-xs text-slate-500">
+          &copy; 2026 PT Bersih Prima Nusantara. All rights reserved.
         </div>
 
-        <div class="lg:col-span-2 space-y-3 text-xs leading-relaxed">
-          <h4 class="text-sm font-bold text-white tracking-wider uppercase mb-4 flex items-center gap-2">
-            <i data-lucide="map-pin" class="w-4 h-4 text-brand-400"></i> Pabrik &amp; Kantor
-          </h4>
-          <p class="flex items-start gap-2">
-            <i data-lucide="map-pin" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
-            <span>Kawasan Industri Sentra Kerajinan &amp; Manufaktur, Jl. Raya Industri No. 88, Solo - Sukoharjo, Jawa Tengah 57552</span>
-          </p>
-          <p class="flex items-center gap-2">
-            <i data-lucide="clock" class="w-4 h-4 text-brand-400 shrink-0"></i>
-            <span>Senin - Sabtu: 08.00 - 17.00 WIB (Minggu Libur)</span>
-          </p>
-          <p class="flex items-center gap-2">
-            <i data-lucide="mail" class="w-4 h-4 text-brand-400 shrink-0"></i>
-            <a href="mailto:sales@bersihprimanusantara.co.id" class="hover:text-white transition">sales@bersihprimanusantara.co.id</a>
-          </p>
-          <p class="flex items-center gap-2">
-            <i data-lucide="phone" class="w-4 h-4 text-emerald-400 shrink-0"></i>
-            <a href="https://wa.me/6281234567890" target="_blank" class="text-emerald-400 font-bold hover:underline">+62 812-3456-7890 (WhatsApp)</a>
-          </p>
-        </div>
-
-      </div>
-
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-        <p>&copy; 2026 <strong>PT Bersih Prima Nusantara</strong>. Seluruh Hak Cipta Dilindungi.</p>
-        <p>Landing Page Siap Deploy Vercel (Edge Static)</p>
       </div>
     </div>
   </footer>
 
-  <!-- ================= MODAL DETAIL PRODUK & KALKULATOR ORDER ================= -->
-  <div id="productModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-900/70 backdrop-blur-sm animate-fadeIn">
-    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 max-h-[90vh] overflow-y-auto shadow-2xl relative">
-      <button onclick="closeProductModal()" class="absolute top-5 right-5 p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 transition">
-        <i data-lucide="x" class="w-5 h-5"></i>
-      </button>
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/6281234567890?text=Halo%20Sales%20PT%20Bersih%20Prima%20Nusantara,%20saya%20ingin%20tanya%20produk%20alat%20kebersihan%20grosir."
+     target="_blank"
+     aria-label="Chat WhatsApp Sales"
+     class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-3 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm shadow-xl shadow-emerald-500/30 transition-all hover:scale-105 group">
+    <i data-lucide="message-circle" class="w-5 h-5"></i>
+    <span class="hidden sm:inline">Chat Sales</span>
+    <span class="flex h-2.5 w-2.5 relative">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
+    </span>
+  </a>
 
-      <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-start">
-        <div class="sm:col-span-5 bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
-          <img id="modalImg" src="" alt="" class="w-full h-48 object-contain mx-auto">
-        </div>
-
-        <div class="sm:col-span-7 space-y-3">
-          <span id="modalCat" class="text-[10px] font-bold px-2.5 py-1 rounded bg-slate-900 text-white uppercase tracking-wider"></span>
-          <h3 id="modalTitle" class="text-xl font-black text-slate-900"></h3>
-          <p id="modalDesc" class="text-xs text-slate-600 leading-relaxed"></p>
-
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1 text-xs">
-            <p><strong>Bahan:</strong> <span id="modalMaterial" class="text-slate-600"></span></p>
-            <p><strong>Dimensi:</strong> <span id="modalSize" class="text-slate-600"></span></p>
-            <p><strong>Daya Tahan:</strong> <span id="modalDurability" class="text-slate-600"></span></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Kalkulator Order WhatsApp di Modal -->
-      <div class="mt-6 pt-6 border-t border-slate-100 bg-emerald-50/70 p-5 rounded-2xl border border-emerald-200 space-y-3">
-        <h4 class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
-          <i data-lucide="calculator" class="w-4 h-4 text-emerald-600"></i> Hitung Estimasi Subtotal &amp; Order Langsung ke WhatsApp
-        </h4>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
-          <div>
-            <label class="text-[11px] font-bold text-slate-700">Jumlah (Unit):</label>
-            <input type="number" id="modalQtyInput" min="1" value="24" class="w-full px-3 py-2 bg-white rounded-xl border border-emerald-300 font-bold text-slate-900 text-xs">
-          </div>
-          <div>
-            <label class="text-[11px] font-bold text-slate-700">Estimasi Total:</label>
-            <div id="modalTotalDisplay" class="px-3 py-2 bg-white rounded-xl border border-emerald-300 font-black text-emerald-800 text-xs">
-              Rp 0
-            </div>
-          </div>
-          <div class="pt-3 sm:pt-4">
-            <button id="modalOrderBtn" class="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 shadow transition">
-              <i data-lucide="message-circle" class="w-4 h-4"></i> Order via WA
-            </button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <!-- CLIENT-SIDE SCRIPT -->
   <script>
-    // 1. DATA PRODUK LENGKAP (CLIENT-SIDE TANPA DATABASE)
+    const WA_NUMBER = '6281234567890';
+
+    // 12 Products Data
     const PRODUCTS = [
       {
-        id: 1,
-        category: 'Aneka Sapu',
-        name: 'Sapu Ijuk Super Aren Premium',
-        shortDesc: 'Serat aren pegunungan murni dengan anyaman rapat, tidak mudah rontok, gagang pipa besi lapis PVC anti-karat.',
-        description: 'Sapu Ijuk Super Aren Premium diproduksi dari serat pohon aren pegunungan pilihan yang telah melalui proses pengeringan dan penyisiran bertahap sehingga bebas debu sisa dan tidak rontok saat digunakan. Sangat ideal untuk lantai keramik, marmer, dan semen kering.',
-        priceRetail: 35000,
-        priceWholesale: 24500,
-        minQty: 24,
-        material: '100% Serat Ijuk Aren Asli, Pipa Besi Coating Anti Karat',
-        size: 'Panjang Gagang 115 cm, Lebar Sapu 38 cm',
-        durability: 'Tahan rontok hingga 2+ tahun',
-        stock: 'Ready Stock',
+        id: 'sapu-ijuk-premium',
+        name: 'Sapu Ijuk Super Tebal Gagang Kayu',
+        category: 'sapu',
+        desc: 'Ijuk aren alami grade A, anyaman kawat rapat anti rontok, gagang kayu mahoni halus.',
+        moq: 'Grosir min. 50 pcs',
         image: 'assets/images/products/sapu-ijuk-premium.svg'
       },
       {
-        id: 2,
-        category: 'Aneka Sapu',
-        name: 'Sapu Rayung Tradisional Exclusive',
-        shortDesc: 'Bunga rayung alami tebal dengan jahitan kawat kuningan ganda presisi, lembut menyapu lantai keramik licin.',
-        description: 'Dibuat dari bunga rayung alami kualitas grade A yang dipanen pada usia optimal. Menggunakan jahitan kawat kuningan ganda anti karat serta anyaman tali nilon rapat. Lembut dan tidak menggores lantai parket maupun keramik.',
-        priceRetail: 32000,
-        priceWholesale: 22000,
-        minQty: 24,
-        material: 'Bunga Rayung Alami Grade A, Gagang Bambu Halus Dipernis',
-        size: 'Panjang Gagang 100 cm, Lebar Kepala 42 cm',
-        durability: 'Bulu alami fleksibel awet hingga 1.5 tahun',
-        stock: 'Ready Stock',
-        image: 'assets/images/products/sapu-rayung.svg'
-      },
-      {
-        id: 3,
-        category: 'Aneka Sapu',
-        name: 'Sapu Nilon Sintetis Anti-Statis',
-        shortDesc: 'Bulu nilon khusus dengan flagged bristles penangkap debu mikro dan rambut tanpa berterbangan.',
-        description: 'Sapu modern dengan bulu sintetis nilon berkepadatan tinggi. Memiliki teknologi flagged bristle (ujung bulu bercabang mikro) yang bekerja seperti magnet debu untuk menangkap debu halus dan rambut manusia.',
-        priceRetail: 28000,
-        priceWholesale: 19500,
-        minQty: 36,
-        material: 'Filamen Nilon Sintetis High Density, Gagang Pipa Aluminium',
-        size: 'Panjang Gagang 120 cm, Lebar Sapu 32 cm',
-        durability: 'Tahan air, tidak berjamur, awet 3+ tahun',
-        stock: 'Ready Stock',
-        image: 'assets/images/products/sapu-nilon.svg'
-      },
-      {
-        id: 4,
-        category: 'Aneka Sapu',
-        name: 'Sapu Lidi Tebal Outdoor (Aren Super)',
-        shortDesc: 'Lidi aren tebal untuk halaman luar, pekarangan, jalan aspal, dan pembersihan daun basah.',
-        description: 'Sapu lidi outdoor kualitas istimewa yang dibuat dari lidi pelepah aren hitam pilihan yang terkenal sangat ulet, tebal, dan tidak mudah patah saat disapukan pada jalan aspal, konblok, atau paving berpasir.',
-        priceRetail: 25000,
-        priceWholesale: 16500,
-        minQty: 30,
-        material: 'Lidi Aren Hitam Pilihan, Ikatan Kawat Baja + Gagang Bambu',
-        size: 'Panjang Gagang 80 cm, Total 140 cm',
-        durability: 'Sangat kuat untuk medan luar ruangan kasar',
-        stock: 'Ready Stock',
-        image: 'assets/images/products/sapu-lidi.svg'
-      },
-      {
-        id: 5,
-        category: 'Aneka Sapu',
-        name: 'Sapu Dorong Industri 60cm',
-        shortDesc: 'Sapu dorong lebar 60 cm untuk pabrik, gudang logistik, basement parkiran, dan lapangan komersial.',
-        description: 'Dirancang khusus untuk kebutuhan pembersihan area luas dengan efisiensi tinggi. Memiliki blok kayu keras solid berukuran 60 cm dengan bulu sikat PVC kaku yang tahan zat kimia, minyak, dan gesekan beton kasar.',
-        priceRetail: 95000,
-        priceWholesale: 72000,
-        minQty: 10,
-        material: 'Bulu Sikat PVC Industri Kaku, Blok Kayu Solid, Braket Baja',
-        size: 'Lebar Kepala 60 cm, Panjang Gagang Besi 140 cm',
-        durability: 'Heavy duty untuk pemakaian operasional industri',
-        stock: 'Ready Stock',
-        image: 'assets/images/products/sapu-dorong.svg'
-      },
-      {
-        id: 6,
-        category: 'Aneka Sapu',
-        name: 'Set Sapu Sudut Ergonomis + Pengki',
-        shortDesc: 'Set sapu miring ergonomis dan pengki vertikal yang dilengkapi sisir pembersih bulu otomatis.',
-        description: 'Inovasi paket pembersih rumah dan kantor. Pengki memiliki gerigi sisir bawaan untuk membersihkan kotoran rambut yang tersangkut di bulu sapu tanpa perlu menggunakan tangan.',
-        priceRetail: 65000,
-        priceWholesale: 46000,
-        minQty: 15,
-        material: 'Plastik ABS Tebal + PP Rubber Edge + Bulu Nilon Halus',
-        size: 'Tinggi Standar 95 cm (Sapu) & 90 cm (Pengki Vertikal)',
-        durability: 'Bahan plastik tebal tidak mudah pecah',
-        stock: 'Ready Stock',
-        image: 'assets/images/products/sapu-set-pengki.svg'
-      },
-      {
-        id: 7,
-        category: 'Aneka Pel Lantai',
-        name: 'Pel Katun Bleaching Super Absorbent',
-        shortDesc: 'Kain pel benang katun 350 gram putih bersih dengan daya serap air instan dan drat putar standar.',
-        description: 'Produk best seller untuk kebutuhan rumah tangga dan perkantoran. Benang katun 100% yang telah melalui proses bleaching murni, berbobot 350 gram, memiliki daya serap air yang sangat cepat dan tidak meninggalkan serat benang terlepas.',
-        priceRetail: 38000,
-        priceWholesale: 26000,
-        minQty: 24,
-        material: '100% Benang Katun Rajut Bleaching, Gagang Aluminium Kokoh',
-        size: 'Panjang Gagang 120 cm, Berat Benang 350g',
-        durability: 'Daya serap air tinggi, jahitan kepala pel kuat',
-        stock: 'Ready Stock',
+        id: 'pel-katun',
+        name: 'Kain Pel Lantai Katun Standar',
+        category: 'pel',
+        desc: 'Serat benang katun 350gr daya serap maksimal, sumbu kokoh, gagang ulir presisi.',
+        moq: 'Grosir min. 50 pcs',
         image: 'assets/images/products/pel-katun.svg'
       },
       {
-        id: 8,
-        category: 'Aneka Pel Lantai',
-        name: 'Pel Microfiber Flat Mop 360° Rotasi',
-        shortDesc: 'Pel lantai pipih modern dengan kain microfiber dua fungsi (basah & kering) serta engsel putar 360 derajat.',
-        description: 'Solusi pembersihan modern untuk lantai keramik, granit, dan vinyl. Kepala mop pipih setebal hanya 3 cm mampu menjangkau kolong ranjang dan sofa yang paling sempit.',
-        priceRetail: 58000,
-        priceWholesale: 41000,
-        minQty: 20,
-        material: 'Microfiber High Performance, Rangka Plat Baja Ringan + ABS',
-        size: 'Panjang Gagang 135 cm, Pad 40 cm x 12 cm',
-        durability: 'Kain microfiber tahan hingga 300x cuci',
-        stock: 'Ready Stock',
+        id: 'sapu-rayung',
+        name: 'Sapu Rayung Tradisional Gagang Bambu',
+        category: 'sapu',
+        desc: 'Rumput rayung pegunungan lentur, ideal untuk lantai semen & keramik, awet dan ringan.',
+        moq: 'Grosir min. 50 pcs',
+        image: 'assets/images/products/sapu-rayung.svg'
+      },
+      {
+        id: 'pel-microfiber',
+        name: 'Pel Microfiber Flat Datar Ergonomis',
+        category: 'pel',
+        desc: 'Kain microfiber magnet debu halus, kepala pel rotasi 360 derajat, gagang teleskopik.',
+        moq: 'Grosir min. 30 pcs',
         image: 'assets/images/products/pel-microfiber.svg'
       },
       {
-        id: 9,
-        category: 'Aneka Pel Lantai',
-        name: 'Pel Jepit Industri (Kentucky Mop)',
-        shortDesc: 'Pel jepit standar cleaning service rumah sakit & mall, sistem klem baja dengan benang katun 450 gram.',
-        description: 'Standar operasional kebersihan komersial. Menggunakan sistem clamp (jepit rahang) berbahan polimer tebal tahan banting yang mencengkeram kain mop dengan sangat kuat. Penggantian kain mop refill dapat dilakukan dalam 5 detik.',
-        priceRetail: 85000,
-        priceWholesale: 64000,
-        minQty: 12,
-        material: 'Gagang Pipa Besi Powder Coating, Klem Rahang ABS, Benang 450g',
-        size: 'Panjang Gagang 145 cm, Berat Benang 450 gram',
-        durability: 'Standar industri rumah sakit, hotel, dan bandara',
-        stock: 'Ready Stock',
+        id: 'sapu-nilon',
+        name: 'Sapu Nilon Sintetis Warna Anti-Kusut',
+        category: 'sapu',
+        desc: 'Bulu nilon PP warna cerah bergelombang, tahan air, tidak rontok, cocok untuk indoor.',
+        moq: 'Grosir min. 60 pcs',
+        image: 'assets/images/products/sapu-nilon.svg'
+      },
+      {
+        id: 'pel-jepit-industri',
+        name: 'Pel Jepit Katun Heavy Duty (Industri)',
+        category: 'pel',
+        desc: 'Klem penjepit besi baja kokoh dengan refill mop 450gr untuk rumah sakit & pabrik.',
+        moq: 'Grosir min. 20 pcs',
         image: 'assets/images/products/pel-jepit-industri.svg'
       },
       {
-        id: 10,
-        category: 'Aneka Pel Lantai',
-        name: 'Spin Mop Otomatis Double Drive',
-        shortDesc: 'Set pel putar otomatis dengan wadah pemeras stainless steel, botol sabun, dan roda tarik praktis.',
-        description: 'Paket alat pel revolusioner tanpa perlu memeras tangan kotor. Keranjang pemeras terbuat dari stainless steel anti karat tebal dengan sistem double drive (bisa putar bilas di dalam air dan putar kering di atas keranjang).',
-        priceRetail: 145000,
-        priceWholesale: 110000,
-        minQty: 6,
-        material: 'Ember PP Tebal + Pemeras Stainless Steel 304 + Kepala Microfiber',
-        size: 'Kapasitas Ember 8 Liter, Gagang Teleskopik 100-130 cm',
-        durability: 'Mekanisme putaran halus bearing baja awet bertahun-tahun',
-        stock: 'Ready Stock',
+        id: 'sapu-dorong',
+        name: 'Sapu Dorong Lapangan 60cm (Push Broom)',
+        category: 'sapu',
+        desc: 'Lebar kerja 60 cm, serabut kaku untuk aspal, trotoar, gudang, dan halaman luas.',
+        moq: 'Grosir min. 20 pcs',
+        image: 'assets/images/products/sapu-dorong.svg'
+      },
+      {
+        id: 'pel-spin-mop',
+        name: 'Pel Putar Spin Mop Otomatis',
+        category: 'pel',
+        desc: 'Mekanisme putar pemeras cepat, ember stainless tebal, roda dan tarikan botol deterjen.',
+        moq: 'Grosir min. 15 pcs',
         image: 'assets/images/products/pel-spin-mop.svg'
       },
       {
-        id: 11,
-        category: 'Aneka Pel Lantai',
-        name: 'Pel Spons Karet PVA Roll Mop',
-        shortDesc: 'Busa PVA berdensitas tinggi menyerap cairan seketika, tuas pemeras 4 rol sekali tarik langsung kering.',
-        description: 'Dirancang untuk membersihkan genangan air tumpah di kamar mandi, dapur, atau ruang makan. Spons PVA memiliki daya serap hingga 10 kali bobotnya dan mengunci debu kotoran di pori-porinya.',
-        priceRetail: 52000,
-        priceWholesale: 37000,
-        minQty: 24,
-        material: 'Spons Selulosa PVA Premium, Rangka Baja Stainless + Tuas ABS',
-        size: 'Panjang Gagang 125 cm, Panjang Spons Busa 28 cm',
-        durability: 'Busa kenyal tidak gampang robek, refill mudah didapat',
-        stock: 'Ready Stock',
+        id: 'sapu-set-pengki',
+        name: 'Sapu Kamar Set Pengki Lipat Windproof',
+        category: 'sapu',
+        desc: 'Pengki berpenutup otomatis dengan sisir pembersih bulu sapu, desain estetik modern.',
+        moq: 'Grosir min. 30 pcs',
+        image: 'assets/images/products/sapu-set-pengki.svg'
+      },
+      {
+        id: 'pel-spons-pva',
+        name: 'Pel Busa PVA Spons Kering Cepat',
+        category: 'pel',
+        desc: 'Busa PVA serap cairan seketika tanpa tetesan, tuas pemeras hidrolik ergonomis.',
+        moq: 'Grosir min. 25 pcs',
         image: 'assets/images/products/pel-spons-pva.svg'
       },
       {
-        id: 12,
-        category: 'Aneka Pel Lantai',
-        name: 'Pel Strip Non-Woven Cepat Kering',
-        shortDesc: 'Kain pel strip berbahan serat sintetis non-woven, sangat cepat kering, ringan di tangan, anti aroma apek.',
-        description: 'Keunggulan utama pel strip ini adalah bobotnya yang sangat ringan saat dicelupkan ke air sehingga tidak melelahkan tangan. Cepat kering setelah digantung dan mencegah timbulnya bakteri bau apek.',
-        priceRetail: 29000,
-        priceWholesale: 19000,
-        minQty: 30,
-        material: 'Serat Sintetis Non-Woven Kualitas Tinggi, Gagang Pipa Logam',
-        size: 'Panjang Gagang 118 cm, Panjang Strip Pel 26 cm',
-        durability: 'Ringan, higienis, cepat kering dalam hitungan menit',
-        stock: 'Ready Stock',
+        id: 'sapu-lidi',
+        name: 'Sapu Lidi Aren Kasur & Taman',
+        category: 'sapu',
+        desc: 'Lidi aren pilihan tebal dan elastis, ikatan tali nilon kuat tanpa mudah lepas.',
+        moq: 'Grosir min. 100 pcs',
+        image: 'assets/images/products/sapu-lidi.svg'
+      },
+      {
+        id: 'pel-strip-nonwoven',
+        name: 'Pel Strip Non-Woven Ekonomis',
+        category: 'pel',
+        desc: 'Kain sintetis strip cepat kering, bobot enteng, varian paling laris untuk pasar ritel grosir.',
+        moq: 'Grosir min. 100 pcs',
         image: 'assets/images/products/pel-strip-nonwoven.svg'
       }
     ];
 
-    const WA_NUMBER = '6281234567890';
-    let currentCategory = 'All';
+    let currentCategory = 'all';
 
-    function formatRupiah(num) {
-      return 'Rp ' + Number(num).toLocaleString('id-ID');
-    }
-
-    function renderProducts(list) {
+    function renderProducts() {
       const grid = document.getElementById('productGrid');
-      const counter = document.getElementById('productCount');
-      counter.textContent = list.length;
+      const filtered = currentCategory === 'all' 
+        ? PRODUCTS 
+        : PRODUCTS.filter(p => p.category === currentCategory);
 
-      if (list.length === 0) {
-        grid.innerHTML = `
-          <div class="col-span-full py-12 text-center bg-white rounded-3xl border border-slate-200">
-            <p class="text-slate-500 text-sm font-semibold">Tidak ada produk yang cocok dengan pencarian Anda.</p>
+      grid.innerHTML = filtered.map(p => {
+        const waText = encodeURIComponent(`Halo Sales PT Bersih Prima Nusantara,\n\nSaya tertarik dengan produk:\n*${p.name}* (${p.moq})\n\nMohon info ketersediaan stok dan penawaran harga grosirnya. Terima kasih.`);
+        return `
+          <div class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-md hover:border-brand-500/40 transition-all flex flex-col group">
+            <div class="relative bg-slate-100/70 p-6 flex items-center justify-center h-52 group-hover:bg-slate-100 transition-colors">
+              <img src="${p.image}" alt="${p.name}" class="h-40 w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider ${p.category === 'sapu' ? 'bg-amber-100 text-amber-800' : 'bg-blue-100 text-blue-800'}">
+                ${p.category === 'sapu' ? 'Sapu' : 'Pel Lantai'}
+              </span>
+            </div>
+            
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-1 mb-1.5">
+                  ${p.name}
+                </h3>
+                <p class="text-xs text-slate-500 leading-relaxed line-clamp-2 mb-4">
+                  ${p.desc}
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between gap-3">
+                <span class="text-xs font-semibold text-slate-500">
+                  ${p.moq}
+                </span>
+                <a href="https://wa.me/${WA_NUMBER}?text=${waText}"
+                   target="_blank"
+                   class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-emerald-600 text-white text-xs font-semibold transition-all">
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i>
+                  <span>Tanya Harga WA</span>
+                </a>
+              </div>
+            </div>
           </div>
         `;
-        return;
+      }).join('');
+
+      if (window.lucide) {
+        lucide.createIcons();
       }
-
-      grid.innerHTML = list.map(p => `
-        <div class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-          <div class="relative bg-slate-100 p-5 text-center border-b border-slate-100">
-            <span class="absolute top-2.5 left-2.5 z-10 px-2 py-0.5 rounded text-[10px] font-bold bg-slate-900 text-white">${p.category}</span>
-            <span class="absolute top-2.5 right-2.5 z-10 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">${p.stock}</span>
-            <div class="cursor-pointer" onclick="openProductModal(${p.id})">
-              <img src="${p.image}" alt="${p.name}" class="w-full h-48 object-contain transform group-hover:scale-105 transition-transform duration-300">
-            </div>
-          </div>
-
-          <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
-            <div>
-              <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug cursor-pointer" onclick="openProductModal(${p.id})">
-                ${p.name}
-              </h3>
-              <p class="text-xs text-slate-500 line-clamp-2 mt-1 leading-relaxed">${p.shortDesc}</p>
-            </div>
-
-            <div class="pt-3 border-t border-slate-100 space-y-3">
-              <div class="flex items-center justify-between">
-                <div>
-                  <span class="text-[10px] text-slate-400 block uppercase font-bold">Harga Grosir</span>
-                  <span class="text-base font-black text-emerald-700">${formatRupiah(p.priceWholesale)}</span>
-                </div>
-                <div class="text-right">
-                  <span class="text-[10px] text-slate-400 block font-medium">Ecer: ${formatRupiah(p.priceRetail)}</span>
-                  <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded">Min. ${p.minQty} pcs</span>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-2 gap-2">
-                <button onclick="openProductModal(${p.id})" class="py-2 px-2 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs flex items-center justify-center gap-1 transition">
-                  <i data-lucide="info" class="w-3.5 h-3.5"></i> Spesifikasi
-                </button>
-                <button onclick="orderViaWa(${p.id})" class="py-2 px-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-1 transition">
-                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Order WA
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      `).join('');
-
-      if (typeof lucide !== 'undefined') lucide.createIcons();
     }
 
     function filterCategory(cat) {
       currentCategory = cat;
-      document.querySelectorAll('.cat-tab').forEach(t => {
-        t.className = 'cat-tab px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition bg-slate-100 text-slate-700 hover:bg-slate-200';
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-slate-900', 'shadow-sm');
+        btn.classList.add('text-slate-600');
       });
-      const activeTab = document.getElementById('tab-' + cat);
-      if (activeTab) {
-        activeTab.className = 'cat-tab px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition bg-brand-600 text-white shadow-sm';
+      const activeBtn = document.getElementById(`tab-${cat}`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-white', 'text-slate-900', 'shadow-sm');
+        activeBtn.classList.remove('text-slate-600');
       }
-      applyFilters();
+      renderProducts();
     }
 
-    function applyFilters() {
-      const query = document.getElementById('searchInput').value.toLowerCase().trim();
-      const sort = document.getElementById('sortSelect').value;
-
-      let filtered = PRODUCTS.filter(p => {
-        const matchCat = (currentCategory === 'All') || (p.category === currentCategory);
-        const matchSearch = p.name.toLowerCase().includes(query) || p.shortDesc.toLowerCase().includes(query) || p.material.toLowerCase().includes(query);
-        return matchCat && matchSearch;
-      });
-
-      if (sort === 'price_asc') {
-        filtered.sort((a, b) => a.priceWholesale - b.priceWholesale);
-      } else if (sort === 'price_desc') {
-        filtered.sort((a, b) => b.priceWholesale - a.priceWholesale);
-      } else if (sort === 'name_asc') {
-        filtered.sort((a, b) => a.name.localeCompare(b.name));
-      }
-
-      renderProducts(filtered);
-    }
-
-    let activeModalProduct = null;
-
-    function openProductModal(id) {
-      const p = PRODUCTS.find(item => item.id === id);
-      if (!p) return;
-      activeModalProduct = p;
-
-      document.getElementById('modalImg').src = p.image;
-      document.getElementById('modalCat').textContent = p.category;
-      document.getElementById('modalTitle').textContent = p.name;
-      document.getElementById('modalDesc').textContent = p.description;
-      document.getElementById('modalMaterial').textContent = p.material;
-      document.getElementById('modalSize').textContent = p.size;
-      document.getElementById('modalDurability').textContent = p.durability;
-
-      const qtyInput = document.getElementById('modalQtyInput');
-      qtyInput.value = p.minQty;
-      qtyInput.min = p.minQty;
-
-      updateModalTotal();
-
-      qtyInput.oninput = updateModalTotal;
-
-      document.getElementById('modalOrderBtn').onclick = () => {
-        const qty = parseInt(qtyInput.value) || p.minQty;
-        const total = qty * p.priceWholesale;
-        const text = `Halo Sales PT Bersih Prima Nusantara,\n\nSaya ingin memesan produk:\n*${p.name}*\nJumlah: *${qty} unit*\nHarga Satuan Grosir: ${formatRupiah(p.priceWholesale)}\nEstimasi Total: *${formatRupiah(total)}*\n\nMohon info ketersediaan stok pabrik dan estimasi ongkos kirim ke kota saya.\nTerima kasih.`;
-        window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
-      };
-
-      document.getElementById('productModal').classList.remove('hidden');
-      if (typeof lucide !== 'undefined') lucide.createIcons();
-    }
-
-    function updateModalTotal() {
-      if (!activeModalProduct) return;
-      const qtyInput = document.getElementById('modalQtyInput');
-      let qty = parseInt(qtyInput.value) || activeModalProduct.minQty;
-      if (qty < 1) qty = 1;
-      const total = qty * activeModalProduct.priceWholesale;
-      document.getElementById('modalTotalDisplay').textContent = formatRupiah(total);
-    }
-
-    function closeProductModal() {
-      document.getElementById('productModal').classList.add('hidden');
-    }
-
-    function orderViaWa(id) {
-      const p = PRODUCTS.find(item => item.id === id);
-      if (!p) return;
-      const text = `Halo Sales PT Bersih Prima Nusantara,\n\nSaya tertarik dengan produk:\n*${p.name}*\n(Harga Grosir: ${formatRupiah(p.priceWholesale)} / unit, Min. Order: ${p.minQty} unit)\n\nMohon info ketersediaan stok dan biaya ongkir ke kota saya.\nTerima kasih.`;
-      window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
-    }
-
-    function handleContactSubmit(e) {
-      e.preventDefault();
-      const name = document.getElementById('contactName').value.trim();
-      const company = document.getElementById('contactCompany').value.trim();
-      const phone = document.getElementById('contactPhone').value.trim();
-      const type = document.getElementById('contactType').value;
-      const message = document.getElementById('contactMessage').value.trim();
-
-      const text = `Halo Tim Sales PT Bersih Prima Nusantara,\n\nSaya mengirimkan formulir penawaran via website:\n- Nama: *${name}*\n- Usaha: *${company || '-'}*\n- No. Kontak: *${phone}*\n- Kebutuhan: *${type}*\n\n*Pesan / Rincian:*\n${message}\n\nMohon konfirmasi dan informasi penawaran resminya. Terima kasih.`;
-      window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
-    }
-
-    // Mobile Menu Toggle
+    // Initialize
     document.addEventListener('DOMContentLoaded', () => {
-      renderProducts(PRODUCTS);
-
-      const btn = document.getElementById('mobileMenuBtn');
-      const drawer = document.getElementById('mobileDrawer');
-      const openIcon = document.getElementById('menuOpenIcon');
-      const closeIcon = document.getElementById('menuCloseIcon');
-
-      if (btn && drawer) {
-        btn.addEventListener('click', () => {
-          const isClosed = drawer.classList.contains('hidden');
-          if (isClosed) {
-            drawer.classList.remove('hidden');
-            openIcon.classList.add('hidden');
-            closeIcon.classList.remove('hidden');
-          } else {
-            drawer.classList.add('hidden');
-            openIcon.classList.remove('hidden');
-            closeIcon.classList.add('hidden');
-          }
-        });
+      renderProducts();
+      if (window.lucide) {
+        lucide.createIcons();
       }
 
-      document.querySelectorAll('.mobile-link').forEach(link => {
-        link.addEventListener('click', () => {
-          drawer.classList.add('hidden');
-          openIcon.classList.remove('hidden');
-          closeIcon.classList.add('hidden');
+      // Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const drawer = document.getElementById('mobileDrawer');
+      if (mobileBtn && drawer) {
+        mobileBtn.addEventListener('click', () => {
+          drawer.classList.toggle('hidden');
         });
-      });
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            drawer.classList.add('hidden');
+          });
+        });
+      }
     });
   </script>
 </body>
