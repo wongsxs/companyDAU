@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontak & Cara Order — Bersih Prima</title>
-  <meta name="description" content="Cara pemesanan grosir sapu dan pel lantai, nomor kontak WhatsApp sales, alamat workshop di Dau Malang, dan pilihan ekspedisi kargo.">
+  <title>Cara Order & Kontak — Bersih Prima</title>
+  <meta name="description" content="Alur pemesanan grosir sapu dan pel lantai, kontak WhatsApp sales, alamat workshop di Dau Malang, dan opsi ekspedisi kargo.">
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Space Grotesk"', '"Plus Jakarta Sans"', 'sans-serif'],
           },
           colors: {
-            brand: {
-              50: '#ecfdf5',
-              600: '#059669',
-              700: '#047857',
+            forest: {
+              800: '#153e35',
+              900: '#0d2822',
+              950: '#081a16',
             }
           }
         }
@@ -30,183 +31,184 @@
   </script>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-stone-50 text-stone-900 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- TOP BAR -->
+  <div class="bg-stone-900 text-stone-300 text-xs py-2 px-4 border-b border-stone-800">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-stone-400"></i>
+          Dau, Kab. Malang, Jawa Timur
+        </span>
+        <span class="hidden sm:inline text-stone-600">|</span>
+        <span class="hidden sm:inline text-stone-400">Kirim Partai Grosir Seluruh Indonesia via Kargo</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span>Telp: (0341) 501-2345</span>
+        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20konsultasi%20pemesanan%20grosir."
+           target="_blank"
+           class="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+          WA: 0812-3456-7890
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- NAVBAR -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 py-3.5 flex items-center justify-between">
+  <header class="bg-white border-b border-stone-200 sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 py-3 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center p-2 text-white shadow-sm">
+        <div class="w-9 h-9 rounded-lg bg-forest-900 flex items-center justify-center p-2 text-white">
           <img src="assets/images/logo.svg" alt="Bersih Prima" class="w-full h-full object-contain">
         </div>
         <div>
-          <span class="block text-base font-extrabold text-slate-900 tracking-tight leading-none">Bersih Prima</span>
-          <span class="block text-xs text-slate-500 font-medium mt-1">Pabrik Sapu & Pel Lantai</span>
+          <span class="block font-heading text-lg font-bold text-stone-900 tracking-tight leading-none">BERSIH PRIMA</span>
+          <span class="block text-[11px] text-stone-500 font-medium tracking-wide uppercase mt-0.5">Pabrik Alat Kebersihan</span>
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
-        <a href="index.html" class="hover:text-emerald-600 transition-colors">Beranda</a>
-        <a href="produk.html" class="hover:text-emerald-600 transition-colors">Produk</a>
-        <a href="tentang.html" class="hover:text-emerald-600 transition-colors">Tentang Kami</a>
-        <a href="kontak.html" class="text-emerald-700 font-bold border-b-2 border-emerald-600 pb-0.5">Kontak & Cara Order</a>
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-stone-700">
+        <a href="index.html" class="hover:text-forest-900 transition-colors">Beranda</a>
+        <a href="produk.html" class="hover:text-forest-900 transition-colors">Katalog Produk</a>
+        <a href="tentang.html" class="hover:text-forest-900 transition-colors">Profil Pabrik</a>
+        <a href="kontak.html" class="text-stone-900 font-bold border-b-2 border-forest-900 pb-0.5">Cara Order & Kontak</a>
       </nav>
 
       <div class="hidden sm:flex items-center">
-        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20konsultasi%20pemesanan%20grosir."
+        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20bisa%20minta%20daftar%20harga%20grosir%20terbaru?"
            target="_blank"
-           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold transition-all shadow-sm">
-          <i data-lucide="message-circle" class="w-4 h-4"></i>
-          <span>Chat WhatsApp</span>
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-forest-900 hover:bg-forest-800 text-white text-xs font-semibold tracking-wide transition-colors">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+          <span>Minta Pricelist WA</span>
         </a>
       </div>
 
-      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" aria-label="Buka Menu">
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100" aria-label="Buka Navigasi">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
 
-    <div id="mobileDrawer" class="hidden md:hidden border-t border-slate-200 bg-white px-5 py-4 space-y-3 shadow-lg">
-      <a href="index.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Beranda</a>
-      <a href="produk.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Produk</a>
-      <a href="tentang.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Tentang Kami</a>
-      <a href="kontak.html" class="block text-sm font-bold text-emerald-600">Kontak & Cara Order</a>
+    <div id="mobileDrawer" class="hidden md:hidden border-t border-stone-200 bg-white px-5 py-4 space-y-3">
+      <a href="index.html" class="block text-sm font-semibold text-stone-600 hover:text-stone-900">Beranda</a>
+      <a href="produk.html" class="block text-sm font-semibold text-stone-600 hover:text-stone-900">Katalog Produk</a>
+      <a href="tentang.html" class="block text-sm font-semibold text-stone-600 hover:text-stone-900">Profil Pabrik</a>
+      <a href="kontak.html" class="block text-sm font-bold text-stone-900">Cara Order & Kontak</a>
     </div>
   </header>
 
-  <!-- CONTENT -->
+  <!-- MAIN -->
   <main class="flex-1 py-12 sm:py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       
-      <!-- Page Header -->
-      <div class="mb-10 text-center sm:text-left border-b border-slate-200 pb-8">
-        <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Kontak & Cara Pemesanan</h1>
-        <p class="text-slate-600 text-sm sm:text-base mt-2">
-          Kami siap melayani kebutuhan stok barang untuk toko Anda. Proses order mudah, cepat, dan transparan.
+      <!-- Top Title -->
+      <div class="border-b border-stone-200 pb-8 mb-10">
+        <span class="text-xs font-mono font-bold text-stone-500 uppercase tracking-wider">PANDUAN PEMBELIAN GROSIR</span>
+        <h1 class="font-heading text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight mt-1 leading-tight">
+          Cara Pemesanan & Saluran Kontak
+        </h1>
+        <p class="text-stone-600 text-base sm:text-lg mt-3 leading-relaxed">
+          Kami berusaha menjaga proses pemesanan barang tetap sederhana, cepat, dan transparan bagi semua rekan toko dan distributor di seluruh Indonesia.
         </p>
       </div>
 
-      <!-- 4 Langkah Order yang Jelas -->
-      <div class="mb-14">
-        <h2 class="text-xl font-bold text-slate-900 mb-6">Alur Pemesanan Grosir</h2>
+      <!-- 4 Langkah Order -->
+      <div class="mb-12">
+        <h2 class="font-heading text-xl font-bold text-stone-900 mb-6">4 Langkah Pemesanan Barang:</h2>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="bg-white p-5 rounded-2xl border border-slate-200 flex items-start gap-4">
-            <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center shrink-0 text-sm">1</span>
+          <div class="bg-white border border-stone-300 p-5 rounded-lg flex items-start gap-4">
+            <span class="w-7 h-7 rounded bg-stone-900 text-white font-mono font-bold text-xs flex items-center justify-center shrink-0">01</span>
             <div>
-              <h3 class="font-bold text-slate-900 text-sm">Pilih Jenis Barang & Jumlah</h3>
-              <p class="text-xs text-slate-500 mt-1">Cek katalog produk kami, tentukan varian sapu atau pel yang Anda perlukan serta perkiraan jumlahnya (lusin / koli).</p>
+              <h3 class="font-bold text-stone-900 text-sm">Pilih Jenis Barang & Jumlah</h3>
+              <p class="text-xs text-stone-600 mt-1">Lihat katalog produk kami, tentukan jenis sapu atau pel yang Anda butuhkan serta jumlahnya (lusin / koli karung).</p>
             </div>
           </div>
 
-          <div class="bg-white p-5 rounded-2xl border border-slate-200 flex items-start gap-4">
-            <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center shrink-0 text-sm">2</span>
+          <div class="bg-white border border-stone-300 p-5 rounded-lg flex items-start gap-4">
+            <span class="w-7 h-7 rounded bg-stone-900 text-white font-mono font-bold text-xs flex items-center justify-center shrink-0">02</span>
             <div>
-              <h3 class="font-bold text-slate-900 text-sm">Chat WhatsApp Kami</h3>
-              <p class="text-xs text-slate-500 mt-1">Kirimkan daftar pesanan Anda. Kami akan buatkan rincian total harga, cek ketersediaan stok, dan cek estimasi ongkir kargo.</p>
+              <h3 class="font-bold text-stone-900 text-sm">Kirim Daftar ke WhatsApp</h3>
+              <p class="text-xs text-stone-600 mt-1">Sales kami akan mengonfirmasi ketersediaan stok, harga grosir terbaik, serta estimasi biaya kargo ke kota Anda.</p>
             </div>
           </div>
 
-          <div class="bg-white p-5 rounded-2xl border border-slate-200 flex items-start gap-4">
-            <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center shrink-0 text-sm">3</span>
+          <div class="bg-white border border-stone-300 p-5 rounded-lg flex items-start gap-4">
+            <span class="w-7 h-7 rounded bg-stone-900 text-white font-mono font-bold text-xs flex items-center justify-center shrink-0">03</span>
             <div>
-              <h3 class="font-bold text-slate-900 text-sm">Pembayaran & Invoice</h3>
-              <p class="text-xs text-slate-500 mt-1">Setelah rincian pesanan disetujui, pembayaran ditransfer via rekening bank resmi yang tercantum di nota pembelian.</p>
+              <h3 class="font-bold text-stone-900 text-sm">Nota Resmi & Pembayaran</h3>
+              <p class="text-xs text-stone-600 mt-1">Kami terbitkan nota invoice resmi dengan rincian kuantiti, ongkos kargo, dan nomor rekening bank usaha.</p>
             </div>
           </div>
 
-          <div class="bg-white p-5 rounded-2xl border border-slate-200 flex items-start gap-4">
-            <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center shrink-0 text-sm">4</span>
+          <div class="bg-white border border-stone-300 p-5 rounded-lg flex items-start gap-4">
+            <span class="w-7 h-7 rounded bg-stone-900 text-white font-mono font-bold text-xs flex items-center justify-center shrink-0">04</span>
             <div>
-              <h3 class="font-bold text-slate-900 text-sm">Packing & Pengiriman Kargo</h3>
-              <p class="text-xs text-slate-500 mt-1">Barang dipacking karung rapi dan diserahkan ke kargo pilihan (Dakota, Indah Logistik, Baraka, truk kargo, dll). Resi dikirim langsung ke WA Anda.</p>
+              <h3 class="font-bold text-stone-900 text-sm">Packing & Resi Kargo</h3>
+              <p class="text-xs text-stone-600 mt-1">Barang dipacking karung rapi dan diserahkan ke kargo (Dakota, Indah Kargo, Baraka, dll). Bukti resi kami kirimkan via WA.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Kartu Kontak Langsung -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
+      <!-- Saluran Kontak & Alamat -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         
-        <!-- WhatsApp & Telepon -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-5">
-          <h3 class="font-bold text-slate-900 text-base">Saluran Komunikasi</h3>
+        <!-- Kontak -->
+        <div class="bg-white border border-stone-300 p-6 rounded-lg space-y-4">
+          <h3 class="font-heading font-bold text-stone-900 text-base border-b border-stone-200 pb-3">Hubungi Tim Sales</h3>
           
-          <div class="space-y-4 text-sm">
-            <div class="flex items-start gap-3">
-              <div class="p-2 bg-emerald-50 text-emerald-700 rounded-lg shrink-0">
-                <i data-lucide="message-circle" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <p class="text-xs text-slate-400 font-medium">WhatsApp Sales & Pemesanan</p>
-                <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20pemesanan%20grosir."
-                   target="_blank"
-                   class="font-bold text-emerald-700 hover:underline">
-                  +62 812-3456-7890
-                </a>
-                <p class="text-[11px] text-slate-500 mt-0.5">Respon cepat setiap hari kerja</p>
-              </div>
+          <div class="space-y-3 text-xs sm:text-sm">
+            <div>
+              <span class="text-stone-500 block text-xs">WhatsApp Pemesanan & Stok:</span>
+              <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20pesanan%20grosir."
+                 target="_blank"
+                 class="font-bold text-emerald-800 hover:underline text-base">
+                +62 812-3456-7890
+              </a>
+              <span class="text-[11px] text-stone-400 block mt-0.5">Respon cepat selama jam kerja operasional</span>
             </div>
 
-            <div class="flex items-start gap-3">
-              <div class="p-2 bg-slate-100 text-slate-700 rounded-lg shrink-0">
-                <i data-lucide="phone" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <p class="text-xs text-slate-400 font-medium">Telepon Kantor</p>
-                <p class="font-bold text-slate-800">(0341) 501-2345</p>
-              </div>
+            <div class="pt-2 border-t border-stone-100">
+              <span class="text-stone-500 block text-xs">Telepon Kantor:</span>
+              <span class="font-bold text-stone-800 text-sm">(0341) 501-2345</span>
             </div>
 
-            <div class="flex items-start gap-3">
-              <div class="p-2 bg-slate-100 text-slate-700 rounded-lg shrink-0">
-                <i data-lucide="clock" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <p class="text-xs text-slate-400 font-medium">Jam Buka Pelayanan</p>
-                <p class="font-semibold text-slate-800">Senin – Sabtu: 08.00 – 17.00 WIB</p>
-                <p class="text-[11px] text-slate-500">Minggu & Libur Nasional tutup</p>
-              </div>
+            <div class="pt-2 border-t border-stone-100">
+              <span class="text-stone-500 block text-xs">Jam Operasional:</span>
+              <span class="font-semibold text-stone-800">Senin – Sabtu: 08.00 – 17.00 WIB</span>
+              <span class="text-[11px] text-stone-400 block">Minggu & Libur Nasional: Tutup</span>
             </div>
           </div>
 
-          <div class="pt-2">
-            <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20konsultasi%20pesanan%20alat%20kebersihan."
+          <div class="pt-3">
+            <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20info%20grosir%20sapu%20dan%20pel."
                target="_blank"
-               class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm transition-all shadow-sm">
+               class="w-full flex items-center justify-center gap-2 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs rounded transition-colors">
               <i data-lucide="message-circle" class="w-4 h-4"></i>
-              <span>Hubungi Kami via WhatsApp</span>
+              <span>Mulai Chat WhatsApp Sekarang</span>
             </a>
           </div>
         </div>
 
-        <!-- Alamat & Ekspedisi -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-5">
-          <h3 class="font-bold text-slate-900 text-base">Alamat Workshop & Gudang</h3>
+        <!-- Alamat -->
+        <div class="bg-white border border-stone-300 p-6 rounded-lg space-y-4">
+          <h3 class="font-heading font-bold text-stone-900 text-base border-b border-stone-200 pb-3">Alamat Produksi & Kargo</h3>
           
-          <div class="space-y-4 text-sm">
-            <div class="flex items-start gap-3">
-              <div class="p-2 bg-slate-100 text-slate-700 rounded-lg shrink-0">
-                <i data-lucide="map-pin" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <p class="text-xs text-slate-400 font-medium">Alamat Produksi</p>
-                <p class="font-semibold text-slate-800 leading-snug">
-                  Jl. Raya Dau, Dusun Klandungan, Kec. Dau, Kabupaten Malang, Jawa Timur 65151
-                </p>
-              </div>
+          <div class="space-y-3 text-xs sm:text-sm">
+            <div>
+              <span class="text-stone-500 block text-xs">Lokasi Workshop / Gudang:</span>
+              <p class="font-semibold text-stone-800 mt-1 leading-snug">
+                Jl. Raya Dau, Dusun Klandungan, Kec. Dau, Kabupaten Malang, Jawa Timur 65151
+              </p>
             </div>
 
-            <div class="flex items-start gap-3">
-              <div class="p-2 bg-slate-100 text-slate-700 rounded-lg shrink-0">
-                <i data-lucide="truck" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <p class="text-xs text-slate-400 font-medium">Ekspedisi Kargo Rekanan</p>
-                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                  Dakota Cargo, Indah Kargo, Baraka Sarana Tama, Kobra Express, Sadana, serta ekspedisi langganan Anda sendiri. Bisa juga kami bantu carikan truk balikan / sewa colt diesel untuk muatan penuh.
-                </p>
-              </div>
+            <div class="pt-2 border-t border-stone-100">
+              <span class="text-stone-500 block text-xs">Ekspedisi Kargo yang Biasa Digunakan:</span>
+              <p class="text-stone-600 text-xs mt-1 leading-relaxed">
+                Dakota Cargo, Indah Logistik Kargo, Baraka Sarana Tama, Kobra Express, Sadana, serta ekspedisi langganan pemesan. Melayani juga sewa truk colt diesel / fuso untuk volume penuh.
+              </p>
             </div>
           </div>
         </div>
@@ -214,21 +216,21 @@
       </div>
 
       <!-- FAQ Ringkas -->
-      <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
-        <h3 class="font-bold text-slate-900 text-lg mb-4">Pertanyaan yang Sering Diajukan</h3>
+      <div class="bg-white border border-stone-300 p-6 rounded-lg">
+        <h3 class="font-heading font-bold text-stone-900 text-base mb-4">Pertanyaan yang Sering Diajukan Pedagang:</h3>
         
-        <div class="space-y-4 text-sm text-slate-700">
+        <div class="space-y-4 text-xs sm:text-sm text-stone-700">
           <div>
-            <h4 class="font-bold text-slate-900">Bisa beli eceran satu atau dua biji?</h4>
-            <p class="text-xs text-slate-600 mt-0.5">Kami fokus melayani grosir toko dan agen dengan minimal order per jenis barang (biasanya minimal 2–4 lusin per item agar dapat harga tangan pertama).</p>
+            <h4 class="font-bold text-stone-900">Berapa minimal order untuk dapat harga grosir pabrik?</h4>
+            <p class="text-stone-600 text-xs mt-1">Rata-rata minimal 2 hingga 4 lusin per item (1 koli karung). Anda juga bisa mencampur beberapa varian dalam 1 pengiriman kargo agar menghemat ongkos kirim.</p>
           </div>
-          <div class="pt-3 border-t border-slate-100">
-            <h4 class="font-bold text-slate-900">Apakah bisa kirim sampel dulu sebelum pesan banyak?</h4>
-            <p class="text-xs text-slate-600 mt-0.5">Bisa. Sampel bisa kami kirimkan lewat ekspedisi reguler (ongkir & biaya sampel ditanggung pemesan, dan bisa diperhitungkan sebagai potongan saat order partai besar).</p>
+          <div class="pt-3 border-t border-stone-200">
+            <h4 class="font-bold text-stone-900">Bisa kirim sampel fisik dulu sebelum pesan banyak?</h4>
+            <p class="text-stone-600 text-xs mt-1">Tentu saja bisa. Sampel produk kami kirimkan via J&T / JNE / Wahana. Biaya sampel & ongkir ditanggung pemesan, dan akan kami potongkan dari total nota saat Anda melakukan pemesanan partai besar.</p>
           </div>
-          <div class="pt-3 border-t border-slate-100">
-            <h4 class="font-bold text-slate-900">Bagaimana jika ada barang yang patah atau rusak di perjalanan?</h4>
-            <p class="text-xs text-slate-600 mt-0.5">Barang yang rusak karena kelalaian produksi akan kami ganti pada orderan berikutnya dengan menyertakan bukti foto/video saat koli kargo dibuka.</p>
+          <div class="pt-3 border-t border-stone-200">
+            <h4 class="font-bold text-stone-900">Bagaimana jika ada barang yang patah atau cacat saat sampai?</h4>
+            <p class="text-stone-600 text-xs mt-1">Barang yang rusak akibat cacat produksi akan kami ganti pada pesanan berikutnya atau dipotongkan langsung di nota, cukup kirimkan foto/video saat koli kargo dibuka.</p>
           </div>
         </div>
       </div>
@@ -237,18 +239,18 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-sm mt-auto">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+  <footer class="bg-stone-950 text-stone-400 text-xs py-8 border-t border-stone-800 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
       <div>
-        <p class="text-base font-bold text-white">Bersih Prima — Pabrik Alat Kebersihan</p>
-        <p class="text-xs text-slate-400 mt-1">Dau, Malang, Jawa Timur — Melayani pesanan grosir se-Indonesia.</p>
+        <p class="font-bold text-stone-200">BERSIH PRIMA — Pabrik Alat Kebersihan</p>
+        <p class="text-stone-400 mt-0.5">Dau, Kabupaten Malang, Jawa Timur 65151</p>
       </div>
-      <div class="flex items-center gap-6 text-xs">
+      <div class="flex items-center gap-5">
         <a href="index.html" class="hover:text-white">Beranda</a>
-        <a href="produk.html" class="hover:text-white">Katalog Produk</a>
-        <a href="tentang.html" class="hover:text-white">Tentang Kami</a>
+        <a href="produk.html" class="hover:text-white">Katalog</a>
+        <a href="tentang.html" class="hover:text-white">Tentang Pabrik</a>
       </div>
-      <p class="text-xs text-slate-500">&copy; 2026 Bersih Prima.</p>
+      <p class="text-stone-500">&copy; 2026 Bersih Prima.</p>
     </div>
   </footer>
 

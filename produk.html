@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Katalog Produk Sapu & Pel Lantai — Bersih Prima</title>
-  <meta name="description" content="Daftar produk sapu ijuk, rayung, nilon, lidi, dan aneka kain pel lantai katun serta microfiber langsung dari produsen.">
+  <title>Katalog Produk — Bersih Prima</title>
+  <meta name="description" content="Katalog 12 produk sapu dan pel lantai langsung dari pabrik Bersih Prima Dau Malang.">
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Space Grotesk"', '"Plus Jakarta Sans"', 'sans-serif'],
           },
           colors: {
-            brand: {
-              50: '#ecfdf5',
-              600: '#059669',
-              700: '#047857',
+            forest: {
+              800: '#153e35',
+              900: '#0d2822',
+              950: '#081a16',
             }
           }
         }
@@ -30,89 +31,116 @@
   </script>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-stone-50 text-stone-900 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- TOP BAR -->
+  <div class="bg-stone-900 text-stone-300 text-xs py-2 px-4 border-b border-stone-800">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-stone-400"></i>
+          Dau, Kab. Malang, Jawa Timur
+        </span>
+        <span class="hidden sm:inline text-stone-600">|</span>
+        <span class="hidden sm:inline text-stone-400">Kirim Partai Grosir Seluruh Indonesia via Kargo</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span>Telp: (0341) 501-2345</span>
+        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20harga%20grosir%20sapu%20dan%20pel."
+           target="_blank"
+           class="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+          WA: 0812-3456-7890
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- NAVBAR -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 py-3.5 flex items-center justify-between">
+  <header class="bg-white border-b border-stone-200 sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 py-3 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center p-2 text-white shadow-sm">
+        <div class="w-9 h-9 rounded-lg bg-forest-900 flex items-center justify-center p-2 text-white">
           <img src="assets/images/logo.svg" alt="Bersih Prima" class="w-full h-full object-contain">
         </div>
         <div>
-          <span class="block text-base font-extrabold text-slate-900 tracking-tight leading-none">Bersih Prima</span>
-          <span class="block text-xs text-slate-500 font-medium mt-1">Pabrik Sapu & Pel Lantai</span>
+          <span class="block font-heading text-lg font-bold text-stone-900 tracking-tight leading-none">BERSIH PRIMA</span>
+          <span class="block text-[11px] text-stone-500 font-medium tracking-wide uppercase mt-0.5">Pabrik Alat Kebersihan</span>
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
-        <a href="index.html" class="hover:text-emerald-600 transition-colors">Beranda</a>
-        <a href="produk.html" class="text-emerald-700 font-bold border-b-2 border-emerald-600 pb-0.5">Produk</a>
-        <a href="tentang.html" class="hover:text-emerald-600 transition-colors">Tentang Kami</a>
-        <a href="kontak.html" class="hover:text-emerald-600 transition-colors">Kontak & Cara Order</a>
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-stone-700">
+        <a href="index.html" class="hover:text-forest-900 transition-colors">Beranda</a>
+        <a href="produk.html" class="text-stone-900 font-bold border-b-2 border-forest-900 pb-0.5">Katalog Produk</a>
+        <a href="tentang.html" class="hover:text-forest-900 transition-colors">Profil Pabrik</a>
+        <a href="kontak.html" class="hover:text-forest-900 transition-colors">Cara Order & Kontak</a>
       </nav>
 
       <div class="hidden sm:flex items-center">
-        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20harga%20grosir%20katalog%20produk."
+        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20bisa%20minta%20daftar%20harga%20grosir%20terbaru?"
            target="_blank"
-           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold transition-all shadow-sm">
-          <i data-lucide="message-circle" class="w-4 h-4"></i>
-          <span>Chat WhatsApp</span>
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-forest-900 hover:bg-forest-800 text-white text-xs font-semibold tracking-wide transition-colors">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+          <span>Minta Pricelist WA</span>
         </a>
       </div>
 
-      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" aria-label="Buka Menu">
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100" aria-label="Buka Navigasi">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
 
-    <div id="mobileDrawer" class="hidden md:hidden border-t border-slate-200 bg-white px-5 py-4 space-y-3 shadow-lg">
-      <a href="index.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Beranda</a>
-      <a href="produk.html" class="block text-sm font-bold text-emerald-600">Produk</a>
-      <a href="tentang.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Tentang Kami</a>
-      <a href="kontak.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Kontak & Cara Order</a>
+    <div id="mobileDrawer" class="hidden md:hidden border-t border-stone-200 bg-white px-5 py-4 space-y-3">
+      <a href="index.html" class="block text-sm font-semibold text-stone-600 hover:text-stone-900">Beranda</a>
+      <a href="produk.html" class="block text-sm font-bold text-stone-900">Katalog Produk</a>
+      <a href="tentang.html" class="block text-sm font-semibold text-stone-600 hover:text-stone-900">Profil Pabrik</a>
+      <a href="kontak.html" class="block text-sm font-semibold text-stone-600 hover:text-stone-900">Cara Order & Kontak</a>
     </div>
   </header>
 
+  <!-- MAIN -->
   <main class="flex-1 py-10 sm:py-14">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
-      <!-- Page Header -->
-      <div class="max-w-2xl mb-8">
-        <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Katalog Produk</h1>
-        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
-          Semua produk di bawah diproduksi langsung di tempat kami. Melayani pembelian grosir per lusin, koli, maupun muatan truk/kontainer.
-        </p>
+      <!-- Header -->
+      <div class="border-b border-stone-200 pb-6 mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-mono font-bold text-stone-500 uppercase tracking-wider">DAFTAR INVENTARIS PRODUK</span>
+          <h1 class="font-heading text-3xl font-bold text-stone-900 tracking-tight mt-1">Katalog Sapu & Pel Lantai</h1>
+          <p class="text-stone-600 text-sm mt-1 max-w-2xl">
+            Produk diproduksi rutin di Dau, Malang. Harga grosir tangan pertama untuk pengiriman partai koli, truk, dan kontainer se-Indonesia.
+          </p>
+        </div>
 
-        <!-- Kategori Filter -->
-        <div class="inline-flex p-1 mt-6 bg-slate-200/80 rounded-xl text-xs sm:text-sm font-semibold">
-          <button onclick="setFilter('all')" id="btn-all" class="filter-tab px-4 py-1.5 rounded-lg bg-white text-slate-900 shadow-sm transition-all">
+        <!-- Filter Tab -->
+        <div class="flex items-center gap-1 bg-stone-200/80 p-1 rounded-lg text-xs font-semibold shrink-0">
+          <button onclick="setFilter('all')" id="tab-all" class="filter-btn active-tab px-3.5 py-1.5 rounded bg-white text-stone-900 shadow-sm">
             Semua (12)
           </button>
-          <button onclick="setFilter('sapu')" id="btn-sapu" class="filter-tab px-4 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 transition-all">
-            Aneka Sapu (6)
+          <button onclick="setFilter('sapu')" id="tab-sapu" class="filter-btn px-3.5 py-1.5 rounded text-stone-600 hover:text-stone-900">
+            Sapu (6)
           </button>
-          <button onclick="setFilter('pel')" id="btn-pel" class="filter-tab px-4 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 transition-all">
-            Aneka Pel Lantai (6)
+          <button onclick="setFilter('pel')" id="tab-pel" class="filter-btn px-3.5 py-1.5 rounded text-stone-600 hover:text-stone-900">
+            Pel Lantai (6)
           </button>
         </div>
       </div>
 
-      <!-- Grid Produk -->
+      <!-- Grid -->
       <div id="catalogGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Rendered by JS -->
       </div>
 
-      <!-- Note Box -->
-      <div class="mt-14 p-6 rounded-2xl bg-emerald-50 border border-emerald-200/80 flex flex-col sm:flex-row items-center justify-between gap-5 text-emerald-950">
+      <!-- OEM Notice -->
+      <div class="mt-12 bg-stone-100 border border-stone-300 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-5 text-stone-800">
         <div>
-          <h3 class="font-bold text-base">Tidak Menemukan Model yang Anda Cari?</h3>
-          <p class="text-xs sm:text-sm text-emerald-800 mt-1">Kami bisa buatkan sesuai contoh sampel fisik atau spesifikasi panjang, ketebalan, dan warna yang Anda butuhkan.</p>
+          <h3 class="font-heading text-base font-bold text-stone-900">Mau Pesan dengan Ukuran Khusus atau Sablon Merk Sendiri?</h3>
+          <p class="text-xs sm:text-sm text-stone-600 mt-0.5">Kami melayani maklon / private label untuk jaringan toko dan distributor Anda.</p>
         </div>
-        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20pembuatan%20sapu/pel%20custom%20sesuai%20contoh."
+        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20pembuatan%20sapu/pel%20custom%20merk%20sendiri."
            target="_blank"
-           class="whitespace-nowrap px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm transition-all shadow-sm">
-          Tanya Model Custom via WA &rarr;
+           class="whitespace-nowrap px-5 py-2.5 bg-stone-900 hover:bg-forest-900 text-white font-semibold text-xs rounded transition-colors">
+          Diskusi Pesanan Custom &rarr;
         </a>
       </div>
 
@@ -120,18 +148,18 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-sm mt-auto">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+  <footer class="bg-stone-950 text-stone-400 text-xs py-8 border-t border-stone-800 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
       <div>
-        <p class="text-base font-bold text-white">Bersih Prima — Pabrik Alat Kebersihan</p>
-        <p class="text-xs text-slate-400 mt-1">Dau, Malang, Jawa Timur — Melayani pesanan grosir se-Indonesia.</p>
+        <p class="font-bold text-stone-200">BERSIH PRIMA — Pabrik Alat Kebersihan</p>
+        <p class="text-stone-400 mt-0.5">Dau, Kabupaten Malang, Jawa Timur 65151</p>
       </div>
-      <div class="flex items-center gap-6 text-xs">
+      <div class="flex items-center gap-5">
         <a href="index.html" class="hover:text-white">Beranda</a>
-        <a href="tentang.html" class="hover:text-white">Tentang Kami</a>
-        <a href="kontak.html" class="hover:text-white">Kontak & Cara Order</a>
+        <a href="tentang.html" class="hover:text-white">Tentang Pabrik</a>
+        <a href="kontak.html" class="hover:text-white">Cara Order</a>
       </div>
-      <p class="text-xs text-slate-500">&copy; 2026 Bersih Prima.</p>
+      <p class="text-stone-500">&copy; 2026 Bersih Prima.</p>
     </div>
   </footer>
 
@@ -140,123 +168,123 @@
 
     const ITEMS = [
       {
-        id: 'sapu-ijuk-premium',
+        sku: 'SP-IJK-01',
         name: 'Sapu Ijuk Super Tebal Gagang Kayu',
         cat: 'sapu',
-        catLabel: 'Sapu Ijuk',
-        bahan: 'Ijuk aren alami grade A, kawat anyam kuat, gagang kayu mahoni halus.',
-        cocok: 'Lantai keramik, semen, rumah harian.',
-        moq: 'Minimal 50 pcs',
+        catBadge: 'Sapu Ijuk',
+        bahan: 'Ijuk aren alami grade A, kawat baja anyaman rapat, gagang kayu mahoni halus.',
+        spek: 'Panjang 115 cm, lebar kepala 32 cm',
+        moq: 'Min. 50 pcs (1 koli)',
         img: 'assets/images/products/sapu-ijuk-premium.svg'
       },
       {
-        id: 'pel-katun',
+        sku: 'PL-KTN-01',
         name: 'Kain Pel Lantai Katun Standar',
         cat: 'pel',
-        catLabel: 'Pel Lantai',
-        bahan: 'Benang katun asli 350 gram, sumbu tebal daya serap tinggi, gagang ulir.',
-        cocok: 'Rumah, toko, kantor, pemakaian harian.',
-        moq: 'Minimal 50 pcs',
+        catBadge: 'Pel Katun',
+        bahan: 'Benang katun putih 350g daya serap tinggi, sumbu tebal, gagang pipa ulir presisi.',
+        spek: 'Berat 350 gr, panjang gagang 120 cm',
+        moq: 'Min. 50 pcs (1 koli)',
         img: 'assets/images/products/pel-katun.svg'
       },
       {
-        id: 'sapu-rayung',
+        sku: 'SP-RYG-01',
         name: 'Sapu Rayung Tradisional Gagang Bambu',
         cat: 'sapu',
-        catLabel: 'Sapu Rayung',
-        bahan: 'Bunga rumput rayung kering pilihan, gagang bambu halus dan ringan.',
-        cocok: 'Lantai dalam ruangan, lentur dan tidak bikin lecet.',
-        moq: 'Minimal 50 pcs',
+        catBadge: 'Sapu Rayung',
+        bahan: 'Bunga rumput rayung gunung kering, lentur, gagang bambu halus dan enteng.',
+        spek: 'Panjang 110 cm, anyaman tali nilon rapat',
+        moq: 'Min. 50 pcs (1 koli)',
         img: 'assets/images/products/sapu-rayung.svg'
       },
       {
-        id: 'pel-microfiber',
+        sku: 'PL-MCF-01',
         name: 'Pel Microfiber Datar (Flat Mop)',
         cat: 'pel',
-        catLabel: 'Pel Microfiber',
-        bahan: 'Kain microfiber magnet debu, kepala pel putar 360°, gagang stainless teleskopik.',
-        cocok: 'Lantai marmer, granit, vinyl, apartemen.',
-        moq: 'Minimal 30 pcs',
+        catBadge: 'Pel Microfiber',
+        bahan: 'Kain microfiber magnet debu, kepala putar 360°, gagang stainless teleskopik.',
+        spek: 'Kepala pel 40 x 12 cm, gagang extendable',
+        moq: 'Min. 30 pcs',
         img: 'assets/images/products/pel-microfiber.svg'
       },
       {
-        id: 'sapu-nilon',
+        sku: 'SP-NLN-01',
         name: 'Sapu Nilon Sintetis Anti-Kusut',
         cat: 'sapu',
-        catLabel: 'Sapu Plastik',
-        bahan: 'Bulu nilon PP bergelombang aneka warna cerah, tahan air, tidak rontok.',
-        cocok: 'Kamar mandi, teras basah, indoor.',
-        moq: 'Minimal 60 pcs',
+        catBadge: 'Sapu Plastik',
+        bahan: 'Bulu nilon PP warna-warni bergelombang, anti air, tidak rontok, gagang pipa lapis seal.',
+        spek: 'Panjang 115 cm, bulu elastis tahan basah',
+        moq: 'Min. 60 pcs (1 koli)',
         img: 'assets/images/products/sapu-nilon.svg'
       },
       {
-        id: 'pel-jepit-industri',
+        sku: 'PL-JPT-01',
         name: 'Pel Jepit Plat Besi Heavy Duty',
         cat: 'pel',
-        catLabel: 'Pel Industri',
-        bahan: 'Klem plat besi kokoh anti karat, kain pel 450 gram tebal bisa dilepas/cuci.',
-        cocok: 'Rumah sakit, pabrik, mall, area luas.',
-        moq: 'Minimal 20 pcs',
+        catBadge: 'Pel Industri',
+        bahan: 'Klem plat besi anti karat, kain pel katun 450g tebal, refill bisa dilepas-cuci.',
+        spek: 'Kain 450 gr, gagang kayu/besi 135 cm',
+        moq: 'Min. 20 pcs',
         img: 'assets/images/products/pel-jepit-industri.svg'
       },
       {
-        id: 'sapu-dorong',
+        sku: 'SP-DRG-01',
         name: 'Sapu Dorong Lapangan / Gudang (60cm)',
         cat: 'sapu',
-        catLabel: 'Sapu Dorong',
-        bahan: 'Balok kayu solid lebar 60 cm, serabut kaku untuk kotoran kasar, gagang panjang.',
-        cocok: 'Gudang, aspal jalanan, pabrik, bengkel.',
-        moq: 'Minimal 20 pcs',
+        catBadge: 'Sapu Dorong',
+        bahan: 'Balok kayu solid lebar 60 cm, serabut kaku untuk aspal dan kotoran kasar, gagang panjang.',
+        spek: 'Lebar kepala 60 cm, gagang 135 cm',
+        moq: 'Min. 20 pcs',
         img: 'assets/images/products/sapu-dorong.svg'
       },
       {
-        id: 'pel-spin-mop',
+        sku: 'PL-SPN-01',
         name: 'Pel Putar Otomatis (Spin Mop)',
         cat: 'pel',
-        catLabel: 'Spin Mop',
-        bahan: 'Ember pemeras putar stainless tebal, gagang tekan otomatis, bonus 2 kain microfiber.',
-        cocok: 'Rumah tangga modern, praktis tanpa sentuh air kotor.',
-        moq: 'Minimal 15 pcs',
+        catBadge: 'Spin Mop',
+        bahan: 'Ember pemeras putar stainless tebal, gagang putar hidrolik, bonus 2 kain microfiber.',
+        spek: 'Ember kapasitas 8 liter, gagang stainless',
+        moq: 'Min. 15 unit',
         img: 'assets/images/products/pel-spin-mop.svg'
       },
       {
-        id: 'sapu-set-pengki',
+        sku: 'SP-PKG-01',
         name: 'Sapu Kamar + Pengki Lipat Tertutup',
         cat: 'sapu',
-        catLabel: 'Set Pengki',
-        bahan: 'Pengki plastik tebal dengan sisir pembersih bulu sapu, bisa dilipat hemat tempat.',
-        cocok: 'Kamar tidur, kosan, kantor, apartemen.',
-        moq: 'Minimal 30 pcs',
+        catBadge: 'Set Pengki',
+        bahan: 'Pengki plastik tebal dengan sisir pembersih bulu sapu, mekanisme lipat hemat ruang.',
+        spek: 'Set 1 sapu + 1 pengki lipat berdiri',
+        moq: 'Min. 30 set',
         img: 'assets/images/products/sapu-set-pengki.svg'
       },
       {
-        id: 'pel-spons-pva',
+        sku: 'PL-PVA-01',
         name: 'Pel Spons Busa PVA Serap Air Cepat',
         cat: 'pel',
-        catLabel: 'Pel Spons',
-        bahan: 'Busa PVA kualitas tinggi menyerap tumpahan air sekali usap, tuas pemeras kuat.',
-        cocok: 'Lantai basah, dapur restoran, kaca.',
-        moq: 'Minimal 25 pcs',
+        catBadge: 'Pel Busa',
+        bahan: 'Busa PVA elastis menyerap tumpahan air sekali tarik, tuas pemeras hidrolik kuat.',
+        spek: 'Panjang spons 28 cm, gagang stainless',
+        moq: 'Min. 25 pcs',
         img: 'assets/images/products/pel-spons-pva.svg'
       },
       {
-        id: 'sapu-lidi',
+        sku: 'SP-LDI-01',
         name: 'Sapu Lidi Aren (Kasur & Halaman)',
         cat: 'sapu',
-        catLabel: 'Sapu Lidi',
-        bahan: 'Lidi pohon aren tua tebal dan lentur, ikatan tali nilon kencang tidak mudah lepas.',
-        cocok: 'Halaman berpasir/rumput, kasur kapuk & busa.',
-        moq: 'Minimal 100 pcs',
+        catBadge: 'Sapu Lidi',
+        bahan: 'Lidi aren tua pilihan tebal dan lentur, ikatan tali nilon kencang tidak mudah copot.',
+        spek: 'Panjang 75-80 cm, ikatan rapi bertingkat',
+        moq: 'Min. 100 pcs',
         img: 'assets/images/products/sapu-lidi.svg'
       },
       {
-        id: 'pel-strip-nonwoven',
+        sku: 'PL-STP-01',
         name: 'Pel Strip Sintetis Non-Woven',
         cat: 'pel',
-        catLabel: 'Pel Ekonomis',
-        bahan: 'Kain sintetis strip cepat kering dan sangat ringan, harga paling ekonomis.',
-        cocok: 'Toko kelontong pasar, kosan, warung.',
-        moq: 'Minimal 100 pcs',
+        catBadge: 'Pel Ekonomis',
+        bahan: 'Kain sintetis strip cepat kering dan sangat ringan, harga paling terjangkau untuk pasar grosir.',
+        spek: 'Berat 220 gr, panjang gagang 115 cm',
+        moq: 'Min. 100 pcs',
         img: 'assets/images/products/pel-strip-nonwoven.svg'
       }
     ];
@@ -270,36 +298,37 @@
         : ITEMS.filter(item => item.cat === currentFilter);
 
       grid.innerHTML = filtered.map(item => {
-        const text = encodeURIComponent(`Halo Bersih Prima,\n\nSaya mau tanya info harga grosir dan stok produk:\n*${item.name}* (${item.moq})\n\nBisa minta rincian harganya? Terima kasih.`);
+        const text = encodeURIComponent(`Halo Bersih Prima,\n\nSaya mau tanya info harga grosir dan stok produk:\n*${item.name}* (SKU: ${item.sku}, ${item.moq})\n\nBisa minta rincian harganya? Terima kasih.`);
         return `
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-emerald-400 transition-all flex flex-col justify-between">
+          <div class="bg-white border border-stone-300 rounded-lg p-5 flex flex-col justify-between hover:border-stone-400 transition-colors">
             <div>
-              <div class="bg-slate-100/80 p-5 flex items-center justify-center h-48 border-b border-slate-100">
-                <img src="${item.img}" alt="${item.name}" class="h-36 max-w-full object-contain" loading="lazy">
+              <div class="h-44 bg-stone-50 rounded border border-stone-200 flex items-center justify-center p-4 mb-4">
+                <img src="${item.img}" alt="${item.name}" class="max-h-full object-contain" loading="lazy">
               </div>
-              <div class="p-5">
-                <span class="inline-block px-2 py-0.5 rounded text-[11px] font-bold ${item.cat === 'sapu' ? 'bg-amber-100 text-amber-800' : 'bg-blue-100 text-blue-800'}">
-                  ${item.catLabel}
+              
+              <div class="flex items-center justify-between gap-2 mb-1.5">
+                <span class="text-[11px] font-mono font-bold text-stone-500 uppercase">${item.sku}</span>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded ${item.cat === 'sapu' ? 'bg-amber-100 text-amber-900' : 'bg-blue-100 text-blue-900'}">
+                  ${item.catBadge}
                 </span>
-                <h3 class="font-bold text-slate-900 text-base mt-2">${item.name}</h3>
-                
-                <div class="mt-3 space-y-1.5 text-xs text-slate-600">
-                  <p><span class="font-semibold text-slate-700">Bahan:</span> ${item.bahan}</p>
-                  <p><span class="font-semibold text-slate-700">Kegunaan:</span> ${item.cocok}</p>
-                </div>
+              </div>
+
+              <h3 class="font-bold text-stone-900 text-base leading-snug">${item.name}</h3>
+
+              <div class="mt-3 pt-3 border-t border-stone-200 space-y-1.5 text-xs text-stone-600">
+                <p><strong class="text-stone-800">Bahan:</strong> ${item.bahan}</p>
+                <p><strong class="text-stone-800">Spesifikasi:</strong> ${item.spek}</p>
               </div>
             </div>
 
-            <div class="p-5 pt-0">
-              <div class="pt-3 border-t border-slate-100 flex items-center justify-between gap-3">
-                <span class="text-xs font-semibold text-slate-500">${item.moq}</span>
-                <a href="https://wa.me/${WA_NUMBER}?text=${text}"
-                   target="_blank"
-                   class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold transition-all">
-                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
-                  <span>Tanya Harga WA</span>
-                </a>
-              </div>
+            <div class="mt-4 pt-3 border-t border-stone-200 flex items-center justify-between gap-2">
+              <span class="text-xs font-semibold text-stone-600">${item.moq}</span>
+              <a href="https://wa.me/${WA_NUMBER}?text=${text}"
+                 target="_blank"
+                 class="px-3.5 py-1.5 bg-stone-900 hover:bg-forest-900 text-white text-xs font-semibold rounded transition-colors inline-flex items-center gap-1.5">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i>
+                <span>Tanya Harga WA</span>
+              </a>
             </div>
           </div>
         `;
@@ -310,14 +339,14 @@
 
     function setFilter(cat) {
       currentFilter = cat;
-      document.querySelectorAll('.filter-tab').forEach(b => {
-        b.classList.remove('bg-white', 'text-slate-900', 'shadow-sm');
-        b.classList.add('text-slate-600');
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('active-tab', 'bg-white', 'text-stone-900', 'shadow-sm');
+        b.classList.add('text-stone-600');
       });
-      const active = document.getElementById(`btn-${cat}`);
+      const active = document.getElementById(`tab-${cat}`);
       if (active) {
-        active.classList.add('bg-white', 'text-slate-900', 'shadow-sm');
-        active.classList.remove('text-slate-600');
+        active.classList.add('active-tab', 'bg-white', 'text-stone-900', 'shadow-sm');
+        active.classList.remove('text-stone-600');
       }
       renderList();
     }

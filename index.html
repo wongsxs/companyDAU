@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pabrik Sapu & Pel Lantai — Bersih Prima</title>
-  <meta name="description" content="Pabrik dan produsen aneka sapu ijuk, rayung, lidi, serta pel lantai katun dan microfiber harga tangan pertama. Melayani grosir toko dan agen seluruh Indonesia.">
+  <title>Bersih Prima — Pabrik & Produsen Sapu dan Pel Lantai</title>
+  <meta name="description" content="Produsen alat kebersihan tangan pertama di Dau, Malang. Memproduksi sapu ijuk, rayung, nilon, dan kain pel lantai untuk toko grosir dan distributor.">
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Space Grotesk"', '"Plus Jakarta Sans"', 'sans-serif'],
           },
           colors: {
-            brand: {
-              50: '#ecfdf5',
-              600: '#059669',
-              700: '#047857',
+            forest: {
+              800: '#153e35',
+              900: '#0d2822',
+              950: '#081a16',
             }
           }
         }
@@ -30,313 +31,405 @@
   </script>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-stone-50 text-stone-900 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- TOP BAR -->
+  <div class="bg-stone-900 text-stone-300 text-xs py-2 px-4 border-b border-stone-800">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-stone-400"></i>
+          Dau, Kab. Malang, Jawa Timur
+        </span>
+        <span class="hidden sm:inline text-stone-600">|</span>
+        <span class="hidden sm:inline text-stone-400">Kirim Partai Grosir Seluruh Indonesia via Kargo</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span>Telp: (0341) 501-2345</span>
+        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20harga%20grosir%20sapu%20dan%20pel."
+           target="_blank"
+           class="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+          WA: 0812-3456-7890
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- NAVBAR -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 py-3.5 flex items-center justify-between">
+  <header class="bg-white border-b border-stone-200 sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 py-3 flex items-center justify-between">
       
-      <!-- Logo -->
+      <!-- Brand -->
       <a href="index.html" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center p-2 text-white shadow-sm">
+        <div class="w-9 h-9 rounded-lg bg-forest-900 flex items-center justify-center p-2 text-white">
           <img src="assets/images/logo.svg" alt="Bersih Prima" class="w-full h-full object-contain">
         </div>
         <div>
-          <span class="block text-base font-extrabold text-slate-900 tracking-tight leading-none">Bersih Prima</span>
-          <span class="block text-xs text-slate-500 font-medium mt-1">Pabrik Sapu & Pel Lantai</span>
+          <span class="block font-heading text-lg font-bold text-stone-900 tracking-tight leading-none">BERSIH PRIMA</span>
+          <span class="block text-[11px] text-stone-500 font-medium tracking-wide uppercase mt-0.5">Pabrik Alat Kebersihan</span>
         </div>
       </a>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
-        <a href="index.html" class="text-emerald-700 font-bold border-b-2 border-emerald-600 pb-0.5">Beranda</a>
-        <a href="produk.html" class="hover:text-emerald-600 transition-colors">Produk</a>
-        <a href="tentang.html" class="hover:text-emerald-600 transition-colors">Tentang Kami</a>
-        <a href="kontak.html" class="hover:text-emerald-600 transition-colors">Kontak & Cara Order</a>
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-stone-700">
+        <a href="index.html" class="text-stone-900 font-bold border-b-2 border-forest-900 pb-0.5">Beranda</a>
+        <a href="produk.html" class="hover:text-forest-900 transition-colors">Katalog Produk</a>
+        <a href="tentang.html" class="hover:text-forest-900 transition-colors">Profil Pabrik</a>
+        <a href="kontak.html" class="hover:text-forest-900 transition-colors">Cara Order & Kontak</a>
       </nav>
 
-      <!-- CTA WA -->
+      <!-- Action -->
       <div class="hidden sm:flex items-center">
-        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20harga%20grosir%20sapu%20dan%20pel%20lantai."
+        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20bisa%20minta%20daftar%20harga%20grosir%20terbaru?"
            target="_blank"
-           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold transition-all shadow-sm">
-          <i data-lucide="message-circle" class="w-4 h-4"></i>
-          <span>Chat WhatsApp</span>
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-forest-900 hover:bg-forest-800 text-white text-xs font-semibold tracking-wide transition-colors">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+          <span>Minta Pricelist WA</span>
         </a>
       </div>
 
-      <!-- Mobile Toggle -->
-      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" aria-label="Buka Menu">
+      <!-- Mobile Button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100" aria-label="Buka Navigasi">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
 
     <!-- Mobile Drawer -->
-    <div id="mobileDrawer" class="hidden md:hidden border-t border-slate-200 bg-white px-5 py-4 space-y-3 shadow-lg">
-      <a href="index.html" class="block text-sm font-bold text-emerald-600">Beranda</a>
-      <a href="produk.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Produk</a>
-      <a href="tentang.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Tentang Kami</a>
-      <a href="kontak.html" class="block text-sm font-semibold text-slate-700 hover:text-emerald-600">Kontak & Cara Order</a>
-      <div class="pt-2">
-        <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20harga%20grosir%20sapu%20dan%20pel%20lantai."
-           target="_blank"
-           class="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg bg-emerald-600 text-white text-sm font-semibold">
-          <i data-lucide="message-circle" class="w-4 h-4"></i>
-          <span>Chat WhatsApp Langsung</span>
-        </a>
-      </div>
+    <div id="mobileDrawer" class="hidden md:hidden border-t border-stone-200 bg-white px-5 py-4 space-y-3">
+      <a href="index.html" class="block text-sm font-bold text-stone-900">Beranda</a>
+      <a href="produk.html" class="block text-sm font-semibold text-stone-600 hover:text-stone-900">Katalog Produk</a>
+      <a href="tentang.html" class="block text-sm font-semibold text-stone-600 hover:text-stone-900">Profil Pabrik</a>
+      <a href="kontak.html" class="block text-sm font-semibold text-stone-600 hover:text-stone-900">Cara Order & Kontak</a>
     </div>
   </header>
 
-  <!-- CONTENT -->
+  <!-- MAIN -->
   <main class="flex-1">
 
-    <!-- HERO SECTION -->
-    <section class="bg-white border-b border-slate-200 py-14 sm:py-20">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-semibold mb-5">
-          <span>📍 Pabrik Langsung dari Jawa Timur</span>
-        </div>
-
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-5">
-          Pabrik Sapu & Pel Lantai <br class="hidden sm:inline">
-          <span class="text-emerald-600">Harga Grosir Tangan Pertama</span>
-        </h1>
-
-        <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
-          Kami memproduksi aneka sapu ijuk, rayung, nilon, dan kain pel lantai untuk kebutuhan toko kelontong, agen sembako, dan kantor di seluruh Indonesia. Bikin sendiri, harga bersahabat, kualitas awet.
-        </p>
-
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-          <a href="produk.html" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm sm:text-base shadow-sm transition-all flex items-center justify-center gap-2">
-            <span>Lihat Daftar Produk</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-          <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20bisa%20minta%20daftar%20harga%20grosir%20sapu%20dan%20pel%20terbaru?"
-             target="_blank"
-             class="w-full sm:w-auto px-6 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2">
-            <i data-lucide="file-text" class="w-4 h-4 text-emerald-600"></i>
-            <span>Minta Daftar Harga (WA)</span>
-          </a>
-        </div>
-
-        <!-- 3 Poin Cepat -->
-        <div class="mt-12 pt-8 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
-          <div class="flex items-start gap-3.5">
-            <div class="p-2.5 rounded-lg bg-emerald-50 text-emerald-700 shrink-0">
-              <i data-lucide="badge-percent" class="w-5 h-5"></i>
+    <!-- HERO SECTION (REAL INDUSTRIAL SPLIT) -->
+    <section class="bg-white border-b border-stone-200 py-12 sm:py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Left Content -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-stone-100 border border-stone-300 rounded text-stone-700 text-xs font-mono font-medium">
+              <span>PRODUSEN TANGAN PERTAMA • DAU, MALANG</span>
             </div>
-            <div>
-              <h4 class="font-bold text-slate-900 text-sm">Harga Tangan Pertama</h4>
-              <p class="text-xs text-slate-500 mt-0.5">Langsung dari pengrajin & tempat produksi, margin toko Anda lebih aman.</p>
+
+            <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 tracking-tight leading-[1.15]">
+              Produksi Sapu & Pel Lantai untuk Kebutuhan Toko dan Distributor
+            </h1>
+
+            <p class="text-stone-600 text-base sm:text-lg leading-relaxed">
+              Kami memproduksi aneka sapu ijuk, sapu rayung, sapu nilon, serta kain pel katun dan microfiber langsung dari tempat produksi kami di Dau, Malang. Pasokan rutin dan harga bersaing untuk toko kelontong, agen grosir sembako, dan pengadaan instansi.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+              <a href="produk.html" class="px-6 py-3 rounded-lg bg-forest-900 hover:bg-forest-800 text-white font-semibold text-sm text-center transition-colors inline-flex items-center justify-center gap-2">
+                <span>Lihat 12 Produk Kami</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20konsultasi%20harga%20grosir%20dan%20stok%20barang."
+                 target="_blank"
+                 class="px-6 py-3 rounded-lg bg-white border border-stone-300 hover:bg-stone-50 text-stone-800 font-semibold text-sm text-center transition-colors inline-flex items-center justify-center gap-2">
+                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-700"></i>
+                <span>Tanya Stok & Harga via WA</span>
+              </a>
+            </div>
+
+            <p class="text-xs text-stone-500 pt-1">
+              Melayani pesanan mulai dari 2 lusin sampai muatan koli besar dan kontainer ekspedisi.
+            </p>
+          </div>
+
+          <!-- Right Content: Factory Spec Sheet -->
+          <div class="lg:col-span-5">
+            <div class="bg-stone-100 border border-stone-300 rounded-xl p-6 space-y-5">
+              <div class="border-b border-stone-300 pb-3 flex items-center justify-between">
+                <h3 class="font-heading text-sm font-bold text-stone-900 uppercase tracking-wide">Ringkasan Spesifikasi Pasokan</h3>
+                <span class="text-[11px] font-mono text-stone-500 bg-white px-2 py-0.5 border border-stone-200 rounded">DAU-MLG</span>
+              </div>
+
+              <div class="space-y-3.5 text-xs">
+                <div class="flex justify-between py-1 border-b border-stone-200">
+                  <span class="text-stone-500">Kapasitas Produksi:</span>
+                  <span class="font-semibold text-stone-900">~10.000 Lusin / Bulan</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-stone-200">
+                  <span class="text-stone-500">Material Serat:</span>
+                  <span class="font-semibold text-stone-900">Ijuk Aren, Rumput Rayung, Nilon PP</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-stone-200">
+                  <span class="text-stone-500">Kain Pel:</span>
+                  <span class="font-semibold text-stone-900">Katun 350g/450g, Microfiber, PVA</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-stone-200">
+                  <span class="text-stone-500">Gagang:</span>
+                  <span class="font-semibold text-stone-900">Kayu Oven Halus & Pipa Ulir Besi</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-stone-200">
+                  <span class="text-stone-500">Minimal Beli:</span>
+                  <span class="font-semibold text-stone-900">2–4 Lusin (Bisa Campur Model)</span>
+                </div>
+                <div class="flex justify-between py-1">
+                  <span class="text-stone-500">Layanan OEM / Merk:</span>
+                  <span class="font-semibold text-stone-900">Bisa Sablon Merk Toko Sendiri</span>
+                </div>
+              </div>
+
+              <div class="pt-3 border-t border-stone-300 text-stone-600 text-xs">
+                <p>📍 <strong>Alamat Pabrik:</strong> Jl. Raya Dau, Dusun Klandungan, Kec. Dau, Kab. Malang, Jawa Timur.</p>
+              </div>
             </div>
           </div>
-          <div class="flex items-start gap-3.5">
-            <div class="p-2.5 rounded-lg bg-emerald-50 text-emerald-700 shrink-0">
-              <i data-lucide="shield-check" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h4 class="font-bold text-slate-900 text-sm">Bahan Pilihan & Rapi</h4>
-              <p class="text-xs text-slate-500 mt-0.5">Ijuk tebal tidak mudah rontok, anyaman rapat, gagang lurus dan kokoh.</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-3.5">
-            <div class="p-2.5 rounded-lg bg-emerald-50 text-emerald-700 shrink-0">
-              <i data-lucide="truck" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h4 class="font-bold text-slate-900 text-sm">Bantu Kirim Kargo</h4>
-              <p class="text-xs text-slate-500 mt-0.5">Bisa kirim per koli atau partai besar ke luar kota & luar pulau dengan kargo murah.</p>
-            </div>
-          </div>
-        </div>
 
+        </div>
       </div>
     </section>
 
-    <!-- 2 KATEGORI UTAMA -->
-    <section class="py-14 max-w-5xl mx-auto px-4 sm:px-6">
-      <div class="text-center mb-10">
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Produk yang Kami Buat</h2>
-        <p class="text-slate-600 text-sm mt-2">Dua kategori utama alat kebersihan yang rutin kami pasok ke pasar dan toko.</p>
+    <!-- KATEGORI UTAMA -->
+    <section class="py-12 max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="border-b border-stone-200 pb-4 mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <h2 class="font-heading text-2xl font-bold text-stone-900">Daftar Kategori Produk</h2>
+          <p class="text-stone-500 text-xs sm:text-sm mt-0.5">Dua kelompok produk utama yang kami pasok rutin ke berbagai toko & distributor.</p>
+        </div>
+        <a href="produk.html" class="text-xs font-bold text-forest-900 hover:underline">
+          Buka Katalog Lengkap &rarr;
+        </a>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Kategori Sapu -->
-        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        
+        <!-- Box Sapu -->
+        <div class="bg-white border border-stone-300 rounded-xl p-6 flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center mb-4">
-              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 bg-amber-100 text-amber-900 text-xs font-bold font-mono rounded">KATEGORI 01</span>
+              <span class="text-xs text-stone-500">6 Varian</span>
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-2">Aneka Sapu</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-4">
-              Mulai dari sapu ijuk aren super tebal, sapu rumput rayung tradisional, sapu nilon warna-warni, sapu lidi taman & kasur, hingga sapu dorong gudang (60cm).
+            <h3 class="font-heading text-xl font-bold text-stone-900 mb-2">Aneka Sapu Rumah & Gudang</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-4">
+              Dibuat dengan anyaman kawat ganda dan klem presisi sehingga bulu tidak mudah rontok saat dipakai menyapu.
             </p>
-            <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
-              <li>✓ Sapu Ijuk Aren Gagang Kayu</li>
-              <li>✓ Sapu Rayung Gagang Bambu</li>
-              <li>✓ Sapu Nilon Sintetis Anti-Kusut</li>
-              <li>✓ Sapu Lidi Kasur & Taman</li>
-            </ul>
+            <div class="grid grid-cols-2 gap-2 text-xs text-stone-600 mb-6 bg-stone-50 p-3 rounded-lg border border-stone-200 font-medium">
+              <div>• Sapu Ijuk Aren Tebal</div>
+              <div>• Sapu Rayung Tradisional</div>
+              <div>• Sapu Nilon Warna Anti-Kusut</div>
+              <div>• Sapu Lidi Kasur & Kebun</div>
+              <div>• Sapu Dorong Lapangan 60cm</div>
+              <div>• Set Sapu + Pengki Lipat</div>
+            </div>
           </div>
-          <a href="produk.html" class="inline-flex items-center gap-2 font-bold text-sm text-emerald-700 hover:text-emerald-800">
-            <span>Lihat Semua Varian Sapu</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          <a href="produk.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-forest-900 hover:text-stone-900">
+            <span>Lihat Foto & Detail Varian Sapu</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
           </a>
         </div>
 
-        <!-- Kategori Pel -->
-        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <!-- Box Pel -->
+        <div class="bg-white border border-stone-300 rounded-xl p-6 flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-4">
-              <i data-lucide="droplets" class="w-6 h-6"></i>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 bg-blue-100 text-blue-900 text-xs font-bold font-mono rounded">KATEGORI 02</span>
+              <span class="text-xs text-stone-500">6 Varian</span>
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-2">Aneka Pel Lantai</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-4">
-              Kain pel katun daya serap tinggi, pel microfiber datar, pel jepit besi untuk industri/rumah sakit, spin mop putar otomatis, hingga pel busa spons PVA.
+            <h3 class="font-heading text-xl font-bold text-stone-900 mb-2">Aneka Kain Pel Lantai</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-4">
+              Kain katun berdaya serap tinggi dan model klem baja kokoh untuk pemakaian harian rumah tangga hingga kebersihan rumah sakit dan pabrik.
             </p>
-            <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
-              <li>✓ Pel Katun Putih 350gr Daya Serap Tinggi</li>
-              <li>✓ Pel Microfiber Datar (Flat Mop)</li>
-              <li>✓ Pel Jepit Plat Besi Standar Pabrik & Mall</li>
-              <li>✓ Refill Kain Pel & Gagang Ulir</li>
-            </ul>
+            <div class="grid grid-cols-2 gap-2 text-xs text-stone-600 mb-6 bg-stone-50 p-3 rounded-lg border border-stone-200 font-medium">
+              <div>• Pel Katun Putih 350g</div>
+              <div>• Pel Microfiber Flat 360°</div>
+              <div>• Pel Jepit Plat Besi 450g</div>
+              <div>• Spin Mop Putar Otomatis</div>
+              <div>• Pel Busa Spons PVA</div>
+              <div>• Pel Strip Non-Woven Hemat</div>
+            </div>
           </div>
-          <a href="produk.html" class="inline-flex items-center gap-2 font-bold text-sm text-emerald-700 hover:text-emerald-800">
-            <span>Lihat Semua Varian Pel</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          <a href="produk.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-forest-900 hover:text-stone-900">
+            <span>Lihat Foto & Detail Varian Pel</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
           </a>
         </div>
+
       </div>
     </section>
 
-    <!-- PREVIEW 4 PRODUK TERLARIS -->
-    <section class="bg-white border-y border-slate-200 py-14">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <!-- 4 PRODUK TERLARIS PREVIEW -->
+    <section class="bg-white border-y border-stone-200 py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div class="border-b border-stone-200 pb-4 mb-8 flex justify-between items-center">
           <div>
-            <h2 class="text-2xl font-extrabold text-slate-900">Produk Paling Sering Dipesan</h2>
-            <p class="text-slate-600 text-sm mt-1">Stok aman dan selalu diproduksi setiap hari.</p>
+            <h2 class="font-heading text-2xl font-bold text-stone-900">Produk yang Rutin Dipesan Toko</h2>
+            <p class="text-stone-500 text-xs sm:text-sm mt-0.5">Barang selalu diproduksi setiap hari dan stok cepat bergerak.</p>
           </div>
-          <a href="produk.html" class="inline-flex items-center gap-1.5 text-sm font-bold text-emerald-600 hover:text-emerald-700">
-            <span>Lihat 12 Produk Lengkap</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          <a href="produk.html" class="hidden sm:inline-block text-xs font-bold text-forest-900 hover:underline">
+            Semua Produk (12 Item) &rarr;
           </a>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          <!-- Item 1 -->
-          <div class="bg-slate-50 rounded-xl border border-slate-200 p-4 flex flex-col justify-between">
+          
+          <!-- Card 1 -->
+          <div class="border border-stone-300 rounded-lg p-4 bg-stone-50/50 flex flex-col justify-between hover:border-stone-400 transition-colors">
             <div>
-              <div class="h-40 bg-white rounded-lg flex items-center justify-center p-3 mb-3 border border-slate-100">
+              <div class="h-44 bg-white rounded border border-stone-200 flex items-center justify-center p-3 mb-3">
                 <img src="assets/images/products/sapu-ijuk-premium.svg" alt="Sapu Ijuk" class="max-h-full object-contain">
               </div>
-              <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 uppercase">Sapu</span>
-              <h4 class="font-bold text-slate-900 text-sm mt-1">Sapu Ijuk Tebal Gagang Kayu</h4>
-              <p class="text-xs text-slate-500 mt-1">Ijuk aren asli rapat, tidak gampang rontok, gagang kayu oven.</p>
+              <span class="text-[10px] font-mono font-bold text-stone-500 uppercase">KODE: SP-IJK-01</span>
+              <h4 class="font-bold text-stone-900 text-sm mt-0.5">Sapu Ijuk Tebal Gagang Kayu</h4>
+              <p class="text-xs text-stone-600 mt-1">Ijuk aren asli rapat, gagang kayu oven halus, min. 50 pcs.</p>
             </div>
             <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20harga%20grosir%20Sapu%20Ijuk%20Tebal."
                target="_blank"
-               class="mt-4 w-full py-2 rounded-lg bg-slate-900 hover:bg-emerald-600 text-white text-xs font-semibold text-center transition-colors">
+               class="mt-4 w-full py-2 bg-stone-900 hover:bg-forest-900 text-white text-xs font-semibold rounded text-center transition-colors">
               Tanya Harga via WA
             </a>
           </div>
 
-          <!-- Item 2 -->
-          <div class="bg-slate-50 rounded-xl border border-slate-200 p-4 flex flex-col justify-between">
+          <!-- Card 2 -->
+          <div class="border border-stone-300 rounded-lg p-4 bg-stone-50/50 flex flex-col justify-between hover:border-stone-400 transition-colors">
             <div>
-              <div class="h-40 bg-white rounded-lg flex items-center justify-center p-3 mb-3 border border-slate-100">
+              <div class="h-44 bg-white rounded border border-stone-200 flex items-center justify-center p-3 mb-3">
                 <img src="assets/images/products/pel-katun.svg" alt="Pel Katun" class="max-h-full object-contain">
               </div>
-              <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-800 uppercase">Pel Lantai</span>
-              <h4 class="font-bold text-slate-900 text-sm mt-1">Kain Pel Katun Standar</h4>
-              <p class="text-xs text-slate-500 mt-1">Benang katun 350gr menyerap air cepat, gagang ulir presisi.</p>
+              <span class="text-[10px] font-mono font-bold text-stone-500 uppercase">KODE: PL-KTN-01</span>
+              <h4 class="font-bold text-stone-900 text-sm mt-0.5">Kain Pel Katun Standar</h4>
+              <p class="text-xs text-stone-600 mt-1">Benang katun 350g daya serap tinggi, gagang ulir, min. 50 pcs.</p>
             </div>
             <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20harga%20grosir%20Kain%20Pel%20Katun."
                target="_blank"
-               class="mt-4 w-full py-2 rounded-lg bg-slate-900 hover:bg-emerald-600 text-white text-xs font-semibold text-center transition-colors">
+               class="mt-4 w-full py-2 bg-stone-900 hover:bg-forest-900 text-white text-xs font-semibold rounded text-center transition-colors">
               Tanya Harga via WA
             </a>
           </div>
 
-          <!-- Item 3 -->
-          <div class="bg-slate-50 rounded-xl border border-slate-200 p-4 flex flex-col justify-between">
+          <!-- Card 3 -->
+          <div class="border border-stone-300 rounded-lg p-4 bg-stone-50/50 flex flex-col justify-between hover:border-stone-400 transition-colors">
             <div>
-              <div class="h-40 bg-white rounded-lg flex items-center justify-center p-3 mb-3 border border-slate-100">
+              <div class="h-44 bg-white rounded border border-stone-200 flex items-center justify-center p-3 mb-3">
                 <img src="assets/images/products/sapu-rayung.svg" alt="Sapu Rayung" class="max-h-full object-contain">
               </div>
-              <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 uppercase">Sapu</span>
-              <h4 class="font-bold text-slate-900 text-sm mt-1">Sapu Rayung Tradisional</h4>
-              <p class="text-xs text-slate-500 mt-1">Rumput rayung pilihan pegunungan, lentur, enteng disapu.</p>
+              <span class="text-[10px] font-mono font-bold text-stone-500 uppercase">KODE: SP-RYG-01</span>
+              <h4 class="font-bold text-stone-900 text-sm mt-0.5">Sapu Rayung Tradisional</h4>
+              <p class="text-xs text-stone-600 mt-1">Rumput rayung pegunungan lentur, enteng disapu, min. 50 pcs.</p>
             </div>
             <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20harga%20grosir%20Sapu%20Rayung."
                target="_blank"
-               class="mt-4 w-full py-2 rounded-lg bg-slate-900 hover:bg-emerald-600 text-white text-xs font-semibold text-center transition-colors">
+               class="mt-4 w-full py-2 bg-stone-900 hover:bg-forest-900 text-white text-xs font-semibold rounded text-center transition-colors">
               Tanya Harga via WA
             </a>
           </div>
 
-          <!-- Item 4 -->
-          <div class="bg-slate-50 rounded-xl border border-slate-200 p-4 flex flex-col justify-between">
+          <!-- Card 4 -->
+          <div class="border border-stone-300 rounded-lg p-4 bg-stone-50/50 flex flex-col justify-between hover:border-stone-400 transition-colors">
             <div>
-              <div class="h-40 bg-white rounded-lg flex items-center justify-center p-3 mb-3 border border-slate-100">
+              <div class="h-44 bg-white rounded border border-stone-200 flex items-center justify-center p-3 mb-3">
                 <img src="assets/images/products/pel-jepit-industri.svg" alt="Pel Jepit" class="max-h-full object-contain">
               </div>
-              <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-800 uppercase">Pel Lantai</span>
-              <h4 class="font-bold text-slate-900 text-sm mt-1">Pel Jepit Plat Besi Heavy Duty</h4>
-              <p class="text-xs text-slate-500 mt-1">Klem besi kuat, kain 450gr tebal, cocok untuk rumah sakit & pabrik.</p>
+              <span class="text-[10px] font-mono font-bold text-stone-500 uppercase">KODE: PL-JPT-01</span>
+              <h4 class="font-bold text-stone-900 text-sm mt-0.5">Pel Jepit Besi Heavy Duty</h4>
+              <p class="text-xs text-stone-600 mt-1">Klem plat besi tebal, kain pel 450g bisa diganti, min. 20 pcs.</p>
             </div>
-            <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20harga%20grosir%20Pel%20Jepit%20Plat%20Besi."
+            <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20harga%20grosir%20Pel%20Jepit%20Besi."
                target="_blank"
-               class="mt-4 w-full py-2 rounded-lg bg-slate-900 hover:bg-emerald-600 text-white text-xs font-semibold text-center transition-colors">
+               class="mt-4 w-full py-2 bg-stone-900 hover:bg-forest-900 text-white text-xs font-semibold rounded text-center transition-colors">
               Tanya Harga via WA
             </a>
           </div>
+
+        </div>
+
+        <div class="mt-8 text-center sm:hidden">
+          <a href="produk.html" class="inline-block px-5 py-2.5 border border-stone-300 rounded-lg text-xs font-bold text-stone-800">
+            Lihat Semua 12 Produk &rarr;
+          </a>
         </div>
 
       </div>
     </section>
 
-    <!-- BISA CUSTOM MERK & PENGIRIMAN -->
-    <section class="py-14 max-w-5xl mx-auto px-4 sm:px-6">
-      <div class="bg-slate-900 rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8">
-        <div class="space-y-3 max-w-xl text-center md:text-left">
-          <span class="text-emerald-400 font-bold text-xs uppercase tracking-wider">Layanan Khusus</span>
-          <h3 class="text-2xl sm:text-3xl font-extrabold leading-snug">
-            Bisa Cetak Merk Toko Sendiri (Maklon / Private Label)
-          </h3>
-          <p class="text-slate-300 text-sm leading-relaxed">
-            Punya toko atau usaha grosir sendiri dan ingin pasang merk sendiri pada stiker sapu atau kain pel? Kami bisa bantu produksinya sesuai spesifikasi yang Anda mau.
+    <!-- KEUNGGULAN (EDITORIAL 4-COLUMN) -->
+    <section class="py-12 max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="border-b border-stone-200 pb-4 mb-8">
+        <h2 class="font-heading text-2xl font-bold text-stone-900">Kenapa Beli di Tempat Kami?</h2>
+        <p class="text-stone-500 text-xs sm:text-sm mt-0.5">Komitmen kami untuk setiap toko dan agen yang bermitra.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="border-l-2 border-forest-900 pl-4 py-1">
+          <h3 class="font-bold text-stone-900 text-sm mb-1">Harga Tangan Pertama</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Diproduksi sendiri di workshop Dau, bukan tangan kedua atau makelar. Selisih harga membuat margin toko Anda aman bersaing.
           </p>
         </div>
-        <div class="shrink-0 w-full md:w-auto text-center">
-          <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20tentang%20custom%20merk%20sendiri%20/%20pesanan%20khusus."
+
+        <div class="border-l-2 border-forest-900 pl-4 py-1">
+          <h3 class="font-bold text-stone-900 text-sm mb-1">Bahan Baku Asli & Awet</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Ijuk aren asli tebal dan benang katun 350-450 gr. Gagang kayu oven lurus dan tidak gampang berjamur saat disimpan lama di gudang.
+          </p>
+        </div>
+
+        <div class="border-l-2 border-forest-900 pl-4 py-1">
+          <h3 class="font-bold text-stone-900 text-sm mb-1">Bantu Kirim via Kargo</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Sudah biasa kirim koli karung ke Jawa, Bali, Sumatra, Kalimantan, dan Indonesia Timur dengan kargo langganan atau ekspedisi rujukan Anda.
+          </p>
+        </div>
+
+        <div class="border-l-2 border-forest-900 pl-4 py-1">
+          <h3 class="font-bold text-stone-900 text-sm mb-1">Bisa Custom Merk Sendiri</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Bisa pasang stiker atau sablon merk toko Anda sendiri (maklon / private label) dengan syarat minimal pesanan yang wajar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER ORDER -->
+    <section class="bg-stone-900 text-stone-100 py-12 border-t border-stone-800">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
+        <span class="text-xs font-mono text-emerald-400 font-semibold tracking-wider uppercase">Pelayanan Grosir Langsung</span>
+        <h2 class="font-heading text-2xl sm:text-3xl font-bold tracking-tight">
+          Mau Tanya Daftar Harga Grosir atau Minta Sampel Barang?
+        </h2>
+        <p class="text-stone-300 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
+          Hubungi kami langsung melalui WhatsApp. Kami siap kirimkan daftar harga resmi per lusin / per koli dan bantu hitungkan ongkos kargonya.
+        </p>
+        <div class="pt-3">
+          <a href="https://wa.me/6281234567890?text=Halo%20Bersih%20Prima,%20saya%20mau%20tanya%20daftar%20harga%20grosir%20dan%20cara%20pesan."
              target="_blank"
-             class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm transition-all w-full md:w-auto">
+             class="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm rounded-lg transition-colors">
             <i data-lucide="message-circle" class="w-4 h-4"></i>
-            <span>Konsultasi Pesanan Custom</span>
+            <span>Chat WhatsApp: 0812-3456-7890</span>
           </a>
         </div>
+        <p class="text-[11px] text-stone-400">
+          Senin – Sabtu (08.00 – 17.00 WIB) • Lokasi Workshop: Dau, Malang, Jawa Timur
+        </p>
       </div>
     </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-sm">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+  <footer class="bg-stone-950 text-stone-400 text-xs py-8 border-t border-stone-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
       <div>
-        <p class="text-base font-bold text-white">Bersih Prima — Pabrik Alat Kebersihan</p>
-        <p class="text-xs text-slate-400 mt-1">Dau, Malang, Jawa Timur — Melayani pesanan grosir se-Indonesia.</p>
+        <p class="font-bold text-stone-200">BERSIH PRIMA — Pabrik Alat Kebersihan</p>
+        <p class="text-stone-400 mt-0.5">Dau, Kabupaten Malang, Jawa Timur 65151</p>
       </div>
-      <div class="flex items-center gap-6 text-xs">
-        <a href="produk.html" class="hover:text-white">Katalog Produk</a>
-        <a href="tentang.html" class="hover:text-white">Tentang Kami</a>
-        <a href="kontak.html" class="hover:text-white">Kontak & Cara Order</a>
+      <div class="flex items-center gap-5">
+        <a href="produk.html" class="hover:text-white">Katalog</a>
+        <a href="tentang.html" class="hover:text-white">Tentang Pabrik</a>
+        <a href="kontak.html" class="hover:text-white">Cara Order</a>
       </div>
-      <p class="text-xs text-slate-500">&copy; 2026 Bersih Prima.</p>
+      <p class="text-stone-500">&copy; 2026 Bersih Prima.</p>
     </div>
   </footer>
 
