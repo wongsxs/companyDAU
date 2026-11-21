@@ -100,6 +100,10 @@ $metaDesc = isset($metaDesc) ? $metaDesc : $config['sub_tagline'];
           <a href="katalog.php" class="px-3.5 py-2 rounded-lg transition <?= ($currentPage === 'katalog.php' || $currentPage === 'detail.php') ? 'text-brand-600 bg-brand-50 font-semibold' : 'hover:text-brand-600 hover:bg-slate-100/80' ?>">
             Katalog Produk
           </a>
+          <a href="checkout.html" class="px-3 py-2 rounded-lg transition hover:text-brand-600 hover:bg-slate-100/80 font-semibold text-teal-800 flex items-center gap-1.5">
+            <i data-lucide="truck" class="w-4 h-4 text-emerald-600"></i>
+            <span>Order &amp; Cek Ongkir</span>
+          </a>
           <a href="kerjasama.php" class="px-3.5 py-2 rounded-lg transition <?= $currentPage === 'kerjasama.php' ? 'text-brand-600 bg-brand-50 font-semibold' : 'hover:text-brand-600 hover:bg-slate-100/80' ?>">
             Kemitraan &amp; B2B
           </a>

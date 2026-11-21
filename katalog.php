@@ -147,9 +147,9 @@ require_once __DIR__ . '/includes/header.php';
                   <a href="detail.php?id=<?= $prod['id'] ?>" class="py-2 px-2 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs flex items-center justify-center gap-1 transition">
                     <i data-lucide="info" class="w-3.5 h-3.5"></i> Detail
                   </a>
-                  <button type="button" onclick="openWhatsAppOrder('<?= addslashes($prod['name']) ?>', '<?= $prod['price_wholesale'] ?>', '<?= $prod['min_wholesale_qty'] ?>', '<?= $config['whatsapp_number'] ?>')" class="py-2 px-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-1 transition">
-                    <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Pesan WA
-                  </button>
+                  <a href="checkout.html?id=<?= $prod['id'] ?>" class="py-2 px-2 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-xs flex items-center justify-center gap-1 transition shadow-xs">
+                    <i data-lucide="truck" class="w-3.5 h-3.5 text-emerald-300"></i> Order &amp; Ongkir
+                  </a>
                 </div>
               </div>
             </div>

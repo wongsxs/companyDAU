@@ -21,6 +21,7 @@ CREATE TABLE `products` (
   `price_retail` INT DEFAULT 0,
   `price_wholesale` INT DEFAULT 0,
   `min_wholesale_qty` INT DEFAULT 12,
+  `weight_gram` INT DEFAULT 500,
   `material` VARCHAR(255) NULL,
   `length_size` VARCHAR(255) NULL,
   `durability` VARCHAR(255) NULL,

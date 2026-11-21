@@ -8,17 +8,23 @@ echo.
 
 where php >nul 2>&1
 if %ERRORLEVEL% equ 0 (
-    set PHP_BIN=php
+    echo Membuka website di browser: http://localhost:8000
+    start http://localhost:8000
+    echo Menjalankan PHP Development Server pada port 8000...
+    echo (Tekan Ctrl + C untuk menghentikan server)
+    echo.
+    php -S localhost:8000
 ) else (
-    set PHP_BIN="C:\Users\%USERNAME%\AppData\Local\Microsoft\WinGet\Packages\PHP.PHP.8.3_Microsoft.Winget.Source_8wekyb3d8bbwe\php.exe"
+    where python >nul 2>&1
+    if %ERRORLEVEL% equ 0 (
+        echo PHP tidak terdeteksi di PATH, beralih ke Python Web Server...
+        echo Membuka website di browser: http://localhost:8000
+        start http://localhost:8000
+        echo Menjalankan Local Web Server pada port 8000...
+        python -m http.server 8000
+    ) else (
+        echo Harap install PHP atau Python untuk menjalankan web server lokal.
+        pause
+    )
 )
-
-echo Membuka website di browser: http://localhost:8000
-start http://localhost:8000
-
-echo Menjalankan PHP Development Server pada port 8000...
-echo (Tekan Ctrl + C untuk menghentikan server)
-echo.
-
-%PHP_BIN% -S localhost:8000
 pause

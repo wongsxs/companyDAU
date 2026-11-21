@@ -29,7 +29,9 @@ $products = $pdo->query("SELECT p.*, c.name AS category_name FROM products p JOI
             <th class="py-3 px-4">Foto</th>
             <th class="py-3 px-4">Nama Produk</th>
             <th class="py-3 px-4">Kategori</th>
+            <th class="py-3 px-4">Harga Eceran</th>
             <th class="py-3 px-4">Harga Grosir</th>
+            <th class="py-3 px-4">Berat</th>
             <th class="py-3 px-4">Min. Order</th>
             <th class="py-3 px-4">Aksi</th>
           </tr>
@@ -42,7 +44,9 @@ $products = $pdo->query("SELECT p.*, c.name AS category_name FROM products p JOI
               </td>
               <td class="py-3 px-4 font-bold text-slate-900"><?= sanitize($p['name']) ?></td>
               <td class="py-3 px-4"><?= sanitize($p['category_name']) ?></td>
+              <td class="py-3 px-4 font-bold text-slate-800"><?= formatRupiah($p['price_retail']) ?></td>
               <td class="py-3 px-4 font-black text-emerald-700"><?= formatRupiah($p['price_wholesale']) ?></td>
+              <td class="py-3 px-4 font-mono text-slate-600"><?= number_format($p['weight_gram'] ?? 500) ?> g</td>
               <td class="py-3 px-4 font-bold"><?= $p['min_wholesale_qty'] ?> pcs</td>
               <td class="py-3 px-4 space-x-2">
                 <a href="produk-form.php?id=<?= $p['id'] ?>" class="text-sky-600 font-bold hover:underline">Edit</a>

@@ -76,11 +76,12 @@
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-700">
+      <nav class="hidden md:flex items-center gap-7 text-sm font-bold text-slate-700">
         <a href="index.html" class="hover:text-brand-primary transition-colors">Beranda</a>
         <a href="produk.html" class="text-brand-primary border-b-2 border-brand-mint pb-0.5">Katalog Produk</a>
-        <a href="tentang.html" class="hover:text-brand-primary transition-colors">Standar Mutu & Pabrik</a>
-        <a href="kontak.html" class="hover:text-brand-primary transition-colors">Prosedur Order & Kontak</a>
+        <a href="checkout.html" class="hover:text-brand-primary transition-colors">Order &amp; Cek Ongkir</a>
+        <a href="tentang.html" class="hover:text-brand-primary transition-colors">Standar Mutu &amp; Pabrik</a>
+        <a href="kontak.html" class="hover:text-brand-primary transition-colors">Prosedur Order &amp; Kontak</a>
       </nav>
 
       <div class="hidden sm:flex items-center gap-3">
@@ -106,6 +107,10 @@
       <a href="produk.html" class="flex items-center justify-between px-3 py-3 rounded-lg bg-brand-ice text-brand-primary font-bold">
         <span>Katalog Produk (12 Item)</span>
         <i data-lucide="chevron-right" class="w-4 h-4 text-brand-mint"></i>
+      </a>
+      <a href="checkout.html" class="flex items-center justify-between px-3 py-3 rounded-lg text-slate-700 hover:bg-slate-50 font-bold text-teal-800">
+        <span>Order &amp; Cek Ongkir Otomatis</span>
+        <i data-lucide="truck" class="w-4 h-4 text-brand-mint"></i>
       </a>
       <a href="tentang.html" class="flex items-center justify-between px-3 py-3 rounded-lg text-slate-700 hover:bg-slate-50">
         <span>Standar Mutu & Pabrik</span>
@@ -398,14 +403,22 @@
               </div>
             </div>
 
-            <div class="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between gap-2">
-              <span class="text-xs font-mono font-semibold text-slate-500">${item.moq}</span>
-              <a href="https://wa.me/${WA_NUMBER}?text=${text}"
-                 target="_blank"
-                 class="px-3.5 py-2 bg-brand-primary hover:bg-brand-dark text-white font-mono font-bold text-xs rounded transition-colors inline-flex items-center gap-1.5 min-h-[38px]">
-                <i data-lucide="message-circle" class="w-3.5 h-3.5 text-teal-300"></i>
-                <span>MINTA HARGA</span>
-              </a>
+            <div class="mt-4 pt-3 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <span class="text-[11px] font-mono font-semibold text-slate-500">${item.moq}</span>
+              <div class="flex items-center gap-1.5 self-end sm:self-auto">
+                <a href="checkout.html?sku=${encodeURIComponent(item.sku)}"
+                   class="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-mono font-bold text-xs rounded transition-colors inline-flex items-center gap-1 shadow-xs"
+                   title="Hitung Ongkir & Order Satuan">
+                  <i data-lucide="truck" class="w-3.5 h-3.5 text-emerald-200"></i>
+                  <span>ORDER / ONGKIR</span>
+                </a>
+                <a href="https://wa.me/${WA_NUMBER}?text=${text}"
+                   target="_blank"
+                   class="p-2 border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold text-xs rounded transition-colors inline-flex items-center justify-center"
+                   title="Tanya Grosir via WA">
+                  <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+                </a>
+              </div>
             </div>
           </div>
         `;

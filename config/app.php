@@ -30,6 +30,21 @@ return [
         'active_distributors' => '650+',
         'product_variants' => '30+'
     ],
+
+    // ==========================================
+    // PENGATURAN LOGISTIK & JASA KIRIM
+    // ==========================================
+    'shipping' => [
+        'origin_province' => 'Jawa Tengah',
+        'origin_city' => 'Kebumen',
+        'origin_address' => 'Desa Pandanlor, Kec. Klirong, Kebumen, Jawa Tengah 54381',
+        'default_couriers' => ['jnt', 'jne', 'sicepat', 'pos', 'anteraja'],
+        'bank_accounts' => [
+            ['bank' => 'BCA', 'account_number' => '123-456-7890', 'holder' => 'PT Bersih Prima Nusantara'],
+            ['bank' => 'Mandiri', 'account_number' => '137-00-1234567-8', 'holder' => 'PT Bersih Prima Nusantara'],
+            ['bank' => 'BRI', 'account_number' => '0012-01-001234-53-0', 'holder' => 'PT Bersih Prima Nusantara']
+        ]
+    ],
     
     // ==========================================
     // PENGATURAN DATABASE ENGINE

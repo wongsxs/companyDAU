@@ -88,6 +88,7 @@ function initSqliteDatabase(PDO $pdo) {
         price_retail INTEGER DEFAULT 0,
         price_wholesale INTEGER DEFAULT 0,
         min_wholesale_qty INTEGER DEFAULT 12,
+        weight_gram INTEGER DEFAULT 500,
         material TEXT,
         length_size TEXT,
         durability TEXT,

@@ -66,24 +66,33 @@ require_once __DIR__ . '/includes/header.php';
           </div>
         </div>
 
-        <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-200 space-y-3">
-          <h3 class="text-sm font-bold text-slate-900">Hitung &amp; Order Langsung via WhatsApp</h3>
+        <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-200 space-y-4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-sm font-bold text-slate-900">Pesan Satuan (Pcs) / Grosir &amp; Hitung Ongkir</h3>
+            <span class="text-[11px] font-mono text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded font-bold">Kirim Seluruh RI</span>
+          </div>
+
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
             <div>
-              <label class="text-xs font-bold text-slate-700">Jumlah Pesanan:</label>
-              <input type="number" id="orderQtyInput" value="<?= $product['min_wholesale_qty'] ?>" min="1" class="w-full px-3 py-2 bg-white rounded-xl border border-emerald-300 font-bold text-slate-900 text-sm">
+              <label class="text-xs font-bold text-slate-700">Jumlah Pesanan (Pcs):</label>
+              <input type="number" id="orderQtyInput" value="1" min="1" class="w-full px-3 py-2 bg-white rounded-xl border border-emerald-300 font-bold text-slate-900 text-sm">
             </div>
             <div>
-              <label class="text-xs font-bold text-slate-700">Estimasi Total:</label>
+              <label class="text-xs font-bold text-slate-700">Estimasi Subtotal:</label>
               <div id="estimatedTotalDisplay" class="px-3 py-2 bg-white rounded-xl border border-emerald-300 font-black text-emerald-800 text-sm">
-                <?= formatRupiah($product['price_wholesale'] * $product['min_wholesale_qty']) ?>
+                <?= formatRupiah($product['price_retail']) ?>
               </div>
             </div>
-            <div class="pt-4 sm:pt-0">
-              <button type="button" id="btnDirectWaOrder" class="w-full py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-2 shadow">
-                <i data-lucide="message-circle" class="w-4 h-4"></i> Kirim ke WA
-              </button>
+            <div class="pt-2 sm:pt-0">
+              <a id="btnGoCheckout" href="checkout.html?id=<?= $product['id'] ?>&qty=1" class="w-full py-2.5 px-4 bg-teal-700 hover:bg-teal-800 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 shadow">
+                <i data-lucide="truck" class="w-4 h-4"></i> Cek Ongkir &amp; Order
+              </a>
             </div>
+          </div>
+
+          <div id="priceTierNotice" class="text-xs text-slate-600 bg-white/80 p-2.5 rounded-xl border border-emerald-200/60 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <span id="tierLabel">Harga Eceran: <strong><?= formatRupiah($product['price_retail']) ?></strong>/pcs</span>
+            <span class="text-[11px] text-teal-800 font-semibold">Min. Grosir: <?= $product['min_wholesale_qty'] ?> pcs (<?= formatRupiah($product['price_wholesale']) ?>)</span>
           </div>
         </div>
 
@@ -111,27 +120,40 @@ require_once __DIR__ . '/includes/header.php';
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+  const priceRetail = <?= (int)$product['price_retail'] ?>;
   const priceWholesale = <?= (int)$product['price_wholesale'] ?>;
+  const minWholesaleQty = <?= (int)$product['min_wholesale_qty'] ?>;
+  const productId = <?= (int)$product['id'] ?>;
   const productName = <?= json_encode($product['name']) ?>;
   const whatsappNumber = <?= json_encode($config['whatsapp_number']) ?>;
   const qtyInput = document.getElementById('orderQtyInput');
   const displayTotal = document.getElementById('estimatedTotalDisplay');
-  const btnWa = document.getElementById('btnDirectWaOrder');
+  const btnGoCheckout = document.getElementById('btnGoCheckout');
+  const tierLabel = document.getElementById('tierLabel');
 
-  if (qtyInput) {
-    qtyInput.addEventListener('input', () => {
-      let qty = parseInt(qtyInput.value) || 1;
-      displayTotal.textContent = 'Rp ' + (qty * priceWholesale).toLocaleString('id-ID');
-    });
+  function recalculate() {
+    let qty = parseInt(qtyInput.value) || 1;
+    if (qty < 1) qty = 1;
+    const isWholesale = qty >= minWholesaleQty;
+    const unitPrice = isWholesale ? priceWholesale : priceRetail;
+    const total = qty * unitPrice;
+    
+    if (displayTotal) {
+      displayTotal.textContent = 'Rp ' + total.toLocaleString('id-ID');
+    }
+    if (tierLabel) {
+      tierLabel.innerHTML = isWholesale 
+        ? `🎉 <strong class="text-emerald-700">Harga Grosir Pabrik!</strong> (Rp ${priceWholesale.toLocaleString('id-ID')}/pcs)`
+        : `Harga Eceran: <strong>Rp ${priceRetail.toLocaleString('id-ID')}</strong>/pcs (Beli ${minWholesaleQty - qty} lagi untuk grosir)`;
+    }
+    if (btnGoCheckout) {
+      btnGoCheckout.href = `checkout.html?id=${productId}&qty=${qty}`;
+    }
   }
 
-  if (btnWa) {
-    btnWa.addEventListener('click', () => {
-      let qty = parseInt(qtyInput.value) || 1;
-      const total = qty * priceWholesale;
-      const text = `Halo Sales PT Bersih Prima Nusantara,\n\nSaya ingin memesan:\n*${productName}*\nJumlah: *${qty} unit*\nEstimasi Total: *Rp ${total.toLocaleString('id-ID')}*\n\nMohon info stok & ongkir ke kota saya.`;
-      window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank');
-    });
+  if (qtyInput) {
+    qtyInput.addEventListener('input', recalculate);
+    recalculate();
   }
 });
 </script>

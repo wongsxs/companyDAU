@@ -19,6 +19,7 @@ $product = [
     'price_retail' => 0,
     'price_wholesale' => 0,
     'min_wholesale_qty' => 12,
+    'weight_gram' => 500,
     'material' => '',
     'length_size' => '',
     'durability' => '',
@@ -40,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $price_wholesale = (int)($_POST['price_wholesale'] ?? 0);
     $price_retail = (int)($_POST['price_retail'] ?? 0);
     $min_wholesale_qty = (int)($_POST['min_wholesale_qty'] ?? 12);
+    $weight_gram = (int)($_POST['weight_gram'] ?? 500);
     $stock_status = sanitize($_POST['stock_status'] ?? 'Ready Stock');
     $material = sanitize($_POST['material'] ?? '');
     $length_size = sanitize($_POST['length_size'] ?? '');
@@ -54,14 +56,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmtUpdate = $pdo->prepare("
             UPDATE products SET 
                 category_id = ?, name = ?, slug = ?, short_desc = ?, description = ?,
-                price_retail = ?, price_wholesale = ?, min_wholesale_qty = ?,
+                price_retail = ?, price_wholesale = ?, min_wholesale_qty = ?, weight_gram = ?,
                 material = ?, length_size = ?, durability = ?, stock_status = ?,
                 image = ?, is_featured = ?
             WHERE id = ?
         ");
         $stmtUpdate->execute([
             $category_id, $name, $slug, $short_desc, $description,
-            $price_retail, $price_wholesale, $min_wholesale_qty,
+            $price_retail, $price_wholesale, $min_wholesale_qty, $weight_gram,
             $material, $length_size, $durability, $stock_status,
             $image, $is_featured, $id
         ]);
@@ -69,14 +71,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmtInsert = $pdo->prepare("
             INSERT INTO products (
                 category_id, name, slug, short_desc, description,
-                price_retail, price_wholesale, min_wholesale_qty,
+                price_retail, price_wholesale, min_wholesale_qty, weight_gram,
                 material, length_size, durability, stock_status,
                 image, is_featured
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ");
         $stmtInsert->execute([
             $category_id, $name, $slug, $short_desc, $description,
-            $price_retail, $price_wholesale, $min_wholesale_qty,
+            $price_retail, $price_wholesale, $min_wholesale_qty, $weight_gram,
             $material, $length_size, $durability, $stock_status,
             $image, $is_featured
         ]);
@@ -130,7 +132,7 @@ require_once __DIR__ . '/includes/header.php';
       </div>
     </div>
 
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
       <div>
         <label class="text-xs font-bold text-slate-700">Harga Grosir (Rp) *</label>
         <input type="number" name="price_wholesale" required value="<?= $product['price_wholesale'] ?>" class="w-full px-3.5 py-2.5 rounded-xl border text-xs">
@@ -140,8 +142,12 @@ require_once __DIR__ . '/includes/header.php';
         <input type="number" name="price_retail" value="<?= $product['price_retail'] ?>" class="w-full px-3.5 py-2.5 rounded-xl border text-xs">
       </div>
       <div>
-        <label class="text-xs font-bold text-slate-700">Min. Order (Unit)</label>
+        <label class="text-xs font-bold text-slate-700">Min. Order Grosir</label>
         <input type="number" name="min_wholesale_qty" value="<?= $product['min_wholesale_qty'] ?>" class="w-full px-3.5 py-2.5 rounded-xl border text-xs">
+      </div>
+      <div>
+        <label class="text-xs font-bold text-slate-700">Berat Satuan (Gram) *</label>
+        <input type="number" name="weight_gram" required value="<?= $product['weight_gram'] ?? 500 ?>" class="w-full px-3.5 py-2.5 rounded-xl border text-xs" placeholder="cth: 450">
       </div>
     </div>
 
